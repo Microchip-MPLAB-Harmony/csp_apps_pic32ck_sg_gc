@@ -1,0 +1,2119 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_wrapper.o)
+                              build/default/production/_ext/1171490990/startup_xc32.o (__pic32c_data_initialization)
+c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_0_1.o)
+                              c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_wrapper.o) (__pic32c_data_initialization_impl)
+c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__libc_start_main.o)
+                              build/default/production/_ext/1171490990/startup_xc32.o (__libc_init_array)
+c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(libc.o)
+                              c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__libc_start_main.o) (__progname_full)
+c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__environ.o)
+                              c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__libc_start_main.o) (__environ)
+
+Microchip PIC32 Memory-Usage Report
+
+ROM Program-Memory Usage
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+.text                    0xc000000           0x20          32  App's exec code 
+.text.CLOCK_Initialize   0xc000020           0x94         148   
+.text.Reset_Handler      0xc0000b4           0x68         104   
+.text.__pic32c_data_ini  0xc00011c           0x60          96   
+.text.__libc_start_init  0xc00017c           0x5c          92   
+.dinit                   0xc0001d8           0x50          80   
+.text                    0xc000228           0x40          64  App's exec code 
+.text.SYSTICK_DelayMs    0xc000268           0x40          64   
+.text.PORT_Initialize    0xc0002a8           0x28          40   
+.text.main               0xc0002d0           0x24          36   
+.text.NVIC_Initialize    0xc0002f4           0x24          36   
+.text.SYSTICK_TimerInit  0xc000318           0x24          36   
+.text.SysTick_Handler    0xc00033c           0x24          36   
+.text.SYS_Initialize     0xc000360           0x1c          28   
+.text.SYSTICK_TimerStar  0xc00037c           0x14          20   
+.text.PM_Initialize      0xc000390           0x10          16   
+.text.__pic32c_data_ini  0xc0003a0            0x4           4   
+.text.Dummy_App_Func     0xc0003a4            0x2           2   
+.text.EVSYS_Initialize   0xc0003a6            0x2           2   
+.text.Dummy_Handler      0xc0003a8            0x2           2   
+.text.NonMaskableInt_Ha  0xc0003aa            0x2           2   
+.text.HardFault_Handler  0xc0003ac            0x2           2   
+.text.__dummy            0xc0003ae            0x2           2   
+      Total ROM used  :       0x3b0         944  0.0% of 0x200000
+        --------------------------------------------------------------------------
+         Total Program Memory used  :       0x3b0         944  0.0% of 0x200000
+        --------------------------------------------------------------------------
+
+
+RAM Data-Memory Usage
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+.bss                             0           0x6c         108  Uninitialized data 
+.bss.systick                  0x6c            0xc          12   
+.bss                          0x78            0x8           8  Uninitialized data 
+         Total RAM used  :        0x80         128  3.1% of 0x1000
+        --------------------------------------------------------------------------
+            Total Data Memory used  :        0x80         128  3.1% of 0x1000
+        --------------------------------------------------------------------------
+
+
+Dynamic Data-Memory Reservation
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+heap                          0x88          0x200         512  Reserved for heap 
+stack                        0x2a0          0xd58        3416  Reserved for stack 
+
+        --------------------------------------------------------------------------
+
+Discarded input sections
+
+ .text          0x00000000        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crti.o
+ .data          0x00000000        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crti.o
+ .bss           0x00000000        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crti.o
+ .xc_stack_usage.hdr
+                0x00000000        0xe c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crti.o
+ .xc_stack_usage
+                0x00000000       0x26 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crti.o
+ .data          0x00000000        0x4 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crtbegin.o
+ .xc_stack_usage
+                0x00000000       0x3c c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crtbegin.o
+ .xc_stack_usage.hdr
+                0x00000000        0xe c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crtbegin.o
+ .text          0x00000000        0x0 build/default/production/_ext/1360937237/main.o
+ .data          0x00000000        0x0 build/default/production/_ext/1360937237/main.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1360937237/main.o
+ .text          0x00000000        0x0 build/default/production/_ext/1865468468/plib_nvic.o
+ .data          0x00000000        0x0 build/default/production/_ext/1865468468/plib_nvic.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1865468468/plib_nvic.o
+ .text.NVIC_INT_Enable
+                0x00000000        0x8 build/default/production/_ext/1865468468/plib_nvic.o
+ .text.NVIC_INT_Disable
+                0x00000000       0x12 build/default/production/_ext/1865468468/plib_nvic.o
+ .text.NVIC_INT_Restore
+                0x00000000       0x12 build/default/production/_ext/1865468468/plib_nvic.o
+ .text          0x00000000        0x0 build/default/production/_ext/1171490990/startup_xc32.o
+ .data          0x00000000        0x0 build/default/production/_ext/1171490990/startup_xc32.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1171490990/startup_xc32.o
+ .text          0x00000000        0x0 build/default/production/_ext/1984496892/plib_clock.o
+ .data          0x00000000        0x0 build/default/production/_ext/1984496892/plib_clock.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1984496892/plib_clock.o
+ .text          0x00000000        0x0 build/default/production/_ext/1827571544/plib_systick.o
+ .data          0x00000000        0x0 build/default/production/_ext/1827571544/plib_systick.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1827571544/plib_systick.o
+ .text.SYSTICK_TimerRestart
+                0x00000000       0x1c build/default/production/_ext/1827571544/plib_systick.o
+ .text.SYSTICK_TimerStop
+                0x00000000       0x10 build/default/production/_ext/1827571544/plib_systick.o
+ .text.SYSTICK_TimerPeriodSet
+                0x00000000        0xc build/default/production/_ext/1827571544/plib_systick.o
+ .text.SYSTICK_TimerPeriodGet
+                0x00000000        0xc build/default/production/_ext/1827571544/plib_systick.o
+ .text.SYSTICK_TimerCounterGet
+                0x00000000        0xc build/default/production/_ext/1827571544/plib_systick.o
+ .text.SYSTICK_TimerFrequencyGet
+                0x00000000        0x8 build/default/production/_ext/1827571544/plib_systick.o
+ .text.SYSTICK_DelayUs
+                0x00000000       0x40 build/default/production/_ext/1827571544/plib_systick.o
+ .text.SYSTICK_GetTickCounter
+                0x00000000        0xc build/default/production/_ext/1827571544/plib_systick.o
+ .text.SYSTICK_StartTimeOut
+                0x00000000       0x24 build/default/production/_ext/1827571544/plib_systick.o
+ .text.SYSTICK_ResetTimeOut
+                0x00000000        0xc build/default/production/_ext/1827571544/plib_systick.o
+ .text.SYSTICK_IsTimeoutReached
+                0x00000000       0x18 build/default/production/_ext/1827571544/plib_systick.o
+ .text.SYSTICK_TimerCallbackSet
+                0x00000000        0xc build/default/production/_ext/1827571544/plib_systick.o
+ .text          0x00000000        0x0 build/default/production/_ext/1171490990/initialization.o
+ .data          0x00000000        0x0 build/default/production/_ext/1171490990/initialization.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1171490990/initialization.o
+ .text          0x00000000        0x0 build/default/production/_ext/1986646378/plib_evsys.o
+ .data          0x00000000        0x0 build/default/production/_ext/1986646378/plib_evsys.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1986646378/plib_evsys.o
+ .text          0x00000000        0x0 build/default/production/_ext/1171490990/interrupts.o
+ .data          0x00000000        0x0 build/default/production/_ext/1171490990/interrupts.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1171490990/interrupts.o
+ .text          0x00000000        0x0 build/default/production/_ext/1171490990/exceptions.o
+ .data          0x00000000        0x0 build/default/production/_ext/1171490990/exceptions.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1171490990/exceptions.o
+ .text          0x00000000        0x0 build/default/production/_ext/1865131932/plib_cmcc.o
+ .data          0x00000000        0x0 build/default/production/_ext/1865131932/plib_cmcc.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1865131932/plib_cmcc.o
+ .text.CMCC_Disable
+                0x00000000       0x18 build/default/production/_ext/1865131932/plib_cmcc.o
+ .text.CMCC_EnableICache
+                0x00000000       0x28 build/default/production/_ext/1865131932/plib_cmcc.o
+ .text.CMCC_DisableICache
+                0x00000000       0x28 build/default/production/_ext/1865131932/plib_cmcc.o
+ .text.CMCC_EnableDCache
+                0x00000000       0x28 build/default/production/_ext/1865131932/plib_cmcc.o
+ .text.CMCC_DisableDCache
+                0x00000000       0x28 build/default/production/_ext/1865131932/plib_cmcc.o
+ .text.CMCC_InvalidateAll
+                0x00000000       0x20 build/default/production/_ext/1865131932/plib_cmcc.o
+ .debug_info    0x00000000      0x557 build/default/production/_ext/1865131932/plib_cmcc.o
+ .debug_abbrev  0x00000000       0x99 build/default/production/_ext/1865131932/plib_cmcc.o
+ .debug_aranges
+                0x00000000       0x48 build/default/production/_ext/1865131932/plib_cmcc.o
+ .debug_ranges  0x00000000       0x38 build/default/production/_ext/1865131932/plib_cmcc.o
+ .debug_line    0x00000000      0x20d build/default/production/_ext/1865131932/plib_cmcc.o
+ .debug_str     0x00000000        0x0 build/default/production/_ext/1865131932/plib_cmcc.o
+ .comment       0x00000000       0x2c build/default/production/_ext/1865131932/plib_cmcc.o
+ .debug_frame   0x00000000       0x70 build/default/production/_ext/1865131932/plib_cmcc.o
+ .ARM.attributes
+                0x00000000       0x38 build/default/production/_ext/1865131932/plib_cmcc.o
+ .text          0x00000000        0x0 build/default/production/_ext/163028504/xc32_monitor.o
+ .data          0x00000000        0x0 build/default/production/_ext/163028504/xc32_monitor.o
+ .bss           0x00000000        0x0 build/default/production/_ext/163028504/xc32_monitor.o
+ .text.read     0x00000000        0x6 build/default/production/_ext/163028504/xc32_monitor.o
+ .text.write    0x00000000        0x6 build/default/production/_ext/163028504/xc32_monitor.o
+ .debug_info    0x00000000      0x34e build/default/production/_ext/163028504/xc32_monitor.o
+ .debug_abbrev  0x00000000       0x96 build/default/production/_ext/163028504/xc32_monitor.o
+ .debug_loc     0x00000000       0x4a build/default/production/_ext/163028504/xc32_monitor.o
+ .debug_aranges
+                0x00000000       0x28 build/default/production/_ext/163028504/xc32_monitor.o
+ .debug_ranges  0x00000000       0x18 build/default/production/_ext/163028504/xc32_monitor.o
+ .debug_line    0x00000000       0xca build/default/production/_ext/163028504/xc32_monitor.o
+ .debug_str     0x00000000        0x0 build/default/production/_ext/163028504/xc32_monitor.o
+ .comment       0x00000000       0x2c build/default/production/_ext/163028504/xc32_monitor.o
+ .debug_frame   0x00000000       0x30 build/default/production/_ext/163028504/xc32_monitor.o
+ .ARM.attributes
+                0x00000000       0x38 build/default/production/_ext/163028504/xc32_monitor.o
+ .text          0x00000000        0x0 build/default/production/_ext/1171490990/libc_syscalls.o
+ .data          0x00000000        0x0 build/default/production/_ext/1171490990/libc_syscalls.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1171490990/libc_syscalls.o
+ .text._exit    0x00000000        0x2 build/default/production/_ext/1171490990/libc_syscalls.o
+ .debug_info    0x00000000      0x335 build/default/production/_ext/1171490990/libc_syscalls.o
+ .debug_abbrev  0x00000000       0x52 build/default/production/_ext/1171490990/libc_syscalls.o
+ .debug_loc     0x00000000       0x15 build/default/production/_ext/1171490990/libc_syscalls.o
+ .debug_aranges
+                0x00000000       0x20 build/default/production/_ext/1171490990/libc_syscalls.o
+ .debug_ranges  0x00000000       0x10 build/default/production/_ext/1171490990/libc_syscalls.o
+ .debug_line    0x00000000       0x5b build/default/production/_ext/1171490990/libc_syscalls.o
+ .debug_str     0x00000000        0x0 build/default/production/_ext/1171490990/libc_syscalls.o
+ .comment       0x00000000       0x2c build/default/production/_ext/1171490990/libc_syscalls.o
+ .debug_frame   0x00000000       0x20 build/default/production/_ext/1171490990/libc_syscalls.o
+ .ARM.attributes
+                0x00000000       0x38 build/default/production/_ext/1171490990/libc_syscalls.o
+ .text          0x00000000        0x0 build/default/production/_ext/1865521619/plib_port.o
+ .data          0x00000000        0x0 build/default/production/_ext/1865521619/plib_port.o
+ .bss           0x00000000        0x0 build/default/production/_ext/1865521619/plib_port.o
+ .text.PORT_GroupRead
+                0x00000000        0x4 build/default/production/_ext/1865521619/plib_port.o
+ .text.PORT_GroupWrite
+                0x00000000        0xc build/default/production/_ext/1865521619/plib_port.o
+ .text.PORT_GroupLatchRead
+                0x00000000        0x4 build/default/production/_ext/1865521619/plib_port.o
+ .text.PORT_GroupSet
+                0x00000000        0x4 build/default/production/_ext/1865521619/plib_port.o
+ .text.PORT_GroupClear
+                0x00000000        0x4 build/default/production/_ext/1865521619/plib_port.o
+ .text.PORT_GroupToggle
+                0x00000000        0x4 build/default/production/_ext/1865521619/plib_port.o
+ .text.PORT_GroupInputEnable
+                0x00000000        0x4 build/default/production/_ext/1865521619/plib_port.o
+ .text.PORT_GroupOutputEnable
+                0x00000000        0x4 build/default/production/_ext/1865521619/plib_port.o
+ .text.PORT_PinPeripheralFunctionConfig
+                0x00000000       0x46 build/default/production/_ext/1865521619/plib_port.o
+ .text.PORT_PinGPIOConfig
+                0x00000000       0x1c build/default/production/_ext/1865521619/plib_port.o
+ .text          0x00000000        0x0 build/default/production/_ext/829342769/plib_pm.o
+ .data          0x00000000        0x0 build/default/production/_ext/829342769/plib_pm.o
+ .bss           0x00000000        0x0 build/default/production/_ext/829342769/plib_pm.o
+ .text.PM_IdleModeEnter
+                0x00000000       0x10 build/default/production/_ext/829342769/plib_pm.o
+ .text.PM_StandbyModeEnter
+                0x00000000       0x18 build/default/production/_ext/829342769/plib_pm.o
+ .text.PM_HibernateModeEnter
+                0x00000000       0x18 build/default/production/_ext/829342769/plib_pm.o
+ .text.PM_BackupModeEnter
+                0x00000000       0x18 build/default/production/_ext/829342769/plib_pm.o
+ .text.PM_OffModeEnter
+                0x00000000       0x10 build/default/production/_ext/829342769/plib_pm.o
+ .text.PM_IO_RetentionSet
+                0x00000000       0x10 build/default/production/_ext/829342769/plib_pm.o
+ .text.PM_IO_RetentionClear
+                0x00000000       0x10 build/default/production/_ext/829342769/plib_pm.o
+ .text          0x00000000        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_wrapper.o)
+ .data          0x00000000        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_wrapper.o)
+ .bss           0x00000000        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_wrapper.o)
+ .xc_stack_usage
+                0x00000000       0x2a c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_wrapper.o)
+ .xc_stack_usage.hdr
+                0x00000000        0xe c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_wrapper.o)
+ .text          0x00000000        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_0_1.o)
+ .data          0x00000000        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_0_1.o)
+ .xc_stack_usage
+                0x00000000       0x2f c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_0_1.o)
+ .xc_stack_usage.hdr
+                0x00000000        0xe c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_0_1.o)
+ .text          0x00000000        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__libc_start_main.o)
+ .data          0x00000000        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__libc_start_main.o)
+ .bss           0x00000000        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__libc_start_main.o)
+ .xc_stack_usage
+                0x00000000       0x34 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__libc_start_main.o)
+ .xc_stack_usage.hdr
+                0x00000000        0xe c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__libc_start_main.o)
+ .text          0x00000000        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(libc.o)
+ .data          0x00000000        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(libc.o)
+ .xc_stack_usage.hdr
+                0x00000000        0xe c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(libc.o)
+ .text          0x00000000        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__environ.o)
+ .data          0x00000000        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__environ.o)
+ .xc_stack_usage.hdr
+                0x00000000        0xe c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__environ.o)
+ .text          0x00000000        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crtend.o
+ .data          0x00000000        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crtend.o
+ .bss           0x00000000        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crtend.o
+ .eh_frame      0x00000000        0x4 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crtend.o
+ .xc_stack_usage.hdr
+                0x00000000        0xe c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crtend.o
+ .comment       0x00000000       0x2c c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crtend.o
+ .ARM.attributes
+                0x00000000       0x36 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crtend.o
+ .text          0x00000000        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crtn.o
+ .data          0x00000000        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crtn.o
+ .bss           0x00000000        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crtn.o
+ .xc_stack_usage.hdr
+                0x00000000        0xe c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+boot_rom         0x08000000         0x00020000         xrl
+rom              0x0c000000         0x00200000         xrl
+ram              0x00000000         0x00001000         xw !r
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crti.o
+LOAD c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crtbegin.o
+LOAD build/default/production/_ext/1360937237/main.o
+LOAD build/default/production/_ext/1865468468/plib_nvic.o
+LOAD build/default/production/_ext/1171490990/startup_xc32.o
+LOAD build/default/production/_ext/1984496892/plib_clock.o
+LOAD build/default/production/_ext/1827571544/plib_systick.o
+LOAD build/default/production/_ext/1171490990/initialization.o
+LOAD build/default/production/_ext/1986646378/plib_evsys.o
+LOAD build/default/production/_ext/1171490990/interrupts.o
+LOAD build/default/production/_ext/1171490990/exceptions.o
+LOAD build/default/production/_ext/1865131932/plib_cmcc.o
+LOAD build/default/production/_ext/163028504/xc32_monitor.o
+LOAD build/default/production/_ext/1171490990/libc_syscalls.o
+LOAD build/default/production/_ext/1865521619/plib_port.o
+LOAD build/default/production/_ext/829342769/plib_pm.o
+                0x00000001                __MPLAB_BUILD = 0x1
+                0x0c200000                __rom_end = (ORIGIN (rom) + LENGTH (rom))
+                0x00001000                __ram_end = (ORIGIN (ram) + LENGTH (ram))
+
+.vectors        0x08000000      0x2ac
+                0x08000000                . = ALIGN (0x4)
+                0x08000000                _sfixed = .
+ *(.vectors .vectors.* .vectors_default .vectors_default.*)
+ .vectors.exception_table
+                0x08000000      0x2ac build/default/production/_ext/1171490990/interrupts.o
+                0x08000000                exception_table
+ *(.isr_vector)
+ *(.reset*)
+ *(.after_vectors)
+
+.text           0x0c000000       0x20
+                0x0c000000                . = ALIGN (0x4)
+ *(.glue_7t)
+ .glue_7t       0x0c000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x0c000000        0x0 linker stubs
+ *(.gnu.linkonce.r.*)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x0c000000                . = ALIGN (0x4)
+ *(.init)
+ .init          0x0c000000        0x4 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crti.o
+                0x0c000000                _init
+ .init          0x0c000004        0x8 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crtn.o
+                0x0c00000c                . = ALIGN (0x4)
+                0x0c00000c                __preinit_array_start = .
+ *(.preinit_array)
+                0x0c00000c                __preinit_array_end = .
+                0x0c00000c                . = ALIGN (0x4)
+                0x0c00000c                __init_array_start = .
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array)
+ .init_array    0x0c00000c        0x4 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crtbegin.o
+                0x0c000010                __init_array_end = .
+                0x0c000010                . = ALIGN (0x4)
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *crtend.o(.ctors)
+                0x0c000010                . = ALIGN (0x4)
+ *(.fini)
+ .fini          0x0c000010        0x4 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crti.o
+                0x0c000010                _fini
+ .fini          0x0c000014        0x8 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crtn.o
+                0x0c00001c                . = ALIGN (0x4)
+                0x0c00001c                __fini_array_start = .
+ *(.fini_array)
+ .fini_array    0x0c00001c        0x4 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crtbegin.o
+ *(SORT_BY_NAME(.fini_array.*))
+                0x0c000020                __fini_array_end = .
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *crtend.o(.dtors)
+                0x0c000020                . = ALIGN (0x4)
+                0x0c000020                _efixed = .
+                [!provide]                PROVIDE (__exidx_start = .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                [!provide]                PROVIDE (__exidx_end = .)
+                0x0c000020                . = ALIGN (0x4)
+                0x0c000020                _etext = .
+
+.bss            0x00000000        0x0
+                0x00000000                . = ALIGN (0x4)
+                0x00000000                __bss_start__ = .
+                0x00000000                _sbss = .
+                0x00000000                _szero = .
+ *(COMMON)
+                0x00000000                . = ALIGN (0x4)
+                0x00000000                __bss_end__ = .
+                0x00000000                _ebss = .
+                0x00000000                _ezero = .
+                0x00000000                . = ALIGN (0x4)
+                0x00000000                _end = .
+                0x00000fff                _ram_end_ = ((ORIGIN (ram) + LENGTH (ram)) - 0x1)
+                0x00000200                _min_heap_size = 0x200
+START GROUP
+LOAD c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a
+LOAD c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libm-emfloat.a
+LOAD c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a
+LOAD c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libm-emfloat.a
+LOAD c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard\libgcc.a
+END GROUP
+LOAD c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crtend.o
+LOAD c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crtn.o
+OUTPUT(dist/default/production/pic32ck_gc01_cult.X.production.elf elf32-littlearm)
+LOAD stack
+LOAD data_init
+
+.ARM.attributes
+                0x00000000       0x38
+ .ARM.attributes
+                0x00000000       0x22 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crti.o
+ .ARM.attributes
+                0x00000022       0x38 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crtbegin.o
+ .ARM.attributes
+                0x0000005a       0x38 build/default/production/_ext/1360937237/main.o
+ .ARM.attributes
+                0x00000092       0x38 build/default/production/_ext/1865468468/plib_nvic.o
+ .ARM.attributes
+                0x000000ca       0x38 build/default/production/_ext/1171490990/startup_xc32.o
+ .ARM.attributes
+                0x00000102       0x38 build/default/production/_ext/1984496892/plib_clock.o
+ .ARM.attributes
+                0x0000013a       0x38 build/default/production/_ext/1827571544/plib_systick.o
+ .ARM.attributes
+                0x00000172       0x38 build/default/production/_ext/1171490990/initialization.o
+ .ARM.attributes
+                0x000001aa       0x38 build/default/production/_ext/1986646378/plib_evsys.o
+ .ARM.attributes
+                0x000001e2       0x38 build/default/production/_ext/1171490990/interrupts.o
+ .ARM.attributes
+                0x0000021a       0x38 build/default/production/_ext/1171490990/exceptions.o
+ .ARM.attributes
+                0x00000252       0x38 build/default/production/_ext/1865521619/plib_port.o
+ .ARM.attributes
+                0x0000028a       0x38 build/default/production/_ext/829342769/plib_pm.o
+ .ARM.attributes
+                0x000002c2       0x38 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_wrapper.o)
+ .ARM.attributes
+                0x000002fa       0x38 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_0_1.o)
+ .ARM.attributes
+                0x00000332       0x3a c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__libc_start_main.o)
+ .ARM.attributes
+                0x0000036c       0x38 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(libc.o)
+ .ARM.attributes
+                0x000003a4       0x38 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__environ.o)
+ .ARM.attributes
+                0x000003dc       0x22 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crtn.o
+
+.comment        0x00000000       0x2b
+ .comment       0x00000000       0x2b c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crtbegin.o
+                                 0x2c (size before relaxing)
+ .comment       0x0000002b       0x2c build/default/production/_ext/1360937237/main.o
+ .comment       0x0000002b       0x2c build/default/production/_ext/1865468468/plib_nvic.o
+ .comment       0x0000002b       0x2c build/default/production/_ext/1171490990/startup_xc32.o
+ .comment       0x0000002b       0x2c build/default/production/_ext/1984496892/plib_clock.o
+ .comment       0x0000002b       0x2c build/default/production/_ext/1827571544/plib_systick.o
+ .comment       0x0000002b       0x2c build/default/production/_ext/1171490990/initialization.o
+ .comment       0x0000002b       0x2c build/default/production/_ext/1986646378/plib_evsys.o
+ .comment       0x0000002b       0x2c build/default/production/_ext/1171490990/interrupts.o
+ .comment       0x0000002b       0x2c build/default/production/_ext/1171490990/exceptions.o
+ .comment       0x0000002b       0x2c build/default/production/_ext/1865521619/plib_port.o
+ .comment       0x0000002b       0x2c build/default/production/_ext/829342769/plib_pm.o
+ .comment       0x0000002b       0x2c c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_wrapper.o)
+ .comment       0x0000002b       0x2c c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_0_1.o)
+ .comment       0x0000002b       0x2c c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__libc_start_main.o)
+ .comment       0x0000002b       0x2c c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(libc.o)
+ .comment       0x0000002b       0x2c c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__environ.o)
+
+.debug_info     0x00000000     0x7c00
+ .debug_info    0x00000000      0x5be build/default/production/_ext/1360937237/main.o
+ .debug_info    0x000005be      0xa27 build/default/production/_ext/1865468468/plib_nvic.o
+ .debug_info    0x00000fe5      0x941 build/default/production/_ext/1171490990/startup_xc32.o
+ .debug_info    0x00001926      0xb6b build/default/production/_ext/1984496892/plib_clock.o
+ .debug_info    0x00002491      0x961 build/default/production/_ext/1827571544/plib_systick.o
+ .debug_info    0x00002df2      0x3df build/default/production/_ext/1171490990/initialization.o
+ .debug_info    0x000031d1      0x344 build/default/production/_ext/1986646378/plib_evsys.o
+ .debug_info    0x00003515     0x195e build/default/production/_ext/1171490990/interrupts.o
+ .debug_info    0x00004e73      0x35f build/default/production/_ext/1171490990/exceptions.o
+ .debug_info    0x000051d2     0x1140 build/default/production/_ext/1865521619/plib_port.o
+ .debug_info    0x00006312      0x578 build/default/production/_ext/829342769/plib_pm.o
+ .debug_info    0x0000688a      0x2aa c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_wrapper.o)
+ .debug_info    0x00006b34      0x2ad c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_0_1.o)
+ .debug_info    0x00006de1      0x62b c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__libc_start_main.o)
+ .debug_info    0x0000740c      0x53d c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(libc.o)
+ .debug_info    0x00007949      0x2b7 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__environ.o)
+
+.debug_abbrev   0x00000000      0xdec
+ .debug_abbrev  0x00000000       0xef build/default/production/_ext/1360937237/main.o
+ .debug_abbrev  0x000000ef      0x18d build/default/production/_ext/1865468468/plib_nvic.o
+ .debug_abbrev  0x0000027c      0x1aa build/default/production/_ext/1171490990/startup_xc32.o
+ .debug_abbrev  0x00000426      0x111 build/default/production/_ext/1984496892/plib_clock.o
+ .debug_abbrev  0x00000537      0x21d build/default/production/_ext/1827571544/plib_systick.o
+ .debug_abbrev  0x00000754       0x8b build/default/production/_ext/1171490990/initialization.o
+ .debug_abbrev  0x000007df       0x3b build/default/production/_ext/1986646378/plib_evsys.o
+ .debug_abbrev  0x0000081a       0xb5 build/default/production/_ext/1171490990/interrupts.o
+ .debug_abbrev  0x000008cf       0x3e build/default/production/_ext/1171490990/exceptions.o
+ .debug_abbrev  0x0000090d      0x1d6 build/default/production/_ext/1865521619/plib_port.o
+ .debug_abbrev  0x00000ae3       0x8a build/default/production/_ext/829342769/plib_pm.o
+ .debug_abbrev  0x00000b6d       0x2b c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_wrapper.o)
+ .debug_abbrev  0x00000b98       0x2e c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_0_1.o)
+ .debug_abbrev  0x00000bc6      0x117 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__libc_start_main.o)
+ .debug_abbrev  0x00000cdd       0xb8 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(libc.o)
+ .debug_abbrev  0x00000d95       0x57 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__environ.o)
+
+.debug_loc      0x00000000      0x6c8
+ .debug_loc     0x00000000       0x20 build/default/production/_ext/1360937237/main.o
+ .debug_loc     0x00000020       0x73 build/default/production/_ext/1865468468/plib_nvic.o
+ .debug_loc     0x00000093       0x4a build/default/production/_ext/1171490990/startup_xc32.o
+ .debug_loc     0x000000dd      0x385 build/default/production/_ext/1827571544/plib_systick.o
+ .debug_loc     0x00000462       0x45 build/default/production/_ext/1171490990/initialization.o
+ .debug_loc     0x000004a7      0x1bc build/default/production/_ext/1865521619/plib_port.o
+ .debug_loc     0x00000663       0x14 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_0_1.o)
+ .debug_loc     0x00000677       0x51 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__libc_start_main.o)
+
+.debug_aranges  0x00000000      0x320
+ .debug_aranges
+                0x00000000       0x20 build/default/production/_ext/1360937237/main.o
+ .debug_aranges
+                0x00000020       0x38 build/default/production/_ext/1865468468/plib_nvic.o
+ .debug_aranges
+                0x00000058       0x28 build/default/production/_ext/1171490990/startup_xc32.o
+ .debug_aranges
+                0x00000080       0x20 build/default/production/_ext/1984496892/plib_clock.o
+ .debug_aranges
+                0x000000a0       0x98 build/default/production/_ext/1827571544/plib_systick.o
+ .debug_aranges
+                0x00000138       0x20 build/default/production/_ext/1171490990/initialization.o
+ .debug_aranges
+                0x00000158       0x20 build/default/production/_ext/1986646378/plib_evsys.o
+ .debug_aranges
+                0x00000178       0x20 build/default/production/_ext/1171490990/interrupts.o
+ .debug_aranges
+                0x00000198       0x28 build/default/production/_ext/1171490990/exceptions.o
+ .debug_aranges
+                0x000001c0       0x70 build/default/production/_ext/1865521619/plib_port.o
+ .debug_aranges
+                0x00000230       0x58 build/default/production/_ext/829342769/plib_pm.o
+ .debug_aranges
+                0x00000288       0x20 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_wrapper.o)
+ .debug_aranges
+                0x000002a8       0x20 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_0_1.o)
+ .debug_aranges
+                0x000002c8       0x28 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__libc_start_main.o)
+ .debug_aranges
+                0x000002f0       0x18 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(libc.o)
+ .debug_aranges
+                0x00000308       0x18 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__environ.o)
+
+.debug_ranges   0x00000000      0x238
+ .debug_ranges  0x00000000       0x10 build/default/production/_ext/1360937237/main.o
+ .debug_ranges  0x00000010       0x28 build/default/production/_ext/1865468468/plib_nvic.o
+ .debug_ranges  0x00000038       0x18 build/default/production/_ext/1171490990/startup_xc32.o
+ .debug_ranges  0x00000050       0x10 build/default/production/_ext/1984496892/plib_clock.o
+ .debug_ranges  0x00000060       0x88 build/default/production/_ext/1827571544/plib_systick.o
+ .debug_ranges  0x000000e8       0x10 build/default/production/_ext/1171490990/initialization.o
+ .debug_ranges  0x000000f8       0x10 build/default/production/_ext/1986646378/plib_evsys.o
+ .debug_ranges  0x00000108       0x10 build/default/production/_ext/1171490990/interrupts.o
+ .debug_ranges  0x00000118       0x18 build/default/production/_ext/1171490990/exceptions.o
+ .debug_ranges  0x00000130       0x60 build/default/production/_ext/1865521619/plib_port.o
+ .debug_ranges  0x00000190       0x48 build/default/production/_ext/829342769/plib_pm.o
+ .debug_ranges  0x000001d8       0x10 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_wrapper.o)
+ .debug_ranges  0x000001e8       0x10 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_0_1.o)
+ .debug_ranges  0x000001f8       0x40 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__libc_start_main.o)
+
+.debug_line     0x00000000     0x188e
+ .debug_line    0x00000000      0x137 build/default/production/_ext/1360937237/main.o
+ .debug_line    0x00000137      0x251 build/default/production/_ext/1865468468/plib_nvic.o
+ .debug_line    0x00000388      0x1df build/default/production/_ext/1171490990/startup_xc32.o
+ .debug_line    0x00000567      0x1f1 build/default/production/_ext/1984496892/plib_clock.o
+ .debug_line    0x00000758      0x421 build/default/production/_ext/1827571544/plib_systick.o
+ .debug_line    0x00000b79      0x1b0 build/default/production/_ext/1171490990/initialization.o
+ .debug_line    0x00000d29       0x66 build/default/production/_ext/1986646378/plib_evsys.o
+ .debug_line    0x00000d8f       0xba build/default/production/_ext/1171490990/interrupts.o
+ .debug_line    0x00000e49       0x6e build/default/production/_ext/1171490990/exceptions.o
+ .debug_line    0x00000eb7      0x29f build/default/production/_ext/1865521619/plib_port.o
+ .debug_line    0x00001156      0x20a build/default/production/_ext/829342769/plib_pm.o
+ .debug_line    0x00001360       0xa8 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_wrapper.o)
+ .debug_line    0x00001408       0xf8 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_0_1.o)
+ .debug_line    0x00001500      0x1cc c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__libc_start_main.o)
+ .debug_line    0x000016cc       0xbb c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(libc.o)
+ .debug_line    0x00001787      0x107 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__environ.o)
+
+.debug_str      0x00000000      0x148
+ .debug_str     0x00000000       0x32 build/default/production/_ext/1360937237/main.o
+ .debug_str     0x00000032        0x0 build/default/production/_ext/1865468468/plib_nvic.o
+ .debug_str     0x00000032       0x2f build/default/production/_ext/1171490990/startup_xc32.o
+ .debug_str     0x00000061       0x1e build/default/production/_ext/1984496892/plib_clock.o
+ .debug_str     0x0000007f       0x56 build/default/production/_ext/1827571544/plib_systick.o
+ .debug_str     0x000000d5       0x68 build/default/production/_ext/1171490990/initialization.o
+ .debug_str     0x0000013d        0x0 build/default/production/_ext/1986646378/plib_evsys.o
+ .debug_str     0x0000013d        0x0 build/default/production/_ext/1171490990/interrupts.o
+ .debug_str     0x0000013d        0x0 build/default/production/_ext/1171490990/exceptions.o
+ .debug_str     0x0000013d        0xb build/default/production/_ext/1865521619/plib_port.o
+ .debug_str     0x00000148        0x0 build/default/production/_ext/829342769/plib_pm.o
+ .debug_str     0x00000148        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_wrapper.o)
+ .debug_str     0x00000148        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_0_1.o)
+ .debug_str     0x00000148        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__libc_start_main.o)
+ .debug_str     0x00000148        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(libc.o)
+ .debug_str     0x00000148        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__environ.o)
+
+.debug_frame    0x00000000      0x484
+ .debug_frame   0x00000000       0x28 build/default/production/_ext/1360937237/main.o
+ .debug_frame   0x00000028       0x50 build/default/production/_ext/1865468468/plib_nvic.o
+ .debug_frame   0x00000078       0x38 build/default/production/_ext/1171490990/startup_xc32.o
+ .debug_frame   0x000000b0       0x20 build/default/production/_ext/1984496892/plib_clock.o
+ .debug_frame   0x000000d0      0x138 build/default/production/_ext/1827571544/plib_systick.o
+ .debug_frame   0x00000208       0x28 build/default/production/_ext/1171490990/initialization.o
+ .debug_frame   0x00000230       0x20 build/default/production/_ext/1986646378/plib_evsys.o
+ .debug_frame   0x00000250       0x20 build/default/production/_ext/1171490990/interrupts.o
+ .debug_frame   0x00000270       0x30 build/default/production/_ext/1171490990/exceptions.o
+ .debug_frame   0x000002a0       0xcc build/default/production/_ext/1865521619/plib_port.o
+ .debug_frame   0x0000036c       0x90 build/default/production/_ext/829342769/plib_pm.o
+ .debug_frame   0x000003fc       0x20 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_wrapper.o)
+ .debug_frame   0x0000041c       0x2c c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_0_1.o)
+ .debug_frame   0x00000448       0x3c c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__libc_start_main.o)
+
+.note.GNU-stack
+                0x00000000        0x0
+ .note.GNU-stack
+                0x00000000        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__libc_start_main.o)
+ .note.GNU-stack
+                0x00000000        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(libc.o)
+ .note.GNU-stack
+                0x00000000        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__environ.o)
+
+.stack          0x000002a0      0x100
+ .stack         0x000002a0      0x100 stack
+
+.bss%1          0x00000000       0x6c
+ .bss           0x00000000       0x50 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(libc.o)
+                0x00000000                __progname_full
+                0x00000000                program_invocation_name
+                0x00000004                program_invocation_short_name
+                0x00000004                __progname
+                0x00000008                __sysinfo
+                0x0000000c                __hwcap
+                0x00000010                __libc
+ .bss           0x00000050       0x1c c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crtbegin.o
+
+.bss.systick%3  0x0000006c        0xc
+ .bss.systick   0x0000006c        0xc build/default/production/_ext/1827571544/plib_systick.o
+
+.bss%4          0x00000078        0x8
+ .bss           0x00000078        0x4 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_0_1.o)
+ .bss           0x0000007c        0x4 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__environ.o)
+                0x0000007c                __environ
+                0x0000007c                environ
+                0x0000007c                ___environ
+                0x0000007c                _environ
+
+.eh_frame%z1    0x00000000        0x0
+ .eh_frame      0x00000000        0x0 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crtbegin.o
+
+.config_0A000000.__config_0A000000%6
+                0x0a000000        0x4
+ .config_0A000000.__config_0A000000
+                0x0a000000        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a000000                __config_0A000000
+
+.config_0A000004.__config_0A000004%7
+                0x0a000004        0x4
+ .config_0A000004.__config_0A000004
+                0x0a000004        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a000004                __config_0A000004
+
+.config_0A000008.__config_0A000008%8
+                0x0a000008        0x4
+ .config_0A000008.__config_0A000008
+                0x0a000008        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a000008                __config_0A000008
+
+.config_0A00000C.__config_0A00000C%9
+                0x0a00000c        0x4
+ .config_0A00000C.__config_0A00000C
+                0x0a00000c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00000c                __config_0A00000C
+
+.config_0A000010.__config_0A000010%10
+                0x0a000010        0x4
+ .config_0A000010.__config_0A000010
+                0x0a000010        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a000010                __config_0A000010
+
+.config_0A000014.__config_0A000014%11
+                0x0a000014        0x4
+ .config_0A000014.__config_0A000014
+                0x0a000014        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a000014                __config_0A000014
+
+.config_0A000018.__config_0A000018%12
+                0x0a000018        0x4
+ .config_0A000018.__config_0A000018
+                0x0a000018        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a000018                __config_0A000018
+
+.config_0A00001C.__config_0A00001C%13
+                0x0a00001c        0x4
+ .config_0A00001C.__config_0A00001C
+                0x0a00001c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00001c                __config_0A00001C
+
+.config_0A000020.__config_0A000020%14
+                0x0a000020        0x4
+ .config_0A000020.__config_0A000020
+                0x0a000020        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a000020                __config_0A000020
+
+.config_0A000024.__config_0A000024%15
+                0x0a000024        0x4
+ .config_0A000024.__config_0A000024
+                0x0a000024        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a000024                __config_0A000024
+
+.config_0A000028.__config_0A000028%16
+                0x0a000028        0x4
+ .config_0A000028.__config_0A000028
+                0x0a000028        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a000028                __config_0A000028
+
+.config_0A00002C.__config_0A00002C%17
+                0x0a00002c        0x4
+ .config_0A00002C.__config_0A00002C
+                0x0a00002c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00002c                __config_0A00002C
+
+.config_0A000030.__config_0A000030%18
+                0x0a000030        0x4
+ .config_0A000030.__config_0A000030
+                0x0a000030        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a000030                __config_0A000030
+
+.config_0A000034.__config_0A000034%19
+                0x0a000034        0x4
+ .config_0A000034.__config_0A000034
+                0x0a000034        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a000034                __config_0A000034
+
+.config_0A000038.__config_0A000038%20
+                0x0a000038        0x4
+ .config_0A000038.__config_0A000038
+                0x0a000038        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a000038                __config_0A000038
+
+.config_0A00003C.__config_0A00003C%21
+                0x0a00003c        0x4
+ .config_0A00003C.__config_0A00003C
+                0x0a00003c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00003c                __config_0A00003C
+
+.config_0A000040.__config_0A000040%22
+                0x0a000040        0x4
+ .config_0A000040.__config_0A000040
+                0x0a000040        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a000040                __config_0A000040
+
+.config_0A000044.__config_0A000044%23
+                0x0a000044        0x4
+ .config_0A000044.__config_0A000044
+                0x0a000044        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a000044                __config_0A000044
+
+.config_0A000048.__config_0A000048%24
+                0x0a000048        0x4
+ .config_0A000048.__config_0A000048
+                0x0a000048        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a000048                __config_0A000048
+
+.config_0A00004C.__config_0A00004C%25
+                0x0a00004c        0x4
+ .config_0A00004C.__config_0A00004C
+                0x0a00004c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00004c                __config_0A00004C
+
+.config_0A000054.__config_0A000054%26
+                0x0a000054        0x4
+ .config_0A000054.__config_0A000054
+                0x0a000054        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a000054                __config_0A000054
+
+.config_0A000058.__config_0A000058%27
+                0x0a000058        0x4
+ .config_0A000058.__config_0A000058
+                0x0a000058        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a000058                __config_0A000058
+
+.config_0A00005C.__config_0A00005C%28
+                0x0a00005c        0x4
+ .config_0A00005C.__config_0A00005C
+                0x0a00005c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00005c                __config_0A00005C
+
+.config_0A000060.__config_0A000060%29
+                0x0a000060        0x4
+ .config_0A000060.__config_0A000060
+                0x0a000060        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a000060                __config_0A000060
+
+.config_0A000064.__config_0A000064%30
+                0x0a000064        0x4
+ .config_0A000064.__config_0A000064
+                0x0a000064        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a000064                __config_0A000064
+
+.config_0A000068.__config_0A000068%31
+                0x0a000068        0x4
+ .config_0A000068.__config_0A000068
+                0x0a000068        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a000068                __config_0A000068
+
+.config_0A00006C.__config_0A00006C%32
+                0x0a00006c        0x4
+ .config_0A00006C.__config_0A00006C
+                0x0a00006c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00006c                __config_0A00006C
+
+.config_0A000070.__config_0A000070%33
+                0x0a000070        0x4
+ .config_0A000070.__config_0A000070
+                0x0a000070        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a000070                __config_0A000070
+
+.config_0A000074.__config_0A000074%34
+                0x0a000074        0x4
+ .config_0A000074.__config_0A000074
+                0x0a000074        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a000074                __config_0A000074
+
+.config_0A000078.__config_0A000078%35
+                0x0a000078        0x4
+ .config_0A000078.__config_0A000078
+                0x0a000078        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a000078                __config_0A000078
+
+.config_0A00007C.__config_0A00007C%36
+                0x0a00007c        0x4
+ .config_0A00007C.__config_0A00007C
+                0x0a00007c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00007c                __config_0A00007C
+
+.config_0A000080.__config_0A000080%37
+                0x0a000080        0x4
+ .config_0A000080.__config_0A000080
+                0x0a000080        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a000080                __config_0A000080
+
+.config_0A0000A0.__config_0A0000A0%38
+                0x0a0000a0        0x4
+ .config_0A0000A0.__config_0A0000A0
+                0x0a0000a0        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a0000a0                __config_0A0000A0
+
+.config_0A002000.__config_0A002000%39
+                0x0a002000        0x4
+ .config_0A002000.__config_0A002000
+                0x0a002000        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002000                __config_0A002000
+
+.config_0A002004.__config_0A002004%40
+                0x0a002004        0x4
+ .config_0A002004.__config_0A002004
+                0x0a002004        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002004                __config_0A002004
+
+.config_0A002008.__config_0A002008%41
+                0x0a002008        0x4
+ .config_0A002008.__config_0A002008
+                0x0a002008        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002008                __config_0A002008
+
+.config_0A002020.__config_0A002020%42
+                0x0a002020        0x4
+ .config_0A002020.__config_0A002020
+                0x0a002020        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002020                __config_0A002020
+
+.config_0A002024.__config_0A002024%43
+                0x0a002024        0x4
+ .config_0A002024.__config_0A002024
+                0x0a002024        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002024                __config_0A002024
+
+.config_0A002028.__config_0A002028%44
+                0x0a002028        0x4
+ .config_0A002028.__config_0A002028
+                0x0a002028        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002028                __config_0A002028
+
+.config_0A00202C.__config_0A00202C%45
+                0x0a00202c        0x4
+ .config_0A00202C.__config_0A00202C
+                0x0a00202c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00202c                __config_0A00202C
+
+.config_0A002030.__config_0A002030%46
+                0x0a002030        0x4
+ .config_0A002030.__config_0A002030
+                0x0a002030        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002030                __config_0A002030
+
+.config_0A002034.__config_0A002034%47
+                0x0a002034        0x4
+ .config_0A002034.__config_0A002034
+                0x0a002034        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002034                __config_0A002034
+
+.config_0A002038.__config_0A002038%48
+                0x0a002038        0x4
+ .config_0A002038.__config_0A002038
+                0x0a002038        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002038                __config_0A002038
+
+.config_0A00203C.__config_0A00203C%49
+                0x0a00203c        0x4
+ .config_0A00203C.__config_0A00203C
+                0x0a00203c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00203c                __config_0A00203C
+
+.config_0A002040.__config_0A002040%50
+                0x0a002040        0x4
+ .config_0A002040.__config_0A002040
+                0x0a002040        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002040                __config_0A002040
+
+.config_0A002044.__config_0A002044%51
+                0x0a002044        0x4
+ .config_0A002044.__config_0A002044
+                0x0a002044        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002044                __config_0A002044
+
+.config_0A002048.__config_0A002048%52
+                0x0a002048        0x4
+ .config_0A002048.__config_0A002048
+                0x0a002048        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002048                __config_0A002048
+
+.config_0A00204C.__config_0A00204C%53
+                0x0a00204c        0x4
+ .config_0A00204C.__config_0A00204C
+                0x0a00204c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00204c                __config_0A00204C
+
+.config_0A002050.__config_0A002050%54
+                0x0a002050        0x4
+ .config_0A002050.__config_0A002050
+                0x0a002050        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002050                __config_0A002050
+
+.config_0A002054.__config_0A002054%55
+                0x0a002054        0x4
+ .config_0A002054.__config_0A002054
+                0x0a002054        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002054                __config_0A002054
+
+.config_0A002058.__config_0A002058%56
+                0x0a002058        0x4
+ .config_0A002058.__config_0A002058
+                0x0a002058        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002058                __config_0A002058
+
+.config_0A00205C.__config_0A00205C%57
+                0x0a00205c        0x4
+ .config_0A00205C.__config_0A00205C
+                0x0a00205c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00205c                __config_0A00205C
+
+.config_0A002060.__config_0A002060%58
+                0x0a002060        0x4
+ .config_0A002060.__config_0A002060
+                0x0a002060        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002060                __config_0A002060
+
+.config_0A002064.__config_0A002064%59
+                0x0a002064        0x4
+ .config_0A002064.__config_0A002064
+                0x0a002064        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002064                __config_0A002064
+
+.config_0A002068.__config_0A002068%60
+                0x0a002068        0x4
+ .config_0A002068.__config_0A002068
+                0x0a002068        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002068                __config_0A002068
+
+.config_0A00206C.__config_0A00206C%61
+                0x0a00206c        0x4
+ .config_0A00206C.__config_0A00206C
+                0x0a00206c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00206c                __config_0A00206C
+
+.config_0A002070.__config_0A002070%62
+                0x0a002070        0x4
+ .config_0A002070.__config_0A002070
+                0x0a002070        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002070                __config_0A002070
+
+.config_0A002074.__config_0A002074%63
+                0x0a002074        0x4
+ .config_0A002074.__config_0A002074
+                0x0a002074        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002074                __config_0A002074
+
+.config_0A002078.__config_0A002078%64
+                0x0a002078        0x4
+ .config_0A002078.__config_0A002078
+                0x0a002078        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002078                __config_0A002078
+
+.config_0A00207C.__config_0A00207C%65
+                0x0a00207c        0x4
+ .config_0A00207C.__config_0A00207C
+                0x0a00207c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00207c                __config_0A00207C
+
+.config_0A002080.__config_0A002080%66
+                0x0a002080        0x4
+ .config_0A002080.__config_0A002080
+                0x0a002080        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002080                __config_0A002080
+
+.config_0A002084.__config_0A002084%67
+                0x0a002084        0x4
+ .config_0A002084.__config_0A002084
+                0x0a002084        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002084                __config_0A002084
+
+.config_0A002088.__config_0A002088%68
+                0x0a002088        0x4
+ .config_0A002088.__config_0A002088
+                0x0a002088        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002088                __config_0A002088
+
+.config_0A00208C.__config_0A00208C%69
+                0x0a00208c        0x4
+ .config_0A00208C.__config_0A00208C
+                0x0a00208c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00208c                __config_0A00208C
+
+.config_0A002090.__config_0A002090%70
+                0x0a002090        0x4
+ .config_0A002090.__config_0A002090
+                0x0a002090        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002090                __config_0A002090
+
+.config_0A002094.__config_0A002094%71
+                0x0a002094        0x4
+ .config_0A002094.__config_0A002094
+                0x0a002094        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002094                __config_0A002094
+
+.config_0A002098.__config_0A002098%72
+                0x0a002098        0x4
+ .config_0A002098.__config_0A002098
+                0x0a002098        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002098                __config_0A002098
+
+.config_0A00209C.__config_0A00209C%73
+                0x0a00209c        0x4
+ .config_0A00209C.__config_0A00209C
+                0x0a00209c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00209c                __config_0A00209C
+
+.config_0A0020A0.__config_0A0020A0%74
+                0x0a0020a0        0x4
+ .config_0A0020A0.__config_0A0020A0
+                0x0a0020a0        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a0020a0                __config_0A0020A0
+
+.config_0A0020A4.__config_0A0020A4%75
+                0x0a0020a4        0x4
+ .config_0A0020A4.__config_0A0020A4
+                0x0a0020a4        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a0020a4                __config_0A0020A4
+
+.config_0A0020A8.__config_0A0020A8%76
+                0x0a0020a8        0x4
+ .config_0A0020A8.__config_0A0020A8
+                0x0a0020a8        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a0020a8                __config_0A0020A8
+
+.config_0A0020AC.__config_0A0020AC%77
+                0x0a0020ac        0x4
+ .config_0A0020AC.__config_0A0020AC
+                0x0a0020ac        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a0020ac                __config_0A0020AC
+
+.config_0A0020B0.__config_0A0020B0%78
+                0x0a0020b0        0x4
+ .config_0A0020B0.__config_0A0020B0
+                0x0a0020b0        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a0020b0                __config_0A0020B0
+
+.config_0A0020B4.__config_0A0020B4%79
+                0x0a0020b4        0x4
+ .config_0A0020B4.__config_0A0020B4
+                0x0a0020b4        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a0020b4                __config_0A0020B4
+
+.config_0A0020B8.__config_0A0020B8%80
+                0x0a0020b8        0x4
+ .config_0A0020B8.__config_0A0020B8
+                0x0a0020b8        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a0020b8                __config_0A0020B8
+
+.config_0A0020BC.__config_0A0020BC%81
+                0x0a0020bc        0x4
+ .config_0A0020BC.__config_0A0020BC
+                0x0a0020bc        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a0020bc                __config_0A0020BC
+
+.config_0A0020C0.__config_0A0020C0%82
+                0x0a0020c0        0x4
+ .config_0A0020C0.__config_0A0020C0
+                0x0a0020c0        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a0020c0                __config_0A0020C0
+
+.config_0A0020C4.__config_0A0020C4%83
+                0x0a0020c4        0x4
+ .config_0A0020C4.__config_0A0020C4
+                0x0a0020c4        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a0020c4                __config_0A0020C4
+
+.config_0A0020C8.__config_0A0020C8%84
+                0x0a0020c8        0x4
+ .config_0A0020C8.__config_0A0020C8
+                0x0a0020c8        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a0020c8                __config_0A0020C8
+
+.config_0A0020CC.__config_0A0020CC%85
+                0x0a0020cc        0x4
+ .config_0A0020CC.__config_0A0020CC
+                0x0a0020cc        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a0020cc                __config_0A0020CC
+
+.config_0A0020D0.__config_0A0020D0%86
+                0x0a0020d0        0x4
+ .config_0A0020D0.__config_0A0020D0
+                0x0a0020d0        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a0020d0                __config_0A0020D0
+
+.config_0A0020D4.__config_0A0020D4%87
+                0x0a0020d4        0x4
+ .config_0A0020D4.__config_0A0020D4
+                0x0a0020d4        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a0020d4                __config_0A0020D4
+
+.config_0A0020D8.__config_0A0020D8%88
+                0x0a0020d8        0x4
+ .config_0A0020D8.__config_0A0020D8
+                0x0a0020d8        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a0020d8                __config_0A0020D8
+
+.config_0A0020DC.__config_0A0020DC%89
+                0x0a0020dc        0x4
+ .config_0A0020DC.__config_0A0020DC
+                0x0a0020dc        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a0020dc                __config_0A0020DC
+
+.config_0A0020E0.__config_0A0020E0%90
+                0x0a0020e0        0x4
+ .config_0A0020E0.__config_0A0020E0
+                0x0a0020e0        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a0020e0                __config_0A0020E0
+
+.config_0A0020E4.__config_0A0020E4%91
+                0x0a0020e4        0x4
+ .config_0A0020E4.__config_0A0020E4
+                0x0a0020e4        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a0020e4                __config_0A0020E4
+
+.config_0A0020E8.__config_0A0020E8%92
+                0x0a0020e8        0x4
+ .config_0A0020E8.__config_0A0020E8
+                0x0a0020e8        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a0020e8                __config_0A0020E8
+
+.config_0A0020EC.__config_0A0020EC%93
+                0x0a0020ec        0x4
+ .config_0A0020EC.__config_0A0020EC
+                0x0a0020ec        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a0020ec                __config_0A0020EC
+
+.config_0A0020F0.__config_0A0020F0%94
+                0x0a0020f0        0x4
+ .config_0A0020F0.__config_0A0020F0
+                0x0a0020f0        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a0020f0                __config_0A0020F0
+
+.config_0A0020F4.__config_0A0020F4%95
+                0x0a0020f4        0x4
+ .config_0A0020F4.__config_0A0020F4
+                0x0a0020f4        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a0020f4                __config_0A0020F4
+
+.config_0A0020F8.__config_0A0020F8%96
+                0x0a0020f8        0x4
+ .config_0A0020F8.__config_0A0020F8
+                0x0a0020f8        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a0020f8                __config_0A0020F8
+
+.config_0A0020FC.__config_0A0020FC%97
+                0x0a0020fc        0x4
+ .config_0A0020FC.__config_0A0020FC
+                0x0a0020fc        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a0020fc                __config_0A0020FC
+
+.config_0A002100.__config_0A002100%98
+                0x0a002100        0x4
+ .config_0A002100.__config_0A002100
+                0x0a002100        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002100                __config_0A002100
+
+.config_0A002110.__config_0A002110%99
+                0x0a002110        0x4
+ .config_0A002110.__config_0A002110
+                0x0a002110        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002110                __config_0A002110
+
+.config_0A002114.__config_0A002114%100
+                0x0a002114        0x4
+ .config_0A002114.__config_0A002114
+                0x0a002114        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002114                __config_0A002114
+
+.config_0A002118.__config_0A002118%101
+                0x0a002118        0x4
+ .config_0A002118.__config_0A002118
+                0x0a002118        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002118                __config_0A002118
+
+.config_0A00211C.__config_0A00211C%102
+                0x0a00211c        0x4
+ .config_0A00211C.__config_0A00211C
+                0x0a00211c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00211c                __config_0A00211C
+
+.config_0A002120.__config_0A002120%103
+                0x0a002120        0x4
+ .config_0A002120.__config_0A002120
+                0x0a002120        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a002120                __config_0A002120
+
+.config_0A004000.__config_0A004000%104
+                0x0a004000        0x4
+ .config_0A004000.__config_0A004000
+                0x0a004000        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a004000                __config_0A004000
+
+.config_0A008000.__config_0A008000%105
+                0x0a008000        0x4
+ .config_0A008000.__config_0A008000
+                0x0a008000        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a008000                __config_0A008000
+
+.config_0A008004.__config_0A008004%106
+                0x0a008004        0x4
+ .config_0A008004.__config_0A008004
+                0x0a008004        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a008004                __config_0A008004
+
+.config_0A008008.__config_0A008008%107
+                0x0a008008        0x4
+ .config_0A008008.__config_0A008008
+                0x0a008008        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a008008                __config_0A008008
+
+.config_0A00800C.__config_0A00800C%108
+                0x0a00800c        0x4
+ .config_0A00800C.__config_0A00800C
+                0x0a00800c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00800c                __config_0A00800C
+
+.config_0A008010.__config_0A008010%109
+                0x0a008010        0x4
+ .config_0A008010.__config_0A008010
+                0x0a008010        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a008010                __config_0A008010
+
+.config_0A008014.__config_0A008014%110
+                0x0a008014        0x4
+ .config_0A008014.__config_0A008014
+                0x0a008014        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a008014                __config_0A008014
+
+.config_0A008018.__config_0A008018%111
+                0x0a008018        0x4
+ .config_0A008018.__config_0A008018
+                0x0a008018        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a008018                __config_0A008018
+
+.config_0A00801C.__config_0A00801C%112
+                0x0a00801c        0x4
+ .config_0A00801C.__config_0A00801C
+                0x0a00801c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00801c                __config_0A00801C
+
+.config_0A008020.__config_0A008020%113
+                0x0a008020        0x4
+ .config_0A008020.__config_0A008020
+                0x0a008020        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a008020                __config_0A008020
+
+.config_0A008024.__config_0A008024%114
+                0x0a008024        0x4
+ .config_0A008024.__config_0A008024
+                0x0a008024        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a008024                __config_0A008024
+
+.config_0A008028.__config_0A008028%115
+                0x0a008028        0x4
+ .config_0A008028.__config_0A008028
+                0x0a008028        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a008028                __config_0A008028
+
+.config_0A00802C.__config_0A00802C%116
+                0x0a00802c        0x4
+ .config_0A00802C.__config_0A00802C
+                0x0a00802c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00802c                __config_0A00802C
+
+.config_0A008030.__config_0A008030%117
+                0x0a008030        0x4
+ .config_0A008030.__config_0A008030
+                0x0a008030        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a008030                __config_0A008030
+
+.config_0A008034.__config_0A008034%118
+                0x0a008034        0x4
+ .config_0A008034.__config_0A008034
+                0x0a008034        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a008034                __config_0A008034
+
+.config_0A008038.__config_0A008038%119
+                0x0a008038        0x4
+ .config_0A008038.__config_0A008038
+                0x0a008038        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a008038                __config_0A008038
+
+.config_0A00803C.__config_0A00803C%120
+                0x0a00803c        0x4
+ .config_0A00803C.__config_0A00803C
+                0x0a00803c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00803c                __config_0A00803C
+
+.config_0A008040.__config_0A008040%121
+                0x0a008040        0x4
+ .config_0A008040.__config_0A008040
+                0x0a008040        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a008040                __config_0A008040
+
+.config_0A008044.__config_0A008044%122
+                0x0a008044        0x4
+ .config_0A008044.__config_0A008044
+                0x0a008044        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a008044                __config_0A008044
+
+.config_0A008048.__config_0A008048%123
+                0x0a008048        0x4
+ .config_0A008048.__config_0A008048
+                0x0a008048        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a008048                __config_0A008048
+
+.config_0A00804C.__config_0A00804C%124
+                0x0a00804c        0x4
+ .config_0A00804C.__config_0A00804C
+                0x0a00804c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00804c                __config_0A00804C
+
+.config_0A008054.__config_0A008054%125
+                0x0a008054        0x4
+ .config_0A008054.__config_0A008054
+                0x0a008054        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a008054                __config_0A008054
+
+.config_0A008058.__config_0A008058%126
+                0x0a008058        0x4
+ .config_0A008058.__config_0A008058
+                0x0a008058        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a008058                __config_0A008058
+
+.config_0A00805C.__config_0A00805C%127
+                0x0a00805c        0x4
+ .config_0A00805C.__config_0A00805C
+                0x0a00805c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00805c                __config_0A00805C
+
+.config_0A008060.__config_0A008060%128
+                0x0a008060        0x4
+ .config_0A008060.__config_0A008060
+                0x0a008060        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a008060                __config_0A008060
+
+.config_0A008064.__config_0A008064%129
+                0x0a008064        0x4
+ .config_0A008064.__config_0A008064
+                0x0a008064        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a008064                __config_0A008064
+
+.config_0A008068.__config_0A008068%130
+                0x0a008068        0x4
+ .config_0A008068.__config_0A008068
+                0x0a008068        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a008068                __config_0A008068
+
+.config_0A00806C.__config_0A00806C%131
+                0x0a00806c        0x4
+ .config_0A00806C.__config_0A00806C
+                0x0a00806c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00806c                __config_0A00806C
+
+.config_0A008070.__config_0A008070%132
+                0x0a008070        0x4
+ .config_0A008070.__config_0A008070
+                0x0a008070        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a008070                __config_0A008070
+
+.config_0A008074.__config_0A008074%133
+                0x0a008074        0x4
+ .config_0A008074.__config_0A008074
+                0x0a008074        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a008074                __config_0A008074
+
+.config_0A008078.__config_0A008078%134
+                0x0a008078        0x4
+ .config_0A008078.__config_0A008078
+                0x0a008078        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a008078                __config_0A008078
+
+.config_0A00807C.__config_0A00807C%135
+                0x0a00807c        0x4
+ .config_0A00807C.__config_0A00807C
+                0x0a00807c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00807c                __config_0A00807C
+
+.config_0A008080.__config_0A008080%136
+                0x0a008080        0x4
+ .config_0A008080.__config_0A008080
+                0x0a008080        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a008080                __config_0A008080
+
+.config_0A0080A0.__config_0A0080A0%137
+                0x0a0080a0        0x4
+ .config_0A0080A0.__config_0A0080A0
+                0x0a0080a0        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a0080a0                __config_0A0080A0
+
+.config_0A00A000.__config_0A00A000%138
+                0x0a00a000        0x4
+ .config_0A00A000.__config_0A00A000
+                0x0a00a000        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a000                __config_0A00A000
+
+.config_0A00A004.__config_0A00A004%139
+                0x0a00a004        0x4
+ .config_0A00A004.__config_0A00A004
+                0x0a00a004        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a004                __config_0A00A004
+
+.config_0A00A008.__config_0A00A008%140
+                0x0a00a008        0x4
+ .config_0A00A008.__config_0A00A008
+                0x0a00a008        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a008                __config_0A00A008
+
+.config_0A00A020.__config_0A00A020%141
+                0x0a00a020        0x4
+ .config_0A00A020.__config_0A00A020
+                0x0a00a020        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a020                __config_0A00A020
+
+.config_0A00A024.__config_0A00A024%142
+                0x0a00a024        0x4
+ .config_0A00A024.__config_0A00A024
+                0x0a00a024        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a024                __config_0A00A024
+
+.config_0A00A028.__config_0A00A028%143
+                0x0a00a028        0x4
+ .config_0A00A028.__config_0A00A028
+                0x0a00a028        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a028                __config_0A00A028
+
+.config_0A00A02C.__config_0A00A02C%144
+                0x0a00a02c        0x4
+ .config_0A00A02C.__config_0A00A02C
+                0x0a00a02c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a02c                __config_0A00A02C
+
+.config_0A00A030.__config_0A00A030%145
+                0x0a00a030        0x4
+ .config_0A00A030.__config_0A00A030
+                0x0a00a030        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a030                __config_0A00A030
+
+.config_0A00A034.__config_0A00A034%146
+                0x0a00a034        0x4
+ .config_0A00A034.__config_0A00A034
+                0x0a00a034        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a034                __config_0A00A034
+
+.config_0A00A038.__config_0A00A038%147
+                0x0a00a038        0x4
+ .config_0A00A038.__config_0A00A038
+                0x0a00a038        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a038                __config_0A00A038
+
+.config_0A00A03C.__config_0A00A03C%148
+                0x0a00a03c        0x4
+ .config_0A00A03C.__config_0A00A03C
+                0x0a00a03c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a03c                __config_0A00A03C
+
+.config_0A00A040.__config_0A00A040%149
+                0x0a00a040        0x4
+ .config_0A00A040.__config_0A00A040
+                0x0a00a040        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a040                __config_0A00A040
+
+.config_0A00A044.__config_0A00A044%150
+                0x0a00a044        0x4
+ .config_0A00A044.__config_0A00A044
+                0x0a00a044        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a044                __config_0A00A044
+
+.config_0A00A048.__config_0A00A048%151
+                0x0a00a048        0x4
+ .config_0A00A048.__config_0A00A048
+                0x0a00a048        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a048                __config_0A00A048
+
+.config_0A00A04C.__config_0A00A04C%152
+                0x0a00a04c        0x4
+ .config_0A00A04C.__config_0A00A04C
+                0x0a00a04c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a04c                __config_0A00A04C
+
+.config_0A00A050.__config_0A00A050%153
+                0x0a00a050        0x4
+ .config_0A00A050.__config_0A00A050
+                0x0a00a050        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a050                __config_0A00A050
+
+.config_0A00A054.__config_0A00A054%154
+                0x0a00a054        0x4
+ .config_0A00A054.__config_0A00A054
+                0x0a00a054        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a054                __config_0A00A054
+
+.config_0A00A058.__config_0A00A058%155
+                0x0a00a058        0x4
+ .config_0A00A058.__config_0A00A058
+                0x0a00a058        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a058                __config_0A00A058
+
+.config_0A00A05C.__config_0A00A05C%156
+                0x0a00a05c        0x4
+ .config_0A00A05C.__config_0A00A05C
+                0x0a00a05c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a05c                __config_0A00A05C
+
+.config_0A00A060.__config_0A00A060%157
+                0x0a00a060        0x4
+ .config_0A00A060.__config_0A00A060
+                0x0a00a060        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a060                __config_0A00A060
+
+.config_0A00A064.__config_0A00A064%158
+                0x0a00a064        0x4
+ .config_0A00A064.__config_0A00A064
+                0x0a00a064        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a064                __config_0A00A064
+
+.config_0A00A068.__config_0A00A068%159
+                0x0a00a068        0x4
+ .config_0A00A068.__config_0A00A068
+                0x0a00a068        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a068                __config_0A00A068
+
+.config_0A00A06C.__config_0A00A06C%160
+                0x0a00a06c        0x4
+ .config_0A00A06C.__config_0A00A06C
+                0x0a00a06c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a06c                __config_0A00A06C
+
+.config_0A00A070.__config_0A00A070%161
+                0x0a00a070        0x4
+ .config_0A00A070.__config_0A00A070
+                0x0a00a070        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a070                __config_0A00A070
+
+.config_0A00A074.__config_0A00A074%162
+                0x0a00a074        0x4
+ .config_0A00A074.__config_0A00A074
+                0x0a00a074        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a074                __config_0A00A074
+
+.config_0A00A078.__config_0A00A078%163
+                0x0a00a078        0x4
+ .config_0A00A078.__config_0A00A078
+                0x0a00a078        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a078                __config_0A00A078
+
+.config_0A00A07C.__config_0A00A07C%164
+                0x0a00a07c        0x4
+ .config_0A00A07C.__config_0A00A07C
+                0x0a00a07c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a07c                __config_0A00A07C
+
+.config_0A00A080.__config_0A00A080%165
+                0x0a00a080        0x4
+ .config_0A00A080.__config_0A00A080
+                0x0a00a080        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a080                __config_0A00A080
+
+.config_0A00A084.__config_0A00A084%166
+                0x0a00a084        0x4
+ .config_0A00A084.__config_0A00A084
+                0x0a00a084        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a084                __config_0A00A084
+
+.config_0A00A088.__config_0A00A088%167
+                0x0a00a088        0x4
+ .config_0A00A088.__config_0A00A088
+                0x0a00a088        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a088                __config_0A00A088
+
+.config_0A00A08C.__config_0A00A08C%168
+                0x0a00a08c        0x4
+ .config_0A00A08C.__config_0A00A08C
+                0x0a00a08c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a08c                __config_0A00A08C
+
+.config_0A00A090.__config_0A00A090%169
+                0x0a00a090        0x4
+ .config_0A00A090.__config_0A00A090
+                0x0a00a090        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a090                __config_0A00A090
+
+.config_0A00A094.__config_0A00A094%170
+                0x0a00a094        0x4
+ .config_0A00A094.__config_0A00A094
+                0x0a00a094        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a094                __config_0A00A094
+
+.config_0A00A098.__config_0A00A098%171
+                0x0a00a098        0x4
+ .config_0A00A098.__config_0A00A098
+                0x0a00a098        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a098                __config_0A00A098
+
+.config_0A00A09C.__config_0A00A09C%172
+                0x0a00a09c        0x4
+ .config_0A00A09C.__config_0A00A09C
+                0x0a00a09c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a09c                __config_0A00A09C
+
+.config_0A00A0A0.__config_0A00A0A0%173
+                0x0a00a0a0        0x4
+ .config_0A00A0A0.__config_0A00A0A0
+                0x0a00a0a0        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a0a0                __config_0A00A0A0
+
+.config_0A00A0A4.__config_0A00A0A4%174
+                0x0a00a0a4        0x4
+ .config_0A00A0A4.__config_0A00A0A4
+                0x0a00a0a4        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a0a4                __config_0A00A0A4
+
+.config_0A00A0A8.__config_0A00A0A8%175
+                0x0a00a0a8        0x4
+ .config_0A00A0A8.__config_0A00A0A8
+                0x0a00a0a8        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a0a8                __config_0A00A0A8
+
+.config_0A00A0AC.__config_0A00A0AC%176
+                0x0a00a0ac        0x4
+ .config_0A00A0AC.__config_0A00A0AC
+                0x0a00a0ac        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a0ac                __config_0A00A0AC
+
+.config_0A00A0B0.__config_0A00A0B0%177
+                0x0a00a0b0        0x4
+ .config_0A00A0B0.__config_0A00A0B0
+                0x0a00a0b0        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a0b0                __config_0A00A0B0
+
+.config_0A00A0B4.__config_0A00A0B4%178
+                0x0a00a0b4        0x4
+ .config_0A00A0B4.__config_0A00A0B4
+                0x0a00a0b4        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a0b4                __config_0A00A0B4
+
+.config_0A00A0B8.__config_0A00A0B8%179
+                0x0a00a0b8        0x4
+ .config_0A00A0B8.__config_0A00A0B8
+                0x0a00a0b8        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a0b8                __config_0A00A0B8
+
+.config_0A00A0BC.__config_0A00A0BC%180
+                0x0a00a0bc        0x4
+ .config_0A00A0BC.__config_0A00A0BC
+                0x0a00a0bc        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a0bc                __config_0A00A0BC
+
+.config_0A00A0C0.__config_0A00A0C0%181
+                0x0a00a0c0        0x4
+ .config_0A00A0C0.__config_0A00A0C0
+                0x0a00a0c0        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a0c0                __config_0A00A0C0
+
+.config_0A00A0C4.__config_0A00A0C4%182
+                0x0a00a0c4        0x4
+ .config_0A00A0C4.__config_0A00A0C4
+                0x0a00a0c4        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a0c4                __config_0A00A0C4
+
+.config_0A00A0C8.__config_0A00A0C8%183
+                0x0a00a0c8        0x4
+ .config_0A00A0C8.__config_0A00A0C8
+                0x0a00a0c8        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a0c8                __config_0A00A0C8
+
+.config_0A00A0CC.__config_0A00A0CC%184
+                0x0a00a0cc        0x4
+ .config_0A00A0CC.__config_0A00A0CC
+                0x0a00a0cc        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a0cc                __config_0A00A0CC
+
+.config_0A00A0D0.__config_0A00A0D0%185
+                0x0a00a0d0        0x4
+ .config_0A00A0D0.__config_0A00A0D0
+                0x0a00a0d0        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a0d0                __config_0A00A0D0
+
+.config_0A00A0D4.__config_0A00A0D4%186
+                0x0a00a0d4        0x4
+ .config_0A00A0D4.__config_0A00A0D4
+                0x0a00a0d4        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a0d4                __config_0A00A0D4
+
+.config_0A00A0D8.__config_0A00A0D8%187
+                0x0a00a0d8        0x4
+ .config_0A00A0D8.__config_0A00A0D8
+                0x0a00a0d8        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a0d8                __config_0A00A0D8
+
+.config_0A00A0DC.__config_0A00A0DC%188
+                0x0a00a0dc        0x4
+ .config_0A00A0DC.__config_0A00A0DC
+                0x0a00a0dc        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a0dc                __config_0A00A0DC
+
+.config_0A00A0E0.__config_0A00A0E0%189
+                0x0a00a0e0        0x4
+ .config_0A00A0E0.__config_0A00A0E0
+                0x0a00a0e0        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a0e0                __config_0A00A0E0
+
+.config_0A00A0E4.__config_0A00A0E4%190
+                0x0a00a0e4        0x4
+ .config_0A00A0E4.__config_0A00A0E4
+                0x0a00a0e4        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a0e4                __config_0A00A0E4
+
+.config_0A00A0E8.__config_0A00A0E8%191
+                0x0a00a0e8        0x4
+ .config_0A00A0E8.__config_0A00A0E8
+                0x0a00a0e8        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a0e8                __config_0A00A0E8
+
+.config_0A00A0EC.__config_0A00A0EC%192
+                0x0a00a0ec        0x4
+ .config_0A00A0EC.__config_0A00A0EC
+                0x0a00a0ec        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a0ec                __config_0A00A0EC
+
+.config_0A00A0F0.__config_0A00A0F0%193
+                0x0a00a0f0        0x4
+ .config_0A00A0F0.__config_0A00A0F0
+                0x0a00a0f0        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a0f0                __config_0A00A0F0
+
+.config_0A00A0F4.__config_0A00A0F4%194
+                0x0a00a0f4        0x4
+ .config_0A00A0F4.__config_0A00A0F4
+                0x0a00a0f4        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a0f4                __config_0A00A0F4
+
+.config_0A00A0F8.__config_0A00A0F8%195
+                0x0a00a0f8        0x4
+ .config_0A00A0F8.__config_0A00A0F8
+                0x0a00a0f8        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a0f8                __config_0A00A0F8
+
+.config_0A00A0FC.__config_0A00A0FC%196
+                0x0a00a0fc        0x4
+ .config_0A00A0FC.__config_0A00A0FC
+                0x0a00a0fc        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a0fc                __config_0A00A0FC
+
+.config_0A00A100.__config_0A00A100%197
+                0x0a00a100        0x4
+ .config_0A00A100.__config_0A00A100
+                0x0a00a100        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a100                __config_0A00A100
+
+.config_0A00A110.__config_0A00A110%198
+                0x0a00a110        0x4
+ .config_0A00A110.__config_0A00A110
+                0x0a00a110        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a110                __config_0A00A110
+
+.config_0A00A114.__config_0A00A114%199
+                0x0a00a114        0x4
+ .config_0A00A114.__config_0A00A114
+                0x0a00a114        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a114                __config_0A00A114
+
+.config_0A00A118.__config_0A00A118%200
+                0x0a00a118        0x4
+ .config_0A00A118.__config_0A00A118
+                0x0a00a118        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a118                __config_0A00A118
+
+.config_0A00A11C.__config_0A00A11C%201
+                0x0a00a11c        0x4
+ .config_0A00A11C.__config_0A00A11C
+                0x0a00a11c        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a11c                __config_0A00A11C
+
+.config_0A00A120.__config_0A00A120%202
+                0x0a00a120        0x4
+ .config_0A00A120.__config_0A00A120
+                0x0a00a120        0x4 build/default/production/_ext/1171490990/initialization.o
+                0x0a00a120                __config_0A00A120
+
+.text.CLOCK_Initialize%203
+                0x0c000020       0x94
+ .text.CLOCK_Initialize
+                0x0c000020       0x94 build/default/production/_ext/1984496892/plib_clock.o
+                0x0c000020                CLOCK_Initialize
+
+.text.Reset_Handler%204
+                0x0c0000b4       0x68
+ .text.Reset_Handler
+                0x0c0000b4       0x68 build/default/production/_ext/1171490990/startup_xc32.o
+                0x0c0000b4                Reset_Handler
+
+.text.__pic32c_data_initialization_impl%205
+                0x0c00011c       0x60
+ .text.__pic32c_data_initialization_impl
+                0x0c00011c       0x60 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_0_1.o)
+                0x0c00011c                __copy_needed
+                0x0c00011c                __pic32c_data_initialization_impl
+
+.text.__libc_start_init%206
+                0x0c00017c       0x5c
+ .text.__libc_start_init
+                0x0c00017c       0x5c c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__libc_start_main.o)
+                0x0c00017c                __libc_init_array
+
+.dinit%207      0x0c0001d8       0x50
+ .dinit         0x0c0001d8       0x50 data_init
+
+.text%208       0x0c000228       0x40
+ .text          0x0c000228       0x40 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v8-m.main+fp/hard/crtbegin.o
+
+.text.SYSTICK_DelayMs%209
+                0x0c000268       0x40
+ .text.SYSTICK_DelayMs
+                0x0c000268       0x40 build/default/production/_ext/1827571544/plib_systick.o
+                0x0c000268                SYSTICK_DelayMs
+
+.text.PORT_Initialize%210
+                0x0c0002a8       0x28
+ .text.PORT_Initialize
+                0x0c0002a8       0x28 build/default/production/_ext/1865521619/plib_port.o
+                0x0c0002a8                PORT_Initialize
+
+.text.main%211  0x0c0002d0       0x24
+ .text.main     0x0c0002d0       0x24 build/default/production/_ext/1360937237/main.o
+                0x0c0002d0                main
+
+.text.NVIC_Initialize%212
+                0x0c0002f4       0x24
+ .text.NVIC_Initialize
+                0x0c0002f4       0x24 build/default/production/_ext/1865468468/plib_nvic.o
+                0x0c0002f4                NVIC_Initialize
+
+.text.SYSTICK_TimerInitialize%213
+                0x0c000318       0x24
+ .text.SYSTICK_TimerInitialize
+                0x0c000318       0x24 build/default/production/_ext/1827571544/plib_systick.o
+                0x0c000318                SYSTICK_TimerInitialize
+
+.text.SysTick_Handler%214
+                0x0c00033c       0x24
+ .text.SysTick_Handler
+                0x0c00033c       0x24 build/default/production/_ext/1827571544/plib_systick.o
+                0x0c00033c                SysTick_Handler
+
+.text.SYS_Initialize%215
+                0x0c000360       0x1c
+ .text.SYS_Initialize
+                0x0c000360       0x1c build/default/production/_ext/1171490990/initialization.o
+                0x0c000360                SYS_Initialize
+
+.text.SYSTICK_TimerStart%216
+                0x0c00037c       0x14
+ .text.SYSTICK_TimerStart
+                0x0c00037c       0x14 build/default/production/_ext/1827571544/plib_systick.o
+                0x0c00037c                SYSTICK_TimerStart
+
+.text.PM_Initialize%217
+                0x0c000390       0x10
+ .text.PM_Initialize
+                0x0c000390       0x10 build/default/production/_ext/829342769/plib_pm.o
+                0x0c000390                PM_Initialize
+
+.text.__pic32c_data_initialization%218
+                0x0c0003a0        0x4
+ .text.__pic32c_data_initialization
+                0x0c0003a0        0x4 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libpic32c.a(data_init_wrapper.o)
+                0x0c0003a0                __pic32c_data_initialization
+
+.text.Dummy_App_Func%219
+                0x0c0003a4        0x2
+ .text.Dummy_App_Func
+                0x0c0003a4        0x2 build/default/production/_ext/1171490990/startup_xc32.o
+                0x0c0003a4                _on_reset
+                0x0c0003a4                _on_bootstrap
+                0x0c0003a4                __xc32_on_reset
+                0x0c0003a4                Dummy_App_Func
+                0x0c0003a4                __xc32_on_bootstrap
+
+.text.EVSYS_Initialize%220
+                0x0c0003a6        0x2
+ .text.EVSYS_Initialize
+                0x0c0003a6        0x2 build/default/production/_ext/1986646378/plib_evsys.o
+                0x0c0003a6                EVSYS_Initialize
+
+.text.Dummy_Handler%221
+                0x0c0003a8        0x2
+ .text.Dummy_Handler
+                0x0c0003a8        0x2 build/default/production/_ext/1171490990/interrupts.o
+                0x0c0003a8                EIC_EXTINT_9_Handler
+                0x0c0003a8                SVCall_Handler
+                0x0c0003a8                SERCOM0_2_Handler
+                0x0c0003a8                DMA0_PRI1_Handler
+                0x0c0003a8                TCC4_OTHER_Handler
+                0x0c0003a8                EVSYS_0_Handler
+                0x0c0003a8                TCC0_MC_0_Handler
+                0x0c0003a8                TCC7_MC_0_Handler
+                0x0c0003a8                TRNG_Handler
+                0x0c0003a8                USB_TRCPT0_Handler
+                0x0c0003a8                AC_Handler
+                0x0c0003a8                EIC_EXTINT_5_Handler
+                0x0c0003a8                SPI_IXS_Handler
+                0x0c0003a8                ADC_1_Handler
+                0x0c0003a8                SERCOM3_1_Handler
+                0x0c0003a8                TCC0_MC_3_Handler
+                0x0c0003a8                SERCOM3_2_Handler
+                0x0c0003a8                TCC3_MC_2_Handler
+                0x0c0003a8                EIC_EXTINT_6_Handler
+                0x0c0003a8                PendSV_Handler
+                0x0c0003a8                SERCOM7_56_Handler
+                0x0c0003a8                SERCOM0_4_Handler
+                0x0c0003a8                EVSYS_3_Handler
+                0x0c0003a8                TCC2_MC_5_Handler
+                0x0c0003a8                ADC_5_Handler
+                0x0c0003a8                FCR_FLT_Handler
+                0x0c0003a8                TCC6_MC_1_Handler
+                0x0c0003a8                TCC2_MC_2_Handler
+                0x0c0003a8                TCC0_MC_4_Handler
+                0x0c0003a8                OSCCTRL_XOSC_Handler
+                0x0c0003a8                SERCOM1_56_Handler
+                0x0c0003a8                EIC_EXTINT_4_Handler
+                0x0c0003a8                TCC0_MC_5_Handler
+                0x0c0003a8                EIC_EXTINT_7_Handler
+                0x0c0003a8                EVSYS_OTHER_Handler
+                0x0c0003a8                SERCOM2_4_Handler
+                0x0c0003a8                SERCOM7_4_Handler
+                0x0c0003a8                USBHS_Handler
+                0x0c0003a8                TCC3_MC_3_Handler
+                0x0c0003a8                SERCOM0_0_Handler
+                0x0c0003a8                RTC_Handler
+                0x0c0003a8                UsageFault_Handler
+                0x0c0003a8                SERCOM4_0_Handler
+                0x0c0003a8                DMA1_PRI1_Handler
+                0x0c0003a8                SERCOM0_3_Handler
+                0x0c0003a8                TCC2_OTHER_Handler
+                0x0c0003a8                EIC_EXTINT_11_Handler
+                0x0c0003a8                TCC3_MC_5_Handler
+                0x0c0003a8                EIC_EXTINT_14_Handler
+                0x0c0003a8                OSC32KCTRL_Handler
+                0x0c0003a8                SERCOM6_2_Handler
+                0x0c0003a8                SERCOM5_4_Handler
+                0x0c0003a8                EVSYS_1_Handler
+                0x0c0003a8                ADC_2_Handler
+                0x0c0003a8                WDT_Handler
+                0x0c0003a8                TCC5_OTHER_Handler
+                0x0c0003a8                TRAM_Handler
+                0x0c0003a8                CAN0_Handler
+                0x0c0003a8                EIC_EXTINT_15_Handler
+                0x0c0003a8                SERCOM6_0_Handler
+                0x0c0003a8                EIC_EXTINT_1_Handler
+                0x0c0003a8                TCC2_MC_4_Handler
+                0x0c0003a8                TCC1_MC_0_Handler
+                0x0c0003a8                SERCOM5_0_Handler
+                0x0c0003a8                HMATRIX_Handler
+                0x0c0003a8                SERCOM4_3_Handler
+                0x0c0003a8                EIC_EXTINT_0_Handler
+                0x0c0003a8                TCC2_MC_3_Handler
+                0x0c0003a8                DMA0_PRI0_Handler
+                0x0c0003a8                TCC3_MC_0_Handler
+                0x0c0003a8                TCC1_OTHER_Handler
+                0x0c0003a8                PAC_Handler
+                0x0c0003a8                TCC5_MC_0_Handler
+                0x0c0003a8                TCC2_MC_0_Handler
+                0x0c0003a8                SERCOM4_1_Handler
+                0x0c0003a8                Dummy_Handler
+                0x0c0003a8                SERCOM6_56_Handler
+                0x0c0003a8                SERCOM5_1_Handler
+                0x0c0003a8                ADC_0_Handler
+                0x0c0003a8                USB_TRCPT1_Handler
+                0x0c0003a8                TCC3_MC_1_Handler
+                0x0c0003a8                TCC1_MC_3_Handler
+                0x0c0003a8                SERCOM0_1_Handler
+                0x0c0003a8                TCC2_MC_1_Handler
+                0x0c0003a8                TCC1_MC_5_Handler
+                0x0c0003a8                EIC_EXTINT_12_Handler
+                0x0c0003a8                SERCOM7_1_Handler
+                0x0c0003a8                PM_Handler
+                0x0c0003a8                SERCOM6_3_Handler
+                0x0c0003a8                SERCOM4_4_Handler
+                0x0c0003a8                OSCCTRL_DFLL_Handler
+                0x0c0003a8                SERCOM2_3_Handler
+                0x0c0003a8                SERCOM2_56_Handler
+                0x0c0003a8                SERCOM7_0_Handler
+                0x0c0003a8                SERCOM3_56_Handler
+                0x0c0003a8                SERCOM1_4_Handler
+                0x0c0003a8                EIC_NSCHK_Handler
+                0x0c0003a8                SERCOM7_3_Handler
+                0x0c0003a8                USB_OTHER_Handler
+                0x0c0003a8                SDMMC1_Handler
+                0x0c0003a8                SERCOM7_2_Handler
+                0x0c0003a8                CAN1_Handler
+                0x0c0003a8                TCC0_OTHER_Handler
+                0x0c0003a8                EIC_EXTINT_10_Handler
+                0x0c0003a8                SERCOM4_56_Handler
+                0x0c0003a8                TCC5_MC_1_Handler
+                0x0c0003a8                SERCOM5_3_Handler
+                0x0c0003a8                OSCCTRL_PLL0_Handler
+                0x0c0003a8                SecureFaultMonitor_Handler
+                0x0c0003a8                SUPC_Handler
+                0x0c0003a8                PDEC_Handler
+                0x0c0003a8                SQI_Handler
+                0x0c0003a8                SERCOM6_1_Handler
+                0x0c0003a8                SERCOM0_56_Handler
+                0x0c0003a8                EIC_EXTINT_2_Handler
+                0x0c0003a8                SERCOM1_1_Handler
+                0x0c0003a8                TCC4_MC_1_Handler
+                0x0c0003a8                PCC_Handler
+                0x0c0003a8                TCC7_MC_1_Handler
+                0x0c0003a8                ADC_4_Handler
+                0x0c0003a8                SERCOM1_3_Handler
+                0x0c0003a8                SDMMC0_Handler
+                0x0c0003a8                PORT_Handler
+                0x0c0003a8                TCC3_OTHER_Handler
+                0x0c0003a8                ETH_Handler
+                0x0c0003a8                EIC_EXTINT_13_Handler
+                0x0c0003a8                SERCOM5_56_Handler
+                0x0c0003a8                DMA1_PRI0_Handler
+                0x0c0003a8                FCW_Handler
+                0x0c0003a8                TCC1_MC_4_Handler
+                0x0c0003a8                SERCOM1_0_Handler
+                0x0c0003a8                TCC0_MC_1_Handler
+                0x0c0003a8                TCC7_OTHER_Handler
+                0x0c0003a8                SERCOM2_1_Handler
+                0x0c0003a8                SERCOM1_2_Handler
+                0x0c0003a8                SERCOM3_0_Handler
+                0x0c0003a8                SERCOM4_2_Handler
+                0x0c0003a8                TCC1_MC_1_Handler
+                0x0c0003a8                SERCOM5_2_Handler
+                0x0c0003a8                SERCOM3_3_Handler
+                0x0c0003a8                TCC1_MC_2_Handler
+                0x0c0003a8                SERCOM2_2_Handler
+                0x0c0003a8                SERCOM3_4_Handler
+                0x0c0003a8                DMA0_PRI2_Handler
+                0x0c0003a8                EIC_EXTINT_3_Handler
+                0x0c0003a8                PTC_Handler
+                0x0c0003a8                EIC_EXTINT_8_Handler
+                0x0c0003a8                FCR_ERR_Handler
+                0x0c0003a8                TCC3_MC_4_Handler
+                0x0c0003a8                TCC0_MC_2_Handler
+                0x0c0003a8                MCLK_Handler
+                0x0c0003a8                EVSYS_2_Handler
+                0x0c0003a8                BusFault_Handler
+                0x0c0003a8                FREQM_Handler
+                0x0c0003a8                MemoryManagement_Handler
+                0x0c0003a8                DebugMonitor_Handler
+                0x0c0003a8                SERCOM2_0_Handler
+                0x0c0003a8                TCC6_MC_0_Handler
+                0x0c0003a8                USB_SOF_Handler
+                0x0c0003a8                TCC4_MC_0_Handler
+                0x0c0003a8                SERCOM6_4_Handler
+                0x0c0003a8                TCC6_OTHER_Handler
+                0x0c0003a8                ADC_3_Handler
+
+.text.NonMaskableInt_Handler%222
+                0x0c0003aa        0x2
+ .text.NonMaskableInt_Handler
+                0x0c0003aa        0x2 build/default/production/_ext/1171490990/exceptions.o
+                0x0c0003aa                NonMaskableInt_Handler
+
+.text.HardFault_Handler%223
+                0x0c0003ac        0x2
+ .text.HardFault_Handler
+                0x0c0003ac        0x2 build/default/production/_ext/1171490990/exceptions.o
+                0x0c0003ac                HardFault_Handler
+
+.text.__dummy%224
+                0x0c0003ae        0x2
+ .text.__dummy  0x0c0003ae        0x2 c:/program files/microchip/xc32/v4.20/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v8-m.main+fp/hard\libc-musl.a(__libc_start_main.o)
+                0x0c0003ae                __init_stdio
+                0x0c0003ae                __init_host
