@@ -1,5 +1,5 @@
 ---
-parent: Harmony 3 peripheral library application examples for PIC32CK GC family
+parent: Harmony 3 peripheral library application examples for PIC32CK SG/GC Family
 title: SERCOM USART ring buffer 
 has_children: false
 has_toc: false
@@ -45,7 +45,7 @@ The following table shows the target hardware for the application projects.
 ## Running the Application
 
 1. Open the Terminal application (Ex.:Tera term) on the computer
-2. Connect to the EDBG Virtual COM port and configure the serial settings as follows:
+2. Connect to the PKOB4 Virtual COM port and configure the serial settings as follows:
     - Baud : 115200
     - Data : 8 Bits
     - Parity : None

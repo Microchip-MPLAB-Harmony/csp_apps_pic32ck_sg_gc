@@ -108,7 +108,7 @@ void APP_ResetFlash(void)
 
     sqiCmdDesc[0].bd_ctrl       = ( SQI_BDCTRL_BD_BUFLEN(1) | SQI_BDCTRL_PKT_INT_EN_Msk |
                                     SQI_BDCTRL_LIFM_Msk | SQI_BDCTRL_LAST_BD_Msk |
-                                    SQI_BDCTRL_SPI_DEV_SEL10(0x00) | SQI_BDCTRL_CS_ASSERT_Msk |
+                                    SQI_BDCTRL_SPI_DEV_SEL10(0x01) | SQI_BDCTRL_CS_ASSERT_Msk |
                                     SQI_BDCTRL_DESC_EN_Msk);
 
     sqiCmdDesc[0].bd_bufaddr    = (uint32_t *)&sqi_cmd_rsten;
@@ -125,7 +125,7 @@ void APP_ResetFlash(void)
 
     sqiCmdDesc[1].bd_ctrl       = ( SQI_BDCTRL_BD_BUFLEN(1) | SQI_BDCTRL_PKT_INT_EN_Msk |
                                     SQI_BDCTRL_LIFM_Msk | SQI_BDCTRL_LAST_BD_Msk |
-                                    SQI_BDCTRL_SPI_DEV_SEL10(0x00) | SQI_BDCTRL_CS_ASSERT_Msk |
+                                    SQI_BDCTRL_SPI_DEV_SEL10(0x01) | SQI_BDCTRL_CS_ASSERT_Msk |
                                     SQI_BDCTRL_DESC_EN_Msk);
 
     sqiCmdDesc[1].bd_bufaddr    = (uint32_t *)&sqi_cmd_rst;
@@ -145,7 +145,7 @@ void APP_EnableQuadIO(void)
 
     sqiCmdDesc[0].bd_ctrl       = ( SQI_BDCTRL_BD_BUFLEN(1) | SQI_BDCTRL_PKT_INT_EN_Msk |
                                     SQI_BDCTRL_LIFM_Msk | SQI_BDCTRL_LAST_BD_Msk |
-                                    SQI_BDCTRL_SPI_DEV_SEL10(0x00) | SQI_BDCTRL_CS_ASSERT_Msk |
+                                    SQI_BDCTRL_SPI_DEV_SEL10(0x01) | SQI_BDCTRL_CS_ASSERT_Msk |
                                     SQI_BDCTRL_DESC_EN_Msk);
 
     sqiCmdDesc[0].bd_bufaddr    = (uint32_t *)&sqi_cmd_eqio;
@@ -162,7 +162,7 @@ void APP_EnableQuadIO(void)
 void APP_WriteEnable(void)
 {
     sqiCmdDesc[0].bd_ctrl       = ( SQI_BDCTRL_BD_BUFLEN(1) | SQI_BDCTRL_MODE(0x02) |
-                                    SQI_BDCTRL_SPI_DEV_SEL10(0x00) | SQI_BDCTRL_CS_ASSERT_Msk |
+                                    SQI_BDCTRL_SPI_DEV_SEL10(0x01) | SQI_BDCTRL_CS_ASSERT_Msk |
                                     SQI_BDCTRL_DESC_EN_Msk);
 
     sqiCmdDesc[0].bd_bufaddr    = (uint32_t *)&sqi_cmd_wren;
@@ -178,7 +178,7 @@ void APP_UnlockFlash(void)
 
     sqiCmdDesc[1].bd_ctrl       = ( SQI_BDCTRL_BD_BUFLEN(1) | SQI_BDCTRL_PKT_INT_EN_Msk |
                                     SQI_BDCTRL_LIFM_Msk | SQI_BDCTRL_LAST_BD_Msk |
-                                    SQI_BDCTRL_MODE(0x02) | SQI_BDCTRL_SPI_DEV_SEL10(0x00) |
+                                    SQI_BDCTRL_MODE(0x02) | SQI_BDCTRL_SPI_DEV_SEL10(0x01) |
                                     SQI_BDCTRL_CS_ASSERT_Msk | SQI_BDCTRL_DESC_EN_Msk);
 
     sqiCmdDesc[1].bd_bufaddr    = (uint32_t *)&sqi_cmd_ULBPR;
@@ -199,7 +199,7 @@ void  APP_ReadJedecId( uint32_t *jedec_id)
     sqi_cmd_jedec[1] = DUMMY_BYTE;
 
     sqiCmdDesc[0].bd_ctrl       = ( SQI_BDCTRL_BD_BUFLEN(2) | SQI_BDCTRL_MODE(0x02) |
-                                    SQI_BDCTRL_SPI_DEV_SEL10(0x00) | SQI_BDCTRL_DESC_EN_Msk);
+                                    SQI_BDCTRL_SPI_DEV_SEL10(0x01) | SQI_BDCTRL_DESC_EN_Msk);
 
     sqiCmdDesc[0].bd_bufaddr    = (uint32_t *)&sqi_cmd_jedec;
     sqiCmdDesc[0].bd_stat       = 0;
@@ -208,7 +208,7 @@ void  APP_ReadJedecId( uint32_t *jedec_id)
     sqiBufDesc[0].bd_ctrl       = ( SQI_BDCTRL_BD_BUFLEN(4) | SQI_BDCTRL_PKT_INT_EN_Msk |
                                     SQI_BDCTRL_LIFM_Msk | SQI_BDCTRL_LAST_BD_Msk |
                                     SQI_BDCTRL_MODE(0x02) | SQI_BDCTRL_DIR_Msk |
-                                    SQI_BDCTRL_SPI_DEV_SEL10(0x00) | SQI_BDCTRL_CS_ASSERT_Msk |
+                                    SQI_BDCTRL_SPI_DEV_SEL10(0x01) | SQI_BDCTRL_CS_ASSERT_Msk |
                                     SQI_BDCTRL_DESC_EN_Msk);
 
     sqiBufDesc[0].bd_bufaddr    = (uint32_t *)jedec_id;
@@ -232,7 +232,7 @@ void  APP_ReadStatus( void *rx_data, uint32_t rx_data_length )
     sqi_cmd_rdsr[1] = DUMMY_BYTE;
 
     sqiCmdDesc[0].bd_ctrl       = ( SQI_BDCTRL_BD_BUFLEN(2) | SQI_BDCTRL_MODE(0x02) |
-                                    SQI_BDCTRL_SPI_DEV_SEL10(0x00) | SQI_BDCTRL_DESC_EN_Msk);
+                                    SQI_BDCTRL_SPI_DEV_SEL10(0x01) | SQI_BDCTRL_DESC_EN_Msk);
 
     sqiCmdDesc[0].bd_bufaddr    = (uint32_t *)&sqi_cmd_rdsr;
     sqiCmdDesc[0].bd_stat       = 0;
@@ -241,7 +241,7 @@ void  APP_ReadStatus( void *rx_data, uint32_t rx_data_length )
     sqiBufDesc[0].bd_ctrl       = ( SQI_BDCTRL_BD_BUFLEN(rx_data_length) | SQI_BDCTRL_PKT_INT_EN_Msk |
                                     SQI_BDCTRL_LIFM_Msk | SQI_BDCTRL_LAST_BD_Msk |
                                     SQI_BDCTRL_MODE(0x02) | SQI_BDCTRL_DIR_Msk |
-                                    SQI_BDCTRL_SPI_DEV_SEL10(0x00) | SQI_BDCTRL_CS_ASSERT_Msk |
+                                    SQI_BDCTRL_SPI_DEV_SEL10(0x01) | SQI_BDCTRL_CS_ASSERT_Msk |
                                     SQI_BDCTRL_DESC_EN_Msk);
 
     sqiBufDesc[0].bd_bufaddr    = (uint32_t *)rx_data;
@@ -274,7 +274,7 @@ void APP_Read( void *rx_data, uint32_t rx_data_length, uint32_t address )
     sqi_cmd_hsr[4] = 0;
 
     sqiCmdDesc[0].bd_ctrl       = ( SQI_BDCTRL_BD_BUFLEN(5) | SQI_BDCTRL_MODE(0x02) |
-                                    SQI_BDCTRL_SPI_DEV_SEL10(0x00) | SQI_BDCTRL_DESC_EN_Msk);
+                                    SQI_BDCTRL_SPI_DEV_SEL10(0x01) | SQI_BDCTRL_DESC_EN_Msk);
 
     sqiCmdDesc[0].bd_bufaddr    = (uint32_t *)&sqi_cmd_hsr;
     sqiCmdDesc[0].bd_stat       = 0;
@@ -283,7 +283,7 @@ void APP_Read( void *rx_data, uint32_t rx_data_length, uint32_t address )
     DCACHE_CLEAN_BY_ADDR((uint32_t *)&sqiCmdDesc[0], sizeof(sqiCmdDesc[0]));
 
     sqiCmdDesc[1].bd_ctrl       = ( SQI_BDCTRL_BD_BUFLEN(2) | SQI_BDCTRL_MODE(0x02) |
-                                    SQI_BDCTRL_SPI_DEV_SEL10(0x00) | SQI_BDCTRL_DESC_EN_Msk);
+                                    SQI_BDCTRL_SPI_DEV_SEL10(0x01) | SQI_BDCTRL_DESC_EN_Msk);
 
     sqiCmdDesc[1].bd_bufaddr    = (uint32_t *)&sqi_cmd_dummy;
     sqiCmdDesc[1].bd_stat       = 0;
@@ -305,7 +305,7 @@ void APP_Read( void *rx_data, uint32_t rx_data_length, uint32_t address )
 
         sqiBufDesc[i].bd_ctrl       = ( SQI_BDCTRL_BD_BUFLEN(numBytes) | SQI_BDCTRL_PKT_INT_EN_Msk |
                                         SQI_BDCTRL_MODE(0x02) | SQI_BDCTRL_DIR_Msk |
-                                        SQI_BDCTRL_SPI_DEV_SEL10(0x00) | SQI_BDCTRL_DESC_EN_Msk);
+                                        SQI_BDCTRL_SPI_DEV_SEL10(0x01) | SQI_BDCTRL_DESC_EN_Msk);
 
         sqiBufDesc[i].bd_bufaddr    = (uint32_t *)readBuffer;
         sqiBufDesc[i].bd_stat       = 0;
@@ -339,7 +339,7 @@ void APP_PageWrite( void *tx_data, uint32_t address )
     sqi_cmd_pp[3] = (0xff & (address>>0));
 
     sqiCmdDesc[1].bd_ctrl       = ( SQI_BDCTRL_BD_BUFLEN(4) | SQI_BDCTRL_MODE(0x02) |
-                                    SQI_BDCTRL_SPI_DEV_SEL10(0x00) | SQI_BDCTRL_DESC_EN_Msk);
+                                    SQI_BDCTRL_SPI_DEV_SEL10(0x01) | SQI_BDCTRL_DESC_EN_Msk);
 
     sqiCmdDesc[1].bd_bufaddr    = (uint32_t *)(&sqi_cmd_pp);
     sqiCmdDesc[1].bd_stat       = 0;
@@ -348,7 +348,7 @@ void APP_PageWrite( void *tx_data, uint32_t address )
     sqiBufDesc[0].bd_ctrl       = ( SQI_BDCTRL_BD_BUFLEN(PAGE_SIZE) | SQI_BDCTRL_PKT_INT_EN_Msk |
                                     SQI_BDCTRL_LIFM_Msk | SQI_BDCTRL_LAST_BD_Msk |
                                     SQI_BDCTRL_MODE(0x02) | SQI_BDCTRL_STAT_CHECK_Msk |
-                                    SQI_BDCTRL_SPI_DEV_SEL10(0x00) | SQI_BDCTRL_CS_ASSERT_Msk |
+                                    SQI_BDCTRL_SPI_DEV_SEL10(0x01) | SQI_BDCTRL_CS_ASSERT_Msk |
                                     SQI_BDCTRL_DESC_EN_Msk);
 
     sqiBufDesc[0].bd_bufaddr    = (uint32_t *)(tx_data);
@@ -372,7 +372,7 @@ void APP_Erase( uint8_t *instruction, uint32_t length )
     sqiCmdDesc[1].bd_ctrl       = ( SQI_BDCTRL_BD_BUFLEN(length) | SQI_BDCTRL_PKT_INT_EN_Msk |
                                     SQI_BDCTRL_LIFM_Msk | SQI_BDCTRL_LAST_BD_Msk |
                                     SQI_BDCTRL_MODE(0x02) | SQI_BDCTRL_STAT_CHECK_Msk |
-                                    SQI_BDCTRL_SPI_DEV_SEL10(0x00) | SQI_BDCTRL_CS_ASSERT_Msk |
+                                    SQI_BDCTRL_SPI_DEV_SEL10(0x01) | SQI_BDCTRL_CS_ASSERT_Msk |
                                     SQI_BDCTRL_DESC_EN_Msk);
 
     sqiCmdDesc[1].bd_bufaddr    = (uint32_t *)(instruction);

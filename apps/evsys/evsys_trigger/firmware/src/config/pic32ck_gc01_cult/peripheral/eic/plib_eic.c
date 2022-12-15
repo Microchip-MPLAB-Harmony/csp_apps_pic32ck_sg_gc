@@ -91,13 +91,15 @@ void EIC_Initialize (void)
 
     EIC_REGS->EIC_CONFIG1 =  EIC_CONFIG1_SENSE8_NONE 
         | EIC_CONFIG1_SENSE9_NONE 
-        | EIC_CONFIG1_SENSE10_RISE 
+        | EIC_CONFIG1_SENSE10_FALL 
         | EIC_CONFIG1_SENSE11_NONE 
         | EIC_CONFIG1_SENSE12_NONE 
         | EIC_CONFIG1_SENSE13_NONE 
         | EIC_CONFIG1_SENSE14_NONE 
         | EIC_CONFIG1_SENSE15_NONE ;
 
+    /* External Interrupt Asynchronous Mode enable */
+    EIC_REGS->EIC_ASYNCH = 0x400;
 
     /* Debouncer enable */
     EIC_REGS->EIC_DEBOUNCEN = 0x400;

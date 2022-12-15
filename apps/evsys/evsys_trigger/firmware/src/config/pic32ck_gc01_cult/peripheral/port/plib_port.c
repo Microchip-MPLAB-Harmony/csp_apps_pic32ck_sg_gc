@@ -87,6 +87,7 @@ void PORT_Initialize(void)
    PORT_REGS->GROUP[3].PORT_PINCFG[20] = 0x0U;
 
    PORT_REGS->GROUP[3].PORT_PMUX[10] = 0x0U;
+   PORT_REGS->GROUP[3].PORT_EVCTRL = 0xf4U;
 
 
 }

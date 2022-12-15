@@ -1,5 +1,5 @@
 ---
-parent: Harmony 3 peripheral library application examples for PIC32CK GC family
+parent: Harmony 3 peripheral library application examples for PIC32CK SG/GC Family
 title: Clock configuration 
 has_children: false
 has_toc: false

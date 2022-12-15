@@ -1,5 +1,5 @@
 ---
-parent: Harmony 3 peripheral library application examples for PIC32CK GC01 family
+parent: Harmony 3 peripheral library application examples for PIC32CK SG/GC Family
 title: SERCOM SPI EEPROM read write 
 has_children: false
 has_toc: false

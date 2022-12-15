@@ -35,7 +35,7 @@ The following table shows the target hardware for the application projects.
 
 | Project Name| Board|
 |:---------|:---------:|
-| pic32ck_gc01_cult.X    | [PIC32CK GC01 Curiosity Ultra board]()
+| pic32ck_gc01_cult.X    | [PIC32CK GC01 Curiosity Ultra board]()|
 |||
 
 ### Setting up [PIC32CK GC01 Curiosity Ultra board]()

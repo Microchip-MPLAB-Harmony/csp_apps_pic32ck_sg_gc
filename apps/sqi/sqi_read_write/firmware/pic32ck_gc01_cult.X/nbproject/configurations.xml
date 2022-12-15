@@ -5,39 +5,40 @@
                    displayName="Header Files"
                    projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="default" displayName="default" projectFiles="true">
+        <logicalFolder name="pic32ck_gc01_cult"
+                       displayName="pic32ck_gc01_cult"
+                       projectFiles="true">
           <logicalFolder name="peripheral" displayName="peripheral" projectFiles="true">
             <logicalFolder name="clock" displayName="clock" projectFiles="true">
-              <itemPath>../src/config/default/peripheral/clock/plib_clock.h</itemPath>
+              <itemPath>../src/config/pic32ck_gc01_cult/peripheral/clock/plib_clock.h</itemPath>
             </logicalFolder>
             <logicalFolder name="cmcc" displayName="cmcc" projectFiles="true">
-              <itemPath>../src/config/default/peripheral/cmcc/plib_cmcc.h</itemPath>
+              <itemPath>../src/config/pic32ck_gc01_cult/peripheral/cmcc/plib_cmcc.h</itemPath>
             </logicalFolder>
             <logicalFolder name="evsys" displayName="evsys" projectFiles="true">
-              <itemPath>../src/config/default/peripheral/evsys/plib_evsys.h</itemPath>
+              <itemPath>../src/config/pic32ck_gc01_cult/peripheral/evsys/plib_evsys.h</itemPath>
             </logicalFolder>
             <logicalFolder name="nvic" displayName="nvic" projectFiles="true">
-              <itemPath>../src/config/default/peripheral/nvic/plib_nvic.h</itemPath>
+              <itemPath>../src/config/pic32ck_gc01_cult/peripheral/nvic/plib_nvic.h</itemPath>
             </logicalFolder>
             <logicalFolder name="pm" displayName="pm" projectFiles="true">
-              <itemPath>../src/config/default/peripheral/pm/plib_pm.h</itemPath>
+              <itemPath>../src/config/pic32ck_gc01_cult/peripheral/pm/plib_pm.h</itemPath>
             </logicalFolder>
             <logicalFolder name="port" displayName="port" projectFiles="true">
-              <itemPath>../src/config/default/peripheral/port/plib_port.h</itemPath>
+              <itemPath>../src/config/pic32ck_gc01_cult/peripheral/port/plib_port.h</itemPath>
             </logicalFolder>
             <logicalFolder name="sqi" displayName="sqi" projectFiles="true">
-              <itemPath>../src/config/default/peripheral/sqi/plib_sqi.h</itemPath>
-              <itemPath>../src/config/default/peripheral/sqi/plib_sqi_common.h</itemPath>
+              <itemPath>../src/config/pic32ck_gc01_cult/peripheral/sqi/plib_sqi_common.h</itemPath>
+              <itemPath>../src/config/pic32ck_gc01_cult/peripheral/sqi/plib_sqi.h</itemPath>
             </logicalFolder>
           </logicalFolder>
-          <itemPath>../src/config/default/device_vectors.h</itemPath>
-          <itemPath>../src/config/default/toolchain_specifics.h</itemPath>
-          <itemPath>../src/config/default/device.h</itemPath>
-          <itemPath>../src/config/default/definitions.h</itemPath>
-          <itemPath>../src/config/default/device_cache.h</itemPath>
-          <itemPath>../src/config/default/interrupts.h</itemPath>
+          <itemPath>../src/config/pic32ck_gc01_cult/device_cache.h</itemPath>
+          <itemPath>../src/config/pic32ck_gc01_cult/toolchain_specifics.h</itemPath>
+          <itemPath>../src/config/pic32ck_gc01_cult/interrupts.h</itemPath>
+          <itemPath>../src/config/pic32ck_gc01_cult/device.h</itemPath>
+          <itemPath>../src/config/pic32ck_gc01_cult/definitions.h</itemPath>
+          <itemPath>../src/config/pic32ck_gc01_cult/device_vectors.h</itemPath>
         </logicalFolder>
-        <itemPath>../src/app.h</itemPath>
       </logicalFolder>
       <logicalFolder name="packs" displayName="packs" projectFiles="true">
         <logicalFolder name="CMSIS" displayName="CMSIS" projectFiles="true">
@@ -173,13 +174,16 @@
           <itemPath>../src/packs/PIC32CK2051GC01144_DFP/pic32ck2051gc01144.h</itemPath>
         </logicalFolder>
       </logicalFolder>
+      <itemPath>../src/app.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
                    projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="default" displayName="default" projectFiles="true">
-          <itemPath>../src/config/default/PIC32CK2051GC01144.ld</itemPath>
+        <logicalFolder name="pic32ck_gc01_cult"
+                       displayName="pic32ck_gc01_cult"
+                       projectFiles="true">
+          <itemPath>../src/config/pic32ck_gc01_cult/PIC32CK2051GC01144.ld</itemPath>
         </logicalFolder>
       </logicalFolder>
     </logicalFolder>
@@ -187,43 +191,45 @@
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="default" displayName="default" projectFiles="true">
+        <logicalFolder name="pic32ck_gc01_cult"
+                       displayName="pic32ck_gc01_cult"
+                       projectFiles="true">
           <logicalFolder name="peripheral" displayName="peripheral" projectFiles="true">
             <logicalFolder name="clock" displayName="clock" projectFiles="true">
-              <itemPath>../src/config/default/peripheral/clock/plib_clock.c</itemPath>
+              <itemPath>../src/config/pic32ck_gc01_cult/peripheral/clock/plib_clock.c</itemPath>
             </logicalFolder>
             <logicalFolder name="cmcc" displayName="cmcc" projectFiles="true">
-              <itemPath>../src/config/default/peripheral/cmcc/plib_cmcc.c</itemPath>
+              <itemPath>../src/config/pic32ck_gc01_cult/peripheral/cmcc/plib_cmcc.c</itemPath>
             </logicalFolder>
             <logicalFolder name="evsys" displayName="evsys" projectFiles="true">
-              <itemPath>../src/config/default/peripheral/evsys/plib_evsys.c</itemPath>
+              <itemPath>../src/config/pic32ck_gc01_cult/peripheral/evsys/plib_evsys.c</itemPath>
             </logicalFolder>
             <logicalFolder name="nvic" displayName="nvic" projectFiles="true">
-              <itemPath>../src/config/default/peripheral/nvic/plib_nvic.c</itemPath>
+              <itemPath>../src/config/pic32ck_gc01_cult/peripheral/nvic/plib_nvic.c</itemPath>
             </logicalFolder>
             <logicalFolder name="pm" displayName="pm" projectFiles="true">
-              <itemPath>../src/config/default/peripheral/pm/plib_pm.c</itemPath>
+              <itemPath>../src/config/pic32ck_gc01_cult/peripheral/pm/plib_pm.c</itemPath>
             </logicalFolder>
             <logicalFolder name="port" displayName="port" projectFiles="true">
-              <itemPath>../src/config/default/peripheral/port/plib_port.c</itemPath>
+              <itemPath>../src/config/pic32ck_gc01_cult/peripheral/port/plib_port.c</itemPath>
             </logicalFolder>
             <logicalFolder name="sqi" displayName="sqi" projectFiles="true">
-              <itemPath>../src/config/default/peripheral/sqi/plib_sqi.c</itemPath>
+              <itemPath>../src/config/pic32ck_gc01_cult/peripheral/sqi/plib_sqi.c</itemPath>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="stdio" displayName="stdio" projectFiles="true">
-            <itemPath>../src/config/default/stdio/xc32_monitor.c</itemPath>
+            <itemPath>../src/config/pic32ck_gc01_cult/stdio/xc32_monitor.c</itemPath>
           </logicalFolder>
-          <itemPath>../src/config/default/exceptions.c</itemPath>
-          <itemPath>../src/config/default/libc_syscalls.c</itemPath>
-          <itemPath>../src/config/default/startup_xc32.c</itemPath>
-          <itemPath>../src/config/default/initialization.c</itemPath>
-          <itemPath>../src/config/default/interrupts.c</itemPath>
+          <itemPath>../src/config/pic32ck_gc01_cult/exceptions.c</itemPath>
+          <itemPath>../src/config/pic32ck_gc01_cult/initialization.c</itemPath>
+          <itemPath>../src/config/pic32ck_gc01_cult/startup_xc32.c</itemPath>
+          <itemPath>../src/config/pic32ck_gc01_cult/interrupts.c</itemPath>
+          <itemPath>../src/config/pic32ck_gc01_cult/libc_syscalls.c</itemPath>
         </logicalFolder>
-        <itemPath>../src/app.c</itemPath>
       </logicalFolder>
-      <itemPath>../src/config/default/pin_configurations.csv</itemPath>
+      <itemPath>../src/config/pic32ck_gc01_cult/pin_configurations.csv</itemPath>
       <itemPath>../src/main.c</itemPath>
+      <itemPath>../src/app.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -237,7 +243,7 @@
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
-    <conf name="default" type="2">
+    <conf name="pic32ck_gc01_cult" type="2">
       <toolsSet>
         <developmentServer>localhost</developmentServer>
         <targetDevice>PIC32CK2051GC01144</targetDevice>
@@ -249,8 +255,8 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC32CK-GC_DFP" vendor="Microchip" version="1.0.5"/>
         <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
+        <pack name="PIC32CK-GC_DFP" vendor="Microchip" version="1.0.5"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -282,14 +288,13 @@
       <C32>
         <property key="additional-warnings" value="true"/>
         <property key="addresss-attribute-use" value="false"/>
-        <property key="appendMe" value=""/>
         <property key="enable-app-io" value="false"/>
         <property key="enable-omit-frame-pointer" value="false"/>
         <property key="enable-symbols" value="true"/>
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/default;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/PIC32CK2051GC01144_DFP"/>
+                  value="../src;../src/config/pic32ck_gc01_cult;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/PIC32CK2051GC01144_DFP"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -301,7 +306,7 @@
         <property key="preprocessor-macros" value=""/>
         <property key="strict-ansi" value="false"/>
         <property key="support-ansi" value="false"/>
-        <property key="tentative-definitions" value="-fno-common"/>
+        <property key="tentative-definitions" value="${tentative.default}"/>
         <property key="toplevel-reordering" value=""/>
         <property key="unaligned-access" value=""/>
         <property key="use-cci" value="false"/>
@@ -339,7 +344,6 @@
         <property key="additional-options-use-response-files" value="false"/>
         <property key="additional-options-write-sla" value="false"/>
         <property key="allocate-dinit" value="false"/>
-        <property key="appendMe" value=""/>
         <property key="code-dinit" value="false"/>
         <property key="ebase-addr" value=""/>
         <property key="enable-check-sections" value="false"/>
@@ -379,7 +383,6 @@
       <C32CPP>
         <property key="additional-warnings" value="false"/>
         <property key="addresss-attribute-use" value="false"/>
-        <property key="appendMe" value=""/>
         <property key="check-new" value="false"/>
         <property key="eh-specs" value="true"/>
         <property key="enable-app-io" value="false"/>
@@ -389,7 +392,7 @@
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/default;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/PIC32CK2051GC01144_DFP"/>
+                  value="../src;../src/config/pic32ck_gc01_cult;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/PIC32CK2051GC01144_DFP"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -408,7 +411,6 @@
         <property key="use-indirect-calls" value="false"/>
       </C32CPP>
       <C32Global>
-        <property key="appendMe" value=""/>
         <property key="common-include-directories" value=""/>
         <property key="gp-relative-option" value=""/>
         <property key="legacy-libc" value="false"/>
@@ -452,8 +454,6 @@
                   value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-63ffffff"/>
-        <property key="programmerToGoFilePath"
-                  value="C:/microchip/harmony/h3/csp_apps_pic32ck_sg_gc/apps/sqi/sqi_read_write/firmware/pic32ck_gc01_cult.X/debug/default/pic32ck_gc01_cult_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.pgmentry.voltage" value="low"/>
@@ -507,8 +507,6 @@
                   value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-63ffffff"/>
-        <property key="programmerToGoFilePath"
-                  value="C:/microchip/harmony/h3/csp_apps_pic32ck_sg_gc/apps/sqi/sqi_read_write/firmware/pic32ck_gc01_cult.X/debug/default/pic32ck_gc01_cult_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.pgmentry.voltage" value="low"/>
@@ -529,6 +527,7 @@
                   value="toolpack.updateoptions.uselatestoolpack"/>
         <property key="toolpack.updateoptions.packversion"
                   value="Press to select which tool pack to use"/>
+        <property key="x.erase.key" value="0xFFFFFFFF,0xFFFFFFFF,0xFFFFFFFF,0xFFFFFFFF"/>
       </pkob4hybrid>
     </conf>
   </confs>
