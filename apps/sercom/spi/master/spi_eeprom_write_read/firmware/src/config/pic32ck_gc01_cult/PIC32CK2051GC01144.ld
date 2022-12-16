@@ -78,12 +78,22 @@ ENTRY(__XC32_RESET_HANDLER_NAME)
 #  error BOOT_ROM_LENGTH is greater than the max size of 0x20000
 #endif
 #ifndef RAM_ORIGIN
-#  define RAM_ORIGIN 0x0
+#  define RAM_ORIGIN 0x20000000
 #endif
 #ifndef RAM_LENGTH
-#  define RAM_LENGTH 0x1000
-#elif (RAM_LENGTH > 0x1000)
-#  error RAM_LENGTH is greater than the max size of 0x1000
+#  define RAM_LENGTH 0x80000
+#elif (RAM_LENGTH > 0x80000)
+#  error RAM_LENGTH is greater than the max size of 0x80000
+#endif
+#ifndef TCM_ORIGIN
+#  define TCM_ORIGIN 0x0
+#endif
+#ifndef __XC32_TCM_LENGTH
+#  define __XC32_TCM_LENGTH 0x0
+#elif (defined(__XC32_TCM_LENGTH)  && __XC32_TCM_LENGTH != 0x0 && __XC32_TCM_LENGTH != 0x800 && __XC32_TCM_LENGTH != 0xc00 && __XC32_TCM_LENGTH != 0x1000)
+#  warning Non-standard ITCM length, using default 0x1000
+#  undef __XC32_TCM_LENGTH
+#  define __XC32_TCM_LENGTH 0x1000
 #endif
 
 
@@ -98,6 +108,7 @@ MEMORY
   boot_rom (LRX) : ORIGIN = BOOT_ROM_ORIGIN, LENGTH = BOOT_ROM_LENGTH
   rom (LRX) : ORIGIN = ROM_ORIGIN, LENGTH = ROM_LENGTH
   ram (WX!R) : ORIGIN = RAM_ORIGIN, LENGTH = RAM_LENGTH
+ tcm (WX) : ORIGIN = TCM_ORIGIN, LENGTH = __XC32_TCM_LENGTH
 
 }
 /*************************************************************************
