@@ -40,7 +40,7 @@ The following table shows the target hardware for the application projects.
 
 ### Setting up [PIC32CK GC01 Curiosity Ultra board]()
 
-- Use a jumper wire to short pin 04 and pin 05 of the MikroBUS header
+- Use a jumper wire to short pin 05 and pin 06 of the MikroBUS header
 - Connect the Debug USB port on the board to the computer using a micro USB cable
 
 ## Running the Application

@@ -255,7 +255,7 @@
       </toolsSet>
       <packs>
         <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
-        <pack name="PIC32CK-GC_DFP" vendor="Microchip" version="1.0.5"/>
+        <pack name="PIC32CK-GC_DFP" vendor="Microchip" version="1.0.9"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -457,6 +457,8 @@
                   value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-63ffffff"/>
+        <property key="programmerToGoFilePath"
+                  value="C:/microchip/harmony/h3/csp_apps_pic32ck_sg_gc/apps/sercom/spi/master/spi_eeprom_write_read/firmware/pic32ck_gc01_cult.X/debug/pic32ck_gc01_cult/pic32ck_gc01_cult_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.pgmentry.voltage" value="low"/>

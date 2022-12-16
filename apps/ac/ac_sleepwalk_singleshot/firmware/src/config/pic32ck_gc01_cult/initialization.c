@@ -402,9 +402,9 @@ void SYS_Initialize ( void* data )
 
     SERCOM5_USART_Initialize();
 
+    AC_Initialize();
     RTC_Initialize();
 
-    AC_Initialize();
 
 
 
