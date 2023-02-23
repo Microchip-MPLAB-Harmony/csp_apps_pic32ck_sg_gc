@@ -54,7 +54,7 @@ int main ( void )
         
         adc_inp_vol = (uint16_t)adc_data * ADC_VREF / 4095U;
             
-        n = sprintf(print_buffer,"ADC1_AIN0: ADC Count: 0x%03x, ADC Input Voltage = %d.%02d V\r", (uint16_t)adc_data, (int)adc_inp_vol, (int)((adc_inp_vol - (int)adc_inp_vol)*100));
+        n = sprintf(print_buffer,"ADC_AIN0: ADC Count: 0x%03x, ADC Input Voltage = %d.%02d V\r", (uint16_t)adc_data, (int)adc_inp_vol, (int)((adc_inp_vol - (int)adc_inp_vol)*100));
         
         printf( print_buffer, n );
     }
