@@ -1,4 +1,27 @@
 /*******************************************************************************
+* Copyright (C) 2019 Microchip Technology Inc. and its subsidiaries.
+*
+* Subject to your compliance with these terms, you may use Microchip software
+* and any derivatives exclusively with Microchip products. It is your
+* responsibility to comply with third party license terms applicable to your
+* use of third party software (including open source software) that may
+* accompany Microchip software.
+*
+* THIS SOFTWARE IS SUPPLIED BY MICROCHIP "AS IS". NO WARRANTIES, WHETHER
+* EXPRESS, IMPLIED OR STATUTORY, APPLY TO THIS SOFTWARE, INCLUDING ANY IMPLIED
+* WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY, AND FITNESS FOR A
+* PARTICULAR PURPOSE.
+*
+* IN NO EVENT WILL MICROCHIP BE LIABLE FOR ANY INDIRECT, SPECIAL, PUNITIVE,
+* INCIDENTAL OR CONSEQUENTIAL LOSS, DAMAGE, COST OR EXPENSE OF ANY KIND
+* WHATSOEVER RELATED TO THE SOFTWARE, HOWEVER CAUSED, EVEN IF MICROCHIP HAS
+* BEEN ADVISED OF THE POSSIBILITY OR THE DAMAGES ARE FORESEEABLE. TO THE
+* FULLEST EXTENT ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN
+* ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
+* THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
+*******************************************************************************/
+
+/*******************************************************************************
   Main Source File
 
   Company:
@@ -63,11 +86,10 @@ void ac_callBack(uint8_t int_flag, uintptr_t ac_context)
 // Section: Main Entry Point
 // *****************************************************************************
 // *****************************************************************************
-//float DAC_OutputVol(uint8_t dac_out)
-//{
-//    return ((33/10) * dac_out)/128; 
-//
-//}
+float DAC_OutputVol(uint8_t dac_out)
+{
+    return (3.3 * dac_out)/128.0;
+}
 
 int main ( void )
 {
@@ -87,8 +109,7 @@ int main ( void )
     
     while (SERCOM5_USART_WriteIsBusy());
     
-    n = sprintf(printbuffer, "DAC Output = %d.%dV", (int)((33 * dac_out)/1280), ((int)((33 * dac_out)% 1280) == 0)? 0: (int)(((int)((33 * dac_out) % 1280) * 10) / 1280)); 
-
+    n = sprintf(printbuffer, "DAC Output = %.5fV\r\n", DAC_OutputVol(dac_out));                
     SERCOM5_USART_Write(printbuffer, n);
     
     while (SERCOM5_USART_WriteIsBusy());
@@ -127,7 +148,7 @@ int main ( void )
 
             AC_SetDACOutput(AC_CHANNEL0, dac_out);
 
-            n = sprintf(printbuffer, "DAC Output = %d.%dV\r\n", (int)((33 * dac_out)/1280), ((int)((33 * dac_out)% 1280) == 0)? 0: (int)(((int)((33 * dac_out) % 1280) * 10) / 1280));
+            n = sprintf(printbuffer, "DAC Output = %.5fV\r\n", DAC_OutputVol(dac_out));
 
             SERCOM5_USART_Write(printbuffer, n);
             
