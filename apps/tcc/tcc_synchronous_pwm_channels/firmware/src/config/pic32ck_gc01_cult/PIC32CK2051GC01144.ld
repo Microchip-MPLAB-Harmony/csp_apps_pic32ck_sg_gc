@@ -105,7 +105,9 @@ ENTRY(__XC32_RESET_HANDLER_NAME)
  *************************************************************************/
 MEMORY
 {
+#if !defined(SECURE_BOOTLOADER)
   boot_rom (LRX) : ORIGIN = BOOT_ROM_ORIGIN, LENGTH = BOOT_ROM_LENGTH
+#endif
   rom (LRX) : ORIGIN = ROM_ORIGIN, LENGTH = ROM_LENGTH
   ram (WX!R) : ORIGIN = RAM_ORIGIN, LENGTH = RAM_LENGTH
  tcm (WX) : ORIGIN = TCM_ORIGIN, LENGTH = __XC32_TCM_LENGTH
@@ -123,7 +125,6 @@ MEMORY
  * of CODE_REGION's value. If you wish to use rom for something else please
  * rename the MEMORY entry.
  * DATA_REGION defaults to 'ram', which must be present.
- * VECTOR_REGION defaults to CODE_REGION, unless 'boot_rom' is present.
  */
 #ifndef CODE_REGION
 # if ROM_LENGTH > 0
