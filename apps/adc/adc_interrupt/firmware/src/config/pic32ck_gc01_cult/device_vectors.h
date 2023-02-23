@@ -151,33 +151,33 @@ typedef struct H3DeviceVectorsTag
   pfn_handler_t pfnSERCOM3_3_Handler;               /* 66 Serial Communication Interface 3 */
   pfn_handler_t pfnSERCOM3_4_Handler;               /* 67 Serial Communication Interface 3 */
   pfn_handler_t pfnTCC0_OTHER_Handler;              /* 68 Error/Overflow/Underflow/Fault Interrupt */
-  pfn_handler_t pfnTCC0_MC_0_Handler;               /* 69 TCC Match/Compare 0 */
-  pfn_handler_t pfnTCC0_MC_1_Handler;               /* 70 TCC Match/Compare 1 */
-  pfn_handler_t pfnTCC0_MC_2_Handler;               /* 71 TCC Match/Compare 2 */
-  pfn_handler_t pfnTCC0_MC_3_Handler;               /* 72 TCC Match/Compare 3 */
-  pfn_handler_t pfnTCC0_MC_4_Handler;               /* 73 TCC Match/Compare 4 */
-  pfn_handler_t pfnTCC0_MC_5_Handler;               /* 74 TCC Match/Compare 5 */
+  pfn_handler_t pfnTCC0_MC0_Handler;                /* 69 TCC Match/Compare 0 */
+  pfn_handler_t pfnTCC0_MC1_Handler;                /* 70 TCC Match/Compare 1 */
+  pfn_handler_t pfnTCC0_MC2_Handler;                /* 71 TCC Match/Compare 2 */
+  pfn_handler_t pfnTCC0_MC3_Handler;                /* 72 TCC Match/Compare 3 */
+  pfn_handler_t pfnTCC0_MC4_Handler;                /* 73 TCC Match/Compare 4 */
+  pfn_handler_t pfnTCC0_MC5_Handler;                /* 74 TCC Match/Compare 5 */
   pfn_handler_t pfnTCC1_OTHER_Handler;              /* 75 Error/Overflow/Underflow/Fault Interrupt */
-  pfn_handler_t pfnTCC1_MC_0_Handler;               /* 76 TCC Match/Compare 0 */
-  pfn_handler_t pfnTCC1_MC_1_Handler;               /* 77 TCC Match/Compare 1 */
-  pfn_handler_t pfnTCC1_MC_2_Handler;               /* 78 TCC Match/Compare 2 */
-  pfn_handler_t pfnTCC1_MC_3_Handler;               /* 79 TCC Match/Compare 3 */
-  pfn_handler_t pfnTCC1_MC_4_Handler;               /* 80 TCC Match/Compare 4 */
-  pfn_handler_t pfnTCC1_MC_5_Handler;               /* 81 TCC Match/Compare 5 */
+  pfn_handler_t pfnTCC1_MC0_Handler;                /* 76 TCC Match/Compare 0 */
+  pfn_handler_t pfnTCC1_MC1_Handler;                /* 77 TCC Match/Compare 1 */
+  pfn_handler_t pfnTCC1_MC2_Handler;                /* 78 TCC Match/Compare 2 */
+  pfn_handler_t pfnTCC1_MC3_Handler;                /* 79 TCC Match/Compare 3 */
+  pfn_handler_t pfnTCC1_MC4_Handler;                /* 80 TCC Match/Compare 4 */
+  pfn_handler_t pfnTCC1_MC5_Handler;                /* 81 TCC Match/Compare 5 */
   pfn_handler_t pfnTCC2_OTHER_Handler;              /* 82 Error/Overflow/Underflow/Fault Interrupt */
-  pfn_handler_t pfnTCC2_MC_0_Handler;               /* 83 TCC Match/Compare 0 */
-  pfn_handler_t pfnTCC2_MC_1_Handler;               /* 84 TCC Match/Compare 1 */
-  pfn_handler_t pfnTCC2_MC_2_Handler;               /* 85 TCC Match/Compare 2 */
-  pfn_handler_t pfnTCC2_MC_3_Handler;               /* 86 TCC Match/Compare 3 */
-  pfn_handler_t pfnTCC2_MC_4_Handler;               /* 87 TCC Match/Compare 4 */
-  pfn_handler_t pfnTCC2_MC_5_Handler;               /* 88 TCC Match/Compare 5 */
+  pfn_handler_t pfnTCC2_MC0_Handler;                /* 83 TCC Match/Compare 0 */
+  pfn_handler_t pfnTCC2_MC1_Handler;                /* 84 TCC Match/Compare 1 */
+  pfn_handler_t pfnTCC2_MC2_Handler;                /* 85 TCC Match/Compare 2 */
+  pfn_handler_t pfnTCC2_MC3_Handler;                /* 86 TCC Match/Compare 3 */
+  pfn_handler_t pfnTCC2_MC4_Handler;                /* 87 TCC Match/Compare 4 */
+  pfn_handler_t pfnTCC2_MC5_Handler;                /* 88 TCC Match/Compare 5 */
   pfn_handler_t pfnTCC3_OTHER_Handler;              /* 89 Error/Overflow/Underflow/Fault Interrupt */
-  pfn_handler_t pfnTCC3_MC_0_Handler;               /* 90 TCC Match/Compare 0 */
-  pfn_handler_t pfnTCC3_MC_1_Handler;               /* 91 TCC Match/Compare 1 */
-  pfn_handler_t pfnTCC3_MC_2_Handler;               /* 92 TCC Match/Compare 2 */
-  pfn_handler_t pfnTCC3_MC_3_Handler;               /* 93 TCC Match/Compare 3 */
-  pfn_handler_t pfnTCC3_MC_4_Handler;               /* 94 TCC Match/Compare 4 */
-  pfn_handler_t pfnTCC3_MC_5_Handler;               /* 95 TCC Match/Compare 5 */
+  pfn_handler_t pfnTCC3_MC0_Handler;                /* 90 TCC Match/Compare 0 */
+  pfn_handler_t pfnTCC3_MC1_Handler;                /* 91 TCC Match/Compare 1 */
+  pfn_handler_t pfnTCC3_MC2_Handler;                /* 92 TCC Match/Compare 2 */
+  pfn_handler_t pfnTCC3_MC3_Handler;                /* 93 TCC Match/Compare 3 */
+  pfn_handler_t pfnTCC3_MC4_Handler;                /* 94 TCC Match/Compare 4 */
+  pfn_handler_t pfnTCC3_MC5_Handler;                /* 95 TCC Match/Compare 5 */
   pfn_handler_t pfnSERCOM4_56_Handler;              /* 96 Serial Communication Interface 4 */
   pfn_handler_t pfnSERCOM4_0_Handler;               /* 97 Serial Communication Interface 4 */
   pfn_handler_t pfnSERCOM4_1_Handler;               /* 98 Serial Communication Interface 4 */
@@ -203,17 +203,17 @@ typedef struct H3DeviceVectorsTag
   pfn_handler_t pfnSERCOM7_3_Handler;               /* 118 Serial Communication Interface 7 */
   pfn_handler_t pfnSERCOM7_4_Handler;               /* 119 Serial Communication Interface 7 */
   pfn_handler_t pfnTCC4_OTHER_Handler;              /* 120 Error/Overflow/Underflow/Fault Interrupt */
-  pfn_handler_t pfnTCC4_MC_0_Handler;               /* 121 TCC Match/Compare 0 */
-  pfn_handler_t pfnTCC4_MC_1_Handler;               /* 122 TCC Match/Compare 1 */
+  pfn_handler_t pfnTCC4_MC0_Handler;                /* 121 TCC Match/Compare 0 */
+  pfn_handler_t pfnTCC4_MC1_Handler;                /* 122 TCC Match/Compare 1 */
   pfn_handler_t pfnTCC5_OTHER_Handler;              /* 123 Error/Overflow/Underflow/Fault Interrupt */
-  pfn_handler_t pfnTCC5_MC_0_Handler;               /* 124 TCC Match/Compare 0 */
-  pfn_handler_t pfnTCC5_MC_1_Handler;               /* 125 TCC Match/Compare 1 */
+  pfn_handler_t pfnTCC5_MC0_Handler;                /* 124 TCC Match/Compare 0 */
+  pfn_handler_t pfnTCC5_MC1_Handler;                /* 125 TCC Match/Compare 1 */
   pfn_handler_t pfnTCC6_OTHER_Handler;              /* 126 Error/Overflow/Underflow/Fault Interrupt */
-  pfn_handler_t pfnTCC6_MC_0_Handler;               /* 127 TCC Match/Compare 0 */
-  pfn_handler_t pfnTCC6_MC_1_Handler;               /* 128 TCC Match/Compare 1 */
+  pfn_handler_t pfnTCC6_MC0_Handler;                /* 127 TCC Match/Compare 0 */
+  pfn_handler_t pfnTCC6_MC1_Handler;                /* 128 TCC Match/Compare 1 */
   pfn_handler_t pfnTCC7_OTHER_Handler;              /* 129 Error/Overflow/Underflow/Fault Interrupt */
-  pfn_handler_t pfnTCC7_MC_0_Handler;               /* 130 TCC Match/Compare 0 */
-  pfn_handler_t pfnTCC7_MC_1_Handler;               /* 131 TCC Match/Compare 1 */
+  pfn_handler_t pfnTCC7_MC0_Handler;                /* 130 TCC Match/Compare 0 */
+  pfn_handler_t pfnTCC7_MC1_Handler;                /* 131 TCC Match/Compare 1 */
   pfn_handler_t pfnADC_GLOBAL_Handler;              /* 132 ADC Global Interrupt */
   pfn_handler_t pfnADC_CORE1_Handler;               /* 133 ADC Core 1 Interrupt */
   pfn_handler_t pfnReserved2_Handler;               /* 134 ADC Unused/Reserved */
