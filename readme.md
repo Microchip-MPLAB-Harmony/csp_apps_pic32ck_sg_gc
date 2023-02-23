@@ -66,6 +66,8 @@ The following applications are provided to demonstrate the typical or interestin
 | [TRAM erase on tamper detect](apps/tram/tram_tamper_erase/readme.md) | This example application shows how to configure and use tamper detect feature of RTC and TrustRam |
 | [TRNG random number](apps/trng/random_number/readme.md) | This example shows how to use the TRNG Peripheral library to generate and read a random number |
 | [WDT timeout](apps/wdt/wdt_timeout/readme.md) | This example shows how to generate a Watchdog timer reset by emulating a deadlock |
+| [Trustzone Systick periodic interrupt](apps/trustzone/systick_periodic_timeout/readme.md) | This example shows how to use the SysTick to generate periodic interrupts on both Secure and Non-secure modes |
+| [TrustZone Secure TCC demonstration](apps/trustZone/tcc/readme.md) | This example application performs a PWM signal applied on PD20 pin (LED0) based on TCC0 peripheral |
 
 ____
 
