@@ -37,6 +37,9 @@ The following applications are provided to demonstrate the typical or interestin
 | Name | Description |
 | ---- | ----------- |
 | [AC Sleepwalking](apps/ac/ac_sleepwalk_singleshot/readme.md) | This example application shows how to use the AC Peripheral library to perform a single shot comparison in standby sleep mode periodically and wake up the device when the comparator output toggles |
+| [ADC Blocking](apps/adc/adc_blocking/readme.md) | This example application shows how to use the ADC Peripheral library in blocking mode to convert analog input on a ADC channel |
+| [ADC DMA Scan](apps/adc/adc_dma_scan/readme.md) | This example application shows how to use the ADC Peripheral library in scan mode to convert multiple analog input on a ADC channels and transfer the ADC result using DMA |
+| [ADC Interrupt](apps/adc/adc_interrupt/readme.md) | This example application shows how to use the ADC Peripheral library in in interrupt mode to convert multiple analog inputs |
 | [CAN FD blocking](apps/can/can_fd_operation_blocking/readme.md) | This example application shows how to use the CAN module to transmit and receive CAN FD messages in polling mode |
 | [CAN FD interrupt](apps/can/can_fd_operation_interrupt_timestamp/readme.md) | This example application shows how to use the CAN module to transmit and receive CAN FD messages in interrupt mode |
 | [CAN blocking](apps/can/can_normal_operation_blocking/readme.md) | This example application shows how to use the CAN module to transmit and receive normal CAN messages in polling mode |
@@ -63,6 +66,10 @@ The following applications are provided to demonstrate the typical or interestin
 | [SERCOM USART ring buffer](apps/sercom/usart/usart_ring_buffer_interrupt/readme.md) | This example application demonstrates how to use the SERCOM peripheral in USART ring buffer mode to transfer data in a non-blocking manner |
 | [SQI flash read write](apps/sqi/sqi_read_write/readme.md) | This example application demonstrates how to use the SQI Peripheral library to perform erase, write and read operation with the on-board SST26 SQI Serial Flash memory |
 | [Systick periodic interrupt](apps/systick/systick_periodic_timeout/readme.md) | This example shows how to use the SysTick to generate periodic interrupts |
+| [TCC capture mode](apps/tcc/tcc_capture_mode/readme.md) | This example shows how to use the TCC module in capture mode to measure duty cycle and frequency of an external input |
+| [TCC compare mode](apps/tcc/tcc_compare_mode/readme.md) | This example shows how to use the TCC module in compare mode to generate different waveforms |
+| [TCC PWM generation](apps/tcc/tcc_synchronous_pwm_channels/readme.md) | This example application shows how to use the TCC to generate a 2 or 3 phase PWM signals for motor control with dead time |
+| [TCC timer mode](apps/tcc/tcc_timer_mode/readme.md) | This example shows how to use the TCC module in timer mode to generate periodic interrupt |
 | [TRAM erase on tamper detect](apps/tram/tram_tamper_erase/readme.md) | This example application shows how to configure and use tamper detect feature of RTC and TrustRam |
 | [TRNG random number](apps/trng/random_number/readme.md) | This example shows how to use the TRNG Peripheral library to generate and read a random number |
 | [WDT timeout](apps/wdt/wdt_timeout/readme.md) | This example shows how to generate a Watchdog timer reset by emulating a deadlock |
