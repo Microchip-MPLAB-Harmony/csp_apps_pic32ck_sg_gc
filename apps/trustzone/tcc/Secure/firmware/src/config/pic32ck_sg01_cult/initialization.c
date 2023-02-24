@@ -465,9 +465,9 @@ void SYS_Initialize ( void* data )
 
     TCC0_CompareInitialize();
 
+	SYSTICK_TimerInitialize();
     PM_Initialize();
 
-	SYSTICK_TimerInitialize();
 
     NVIC_Initialize();
 

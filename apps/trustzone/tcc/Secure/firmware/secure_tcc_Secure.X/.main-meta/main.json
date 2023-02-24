@@ -3,11 +3,11 @@
 	"category": "com.microchip.ide.project",
 	"content": {
 		"metaDataVersion": "1.1.0",
-		"name": "com.microchip.mcu32.mplabx.project.csp_apps_pic32ck_sg_gc_systick_periodic_timeout",
+		"name": "com.microchip.mcu32.mplabx.project.csp_apps_pic32ck_sg_gc_trustZone_tcc_secure_tcc",
 		"version": "3.0.0",
-		"displayName": "Systick periodic interrupt Example for PIC32CK_SG Family",
-		"projectName": "systick_periodic_timeout_pic32ck_sg01_cult",
-		"shortDescription": "This example shows how to use the SysTick to generate periodic interrupts on both Secure and Non-secure modes",
+		"displayName": "TCC secure Example for PIC32CK_SG Family",
+		"projectName": "tcc_secure_tcc_pic32ck_sg01_cult",
+		"shortDescription": "This example application performs a PWM signal applied on PD20 pin (LED0) based on TCC0 peripheral",
 		"ide": {
 			"name": "MPLABX",
 			"semverRange": ">=6.05.0"
@@ -45,25 +45,25 @@
 			[
 				"Harmony",
 				"Peripherals",
-				"SYSTICK"
+				"TC",
+				"TRUSTZONE"
 			],
 			[
 				"Peripherals",
-				"SYSTICK"
+				"TC",
+				"TRUSTZONE"
 			]
 		],
 		"peripherals": [
-			"SYSTICK"
+			"TCC",
+			"TRUSTZONE"
 		],
 		"keywords": [
 			"MHC",
 			"Harmony",
 			"PIC32CK2051SG01144",
 			"PIC32CK_SG Family",
-			"System Timer",
-			"Core Timer",
-			"Timer",
-			"Counter",
+			"TCC",
 			"TRUSTZONE",
 			"TrustZone",
 			"Security"
