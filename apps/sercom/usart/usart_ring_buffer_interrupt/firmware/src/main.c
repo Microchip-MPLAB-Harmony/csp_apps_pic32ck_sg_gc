@@ -26,6 +26,7 @@
 #include <stdbool.h>                    // Defines true
 #include <stdlib.h>                     // Defines EXIT_FAILURE
 #include "definitions.h"                // SYS function prototypes
+#include <stdio.h>
 
 uint8_t txBuffer[50];
 uint8_t rxBuffer[10];

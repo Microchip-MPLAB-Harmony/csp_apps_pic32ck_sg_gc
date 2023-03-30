@@ -93,7 +93,7 @@
 130,PD17,,Available,,,,,,NORMAL
 131,PD18,,Available,,,,,,NORMAL
 132,PD19,,Available,,,,,,NORMAL
-133,PD20,LED,LED_AL,Digital,Out,High,,,NORMAL
+133,PD20,LED,GPIO,Digital,Out,High,,,NORMAL
 134,PD21,,Available,,,,,,NORMAL
 135,PD12,,Available,,,,,,NORMAL
 136,PD05,,Available,,,,,,NORMAL
