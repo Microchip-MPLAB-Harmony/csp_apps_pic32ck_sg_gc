@@ -1,4 +1,4 @@
-<config configName="pic32ck_gc01_cult" projectName="pm_wakeup_rtc_pic32ck_gc01_cult" configVersion="1.1" device="PIC32CK2051GC01144" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.4.14">
+<config configName="pic32ck_gc01_cult" projectName="pm_wakeup_rtc_pic32ck_gc01_cult" configVersion="1.1" device="PIC32CK2051GC01144" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.5.0">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -63,7 +63,7 @@
         &lt;ElementPosition dnOrder=&quot;4&quot; id=&quot;pm&quot; x=&quot;30&quot; y=&quot;120&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;5&quot; id=&quot;rstc&quot; x=&quot;400&quot; y=&quot;20&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;6&quot; id=&quot;rtc&quot; x=&quot;240&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;7&quot; id=&quot;sercom5&quot; x=&quot;560&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;7&quot; id=&quot;sercom5&quot; x=&quot;236&quot; y=&quot;193&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;8&quot; id=&quot;stdio&quot; x=&quot;377&quot; y=&quot;192&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;9&quot; id=&quot;supc&quot; x=&quot;233&quot; y=&quot;116&quot;/&gt;
       &lt;/ElementPositions&gt;
@@ -4290,28 +4290,6 @@
 </value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="supc" name="SUPC_VREGCTRL_LVHIB"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;supc&gt;
-  &lt;supc dnOrder=&quot;0&quot; id=&quot;SUPC_VREGCTRL_LVHIB&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;false&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/supc&gt;
-&lt;/supc&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="supc" name="SUPC_VREGCTRL_LVSTDBY"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;supc&gt;
-  &lt;supc dnOrder=&quot;0&quot; id=&quot;SUPC_VREGCTRL_LVSTDBY&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;false&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/supc&gt;
-&lt;/supc&gt;
-</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="supc" name="SUPC_VREGCTRL_OFFSTDBY"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;supc&gt;
   &lt;supc dnOrder=&quot;0&quot; id=&quot;SUPC_VREGCTRL_OFFSTDBY&quot;&gt;
@@ -4337,7 +4315,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult\peripheral\nvic\plib_nvic.c</file>
-         <hash>2461bc8cb07e9fb750cb02f429719444a46225929a97ebc07fff455aac05daf2</hash>
+         <hash>29e007ea4375c94785706835d7302f649a2504879f8159f06b27692dd15841a6</hash>
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_gcc.h</file>
@@ -4353,7 +4331,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult\peripheral\sercom\usart\plib_sercom5_usart.h</file>
-         <hash>acdd3259b9546f010e1422718370dca588703f7fb807f2eebb48c3dde6c4b9de</hash>
+         <hash>5aa7f37d6ac2c6c293049dc789c617722c741d6c0e4b46f6da198cdbe885ebde</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CK2051GC01144_DFP\instance\osc32kctrl.h</file>
@@ -4377,7 +4355,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult\peripheral\sercom\usart\plib_sercom5_usart.c</file>
-         <hash>f8821ee1129413d20756d34d5cb6c55f8786e9f3effabb30b3baa9f235c09d8f</hash>
+         <hash>fa18e1d8410b48a7eda4730d61614ed5fc7a206f132322d360201a9df7f77d08</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult\peripheral\supc\plib_supc.c</file>
@@ -4509,7 +4487,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult\toolchain_specifics.h</file>
-         <hash>fb1c58b7fb94545ef6247f18ea3001b719e06ec29bf39bfd68fe3927f709eaa3</hash>
+         <hash>6fc0551b0fa3362678b3d7a227386fafa343140d31e4da3ad4af972e61cd0acb</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CK2051GC01144_DFP\component\sqi.h</file>
@@ -4545,7 +4523,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult\peripheral\systick\plib_systick.c</file>
-         <hash>997250e4916b5bfd8623fe8f138e8eaadb2d40c9218e301c02ed95abd1d3f220</hash>
+         <hash>c5a270592e3c5e399a4a29719942b267e04fe4ff04827880012ef56e0fe2167c</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CK2051GC01144_DFP\component\hmatrix2.h</file>
@@ -4632,12 +4610,12 @@
          <hash>5117c844c51e88132b384c381a94d9cc9e68777352e4ab4dc39c261d210b3ebd</hash>
       </entry>
       <entry>
-         <file>..\src\packs\PIC32CK2051GC01144_DFP\component\ccl.h</file>
-         <hash>ffb1fd9496e8ae1202653a87057b7589ec69626e401ea28c350a36cf644d11b5</hash>
-      </entry>
-      <entry>
          <file>..\src\config\pic32ck_gc01_cult\peripheral\pm\plib_pm.h</file>
          <hash>37890f6427dd8228e6743897f657f0d22cd7f8ea500c2b6e1bca643804728eb4</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\PIC32CK2051GC01144_DFP\component\ccl.h</file>
+         <hash>ffb1fd9496e8ae1202653a87057b7589ec69626e401ea28c350a36cf644d11b5</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CK2051GC01144_DFP\component\pac.h</file>
@@ -4681,7 +4659,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult\initialization.c</file>
-         <hash>e8eb434efde733bbb3c6f25e3b7f1b475da8c645230caf9183e0f2fbf6e8e2a5</hash>
+         <hash>6a60a3b11a59a27815ac5b8910517da1e83ee148d0cf97d442b3300abdb6982c</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CK2051GC01144_DFP\instance\tcc7.h</file>
@@ -4757,11 +4735,11 @@
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult\definitions.h</file>
-         <hash>3eb25ae7d1dd87b0d9cc1ed0fd49ec9bc2d45cda333c86969161e2f2ade3900f</hash>
+         <hash>98a2b4c0cc882bb90b396507f2d50debcbe8af371fd701ac28feb9e41e34fb54</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult\startup_xc32.c</file>
-         <hash>11caa9a0b02e9cb9ce9c34129246742b0aec16dd5c7ea904d2b1abbd15e5432e</hash>
+         <hash>9b833e3877251f018b3ce7829a624bb42cb8832d98465d1186786e0b66918253</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult\pin_configurations.csv</file>
@@ -4793,7 +4771,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult\exceptions.c</file>
-         <hash>b850253aacaae1bddfcb426c2dc11e0688900afffe9b22c60d0ab16298701118</hash>
+         <hash>c79ad9b04879ace9e0a2da99bd91bc77c7dd9ba09bfd5e065ea68ca23b9a4826</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CK2051GC01144_DFP\instance\pac.h</file>
@@ -4801,7 +4779,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult\peripheral\rtc\plib_rtc_timer.c</file>
-         <hash>f4a000c1d2e9656235e3daf40d19e760ead757666e7ec5234647402ba83f739a</hash>
+         <hash>35c50c23e768c57ffdaf380730659ea24a143aa7cbde5f6096b21d2079d92508</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CK2051GC01144_DFP\instance\freqm.h</file>
