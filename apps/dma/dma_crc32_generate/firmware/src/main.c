@@ -68,14 +68,14 @@
 #define CRC32_REVERSE_OUTPUT        true
 
 /* Input String for CRC: 123456789 */
-CACHE_ALIGN uint8_t srcBuffer[DMA_TRANSFER_SIZE] = {0};
+CACHE_ALIGN static uint8_t srcBuffer[DMA_TRANSFER_SIZE] = {0};
 
-CACHE_ALIGN uint8_t dstBuffer[DMA_TRANSFER_SIZE] = {0};
+CACHE_ALIGN static uint8_t dstBuffer[DMA_TRANSFER_SIZE] = {0};
 
-CACHE_ALIGN uint32_t reverse_table[256] = {0};
+CACHE_ALIGN static uint32_t reverse_table[256] = {0};
 
-volatile bool completeStatus = false;
-volatile bool errorStatus = false;
+volatile static bool completeStatus = false;
+volatile static bool errorStatus = false;
 
 void DMA_EventHandler(DMA_TRANSFER_EVENT status, uintptr_t context)
 {

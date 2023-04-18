@@ -32,15 +32,15 @@
 #define LED_ON    LED_Clear
 #define LED_OFF   LED_Set
 
-char messageStart[] = "****  USART echo demo: Non-blocking Transfer with the interrupt  ****\r\n\
+static char messageStart[] = "****  USART echo demo: Non-blocking Transfer with the interrupt  ****\r\n\
 **** Type 10 characters. The received characters are echoed back, and the LED is toggled ****\r\n";
-char receiveBuffer[RX_BUFFER_SIZE] = {0};
-char echoBuffer[RX_BUFFER_SIZE+4] = {0};
-char messageError[] = "**** USART error occurred ****\r\n";
+static char receiveBuffer[RX_BUFFER_SIZE] = {0};
+static char echoBuffer[RX_BUFFER_SIZE+4] = {0};
+static char messageError[] = "**** USART error occurred ****\r\n";
 
-bool errorStatus = false;
-bool writeStatus = false;
-bool readStatus = false;
+static bool errorStatus = false;
+static bool writeStatus = false;
+static bool readStatus = false;
 
 
 void APP_WriteCallback(uintptr_t context)
