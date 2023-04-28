@@ -256,14 +256,14 @@
         <targetDevice>PIC32CK2051SG01144</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool></platformTool>
+        <platformTool>noID</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.30</languageToolchainVersion>
+        <languageToolchainVersion>4.21</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC32CK-SG_DFP" vendor="Microchip" version="1.0.130"/>
         <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
+        <pack name="PIC32CK-SG_DFP" vendor="Microchip" version="1.0.143"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>

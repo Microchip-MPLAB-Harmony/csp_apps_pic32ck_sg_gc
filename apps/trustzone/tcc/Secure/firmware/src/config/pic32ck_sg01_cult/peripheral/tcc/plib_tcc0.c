@@ -68,7 +68,7 @@
 // *****************************************************************************
 // *****************************************************************************
 
-static TCC_CALLBACK_OBJECT TCC0_CallbackObject;
+volatile static TCC_CALLBACK_OBJECT TCC0_CallbackObject;
 
 // *****************************************************************************
 // *****************************************************************************
@@ -175,9 +175,9 @@ uint32_t TCC0_Compare32bitCounterGet( void )
 }
 
 /* Configure counter value */
-void TCC0_Compare32bitCounterSet( uint32_t count )
+void TCC0_Compare32bitCounterSet( uint32_t countVal )
 {
-    TCC0_REGS->TCC_COUNT = count;
+    TCC0_REGS->TCC_COUNT = countVal;
 
     while((TCC0_REGS->TCC_SYNCBUSY & TCC_SYNCBUSY_COUNT_Msk) == TCC_SYNCBUSY_COUNT_Msk)
     {
@@ -229,31 +229,37 @@ void TCC0_CompareCallbackRegister( TCC_CALLBACK callback, uintptr_t context )
 }
 
 /* Interrupt Handler */
-void TCC0_OTHER_InterruptHandler(void)
+void __attribute__((used)) TCC0_OTHER_InterruptHandler(void)
 {
     uint32_t status;
+    /* Additional local variable to prevent MISRA C violations (Rule 13.x) */
+    uintptr_t context;
+    context = TCC0_CallbackObject.context;            
     status = (TCC0_REGS->TCC_INTFLAG & 0xFFFFU);
     /* Clear interrupt flags */
     TCC0_REGS->TCC_INTFLAG = 0xFFFFU;
     (void)TCC0_REGS->TCC_INTFLAG;
     if (TCC0_CallbackObject.callback_fn != NULL)
-    {
-        TCC0_CallbackObject.callback_fn(status, TCC0_CallbackObject.context);
+    { 
+        TCC0_CallbackObject.callback_fn(status, context);
     }
 
 }
 
 /* Interrupt Handler */
-void TCC0_MC0_InterruptHandler(void)
+void __attribute__((used)) TCC0_MC0_InterruptHandler(void)
 {
     uint32_t status;
+    /* Additional local variable to prevent MISRA C violations (Rule 13.x) */
+    uintptr_t context;
+    context = TCC0_CallbackObject.context;                
     status = TCC_INTFLAG_MC0_Msk;
     /* Clear interrupt flags */
     TCC0_REGS->TCC_INTFLAG = TCC_INTFLAG_MC0_Msk;
     (void)TCC0_REGS->TCC_INTFLAG;
     if (TCC0_CallbackObject.callback_fn != NULL)
     {
-        TCC0_CallbackObject.callback_fn(status, TCC0_CallbackObject.context);
+        TCC0_CallbackObject.callback_fn(status, context);
     }
 
 }
