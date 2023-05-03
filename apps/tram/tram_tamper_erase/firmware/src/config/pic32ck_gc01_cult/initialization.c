@@ -407,9 +407,9 @@ void SYS_Initialize ( void* data )
 
 	TRAM_Initialize();
 
-    SERCOM5_USART_Initialize();
-
     PM_Initialize();
+
+    SERCOM5_USART_Initialize();
 
     RTC_Initialize();
 
