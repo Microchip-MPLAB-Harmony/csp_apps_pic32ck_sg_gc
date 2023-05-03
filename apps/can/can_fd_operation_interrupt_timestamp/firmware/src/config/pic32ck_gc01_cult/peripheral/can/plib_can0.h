@@ -73,6 +73,8 @@
 // Section: Data Types
 // *****************************************************************************
 // *****************************************************************************
+#define CAN0_CLOCK_FREQUENCY    60000000U
+
 /* CAN0 Message RAM Configuration Size */
 #define CAN0_RX_FIFO0_ELEMENT_SIZE       72U
 #define CAN0_RX_FIFO0_SIZE               72U
@@ -111,6 +113,8 @@ bool CAN0_ExtendedFilterElementSet(uint8_t filterNumber, can_xidfe_registers_t *
 bool CAN0_ExtendedFilterElementGet(uint8_t filterNumber, can_xidfe_registers_t *extMsgIDFilterElement);
 void CAN0_SleepModeEnter(void);
 void CAN0_SleepModeExit(void);
+bool CAN0_BitTimingCalculationGet(CAN_BIT_TIMING_SETUP *setup, CAN_BIT_TIMING *bitTiming);
+bool CAN0_BitTimingSet(CAN_BIT_TIMING *bitTiming);
 void CAN0_TxFifoCallbackRegister(CAN_TX_FIFO_CALLBACK callback, uintptr_t contextHandle);
 void CAN0_TxEventFifoCallbackRegister(CAN_TX_EVENT_FIFO_CALLBACK callback, uintptr_t contextHandle);
 void CAN0_RxBuffersCallbackRegister(CAN_TXRX_BUFFERS_CALLBACK callback, uintptr_t contextHandle);
