@@ -56,7 +56,7 @@
 
 
 /* Object to hold callback function and context */
-static TCC_CALLBACK_OBJECT TCC1_CallbackObj;
+volatile static TCC_CALLBACK_OBJECT TCC1_CallbackObj;
 
 /* Initialize TCC module */
 void TCC1_PWMInitialize(void)
@@ -68,13 +68,15 @@ void TCC1_PWMInitialize(void)
         /* Wait for sync */
     }
     /* Clock prescaler */
-    TCC1_REGS->TCC_CTRLA = TCC_CTRLA_PRESCALER_DIV1 ;
+    TCC1_REGS->TCC_CTRLA = TCC_CTRLA_PRESCALER_DIV1 
+                            | TCC_CTRLA_PRESCSYNC_PRESC ;
     TCC1_REGS->TCC_WEXCTRL = TCC_WEXCTRL_OTMX(0UL);
     /* Dead time configurations */
     TCC1_REGS->TCC_WEXCTRL |= TCC_WEXCTRL_DTIEN0_Msk | TCC_WEXCTRL_DTIEN1_Msk | TCC_WEXCTRL_DTIEN2_Msk | TCC_WEXCTRL_DTIEN3_Msk
  	 	 | TCC_WEXCTRL_DTLS(30UL) | TCC_WEXCTRL_DTHS(60UL);
 
     TCC1_REGS->TCC_WAVE = TCC_WAVE_WAVEGEN_DSBOTH | TCC_WAVE_POL0_Msk | TCC_WAVE_POL1_Msk;
+
 
     /* Configure duty cycle values */
     TCC1_REGS->TCC_CC[0] = 0U;
@@ -156,10 +158,31 @@ bool TCC1_PWMPatternSet(uint8_t pattern_enable, uint8_t pattern_output)
 }
 
 
-/* Set the counter*/
-void TCC1_PWM32bitCounterSet (uint32_t count)
+
+/* Get the current counter value */
+uint32_t TCC1_PWM32bitCounterGet( void )
 {
-    TCC1_REGS->TCC_COUNT = count;
+    /* Write command to force COUNT register read synchronization */
+    TCC1_REGS->TCC_CTRLBSET |= (uint8_t)TCC_CTRLBSET_CMD_READSYNC;
+
+    while((TCC1_REGS->TCC_SYNCBUSY & TCC_SYNCBUSY_CTRLB_Msk) == TCC_SYNCBUSY_CTRLB_Msk)
+    {
+        /* Wait for Write Synchronization */
+    }
+
+    while((TCC1_REGS->TCC_CTRLBSET & TCC_CTRLBSET_CMD_Msk) != 0U)
+    {
+        /* Wait for CMD to become zero */
+    }
+
+    /* Read current count value */
+    return TCC1_REGS->TCC_COUNT;
+}
+
+/* Set the counter*/
+void TCC1_PWM32bitCounterSet (uint32_t countVal)
+{
+    TCC1_REGS->TCC_COUNT = countVal;
     while ((TCC1_REGS->TCC_SYNCBUSY & TCC_SYNCBUSY_COUNT_Msk) != 0U)
     {
         /* Wait for sync */
@@ -196,16 +219,19 @@ void TCC1_PWMCallbackRegister(TCC_CALLBACK callback, uintptr_t context)
 }
 
 /* Interrupt Handler */
-void TCC1_OTHER_InterruptHandler(void)
+void __attribute__((used)) TCC1_OTHER_InterruptHandler(void)
 {
     uint32_t status;
+    /* Additional local variable to prevent MISRA C violations (Rule 13.x) */
+    uintptr_t context;
+    context = TCC1_CallbackObj.context;            
     status = (TCC1_REGS->TCC_INTFLAG & 0xFFFFU);
     /* Clear interrupt flags */
     TCC1_REGS->TCC_INTFLAG = 0xFFFFU;
     (void)TCC1_REGS->TCC_INTFLAG;
     if (TCC1_CallbackObj.callback_fn != NULL)
     {
-        TCC1_CallbackObj.callback_fn(status, TCC1_CallbackObj.context);
+        TCC1_CallbackObj.callback_fn(status, context);
     }
 
 }
