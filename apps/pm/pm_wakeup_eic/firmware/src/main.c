@@ -83,7 +83,10 @@ int main ( void )
     printf("\n\r                 LOW power demo using EIC"               );
     printf("\n\r----------------------------------------------"); 
     
-    if(reset_cause_bkup == RSTC_BKUPEXIT_HIB_Msk)
+    printf("\r\nreset_cause_bkup :%x\r\n",(unsigned int)reset_cause_bkup);
+    printf("\r\nreset_cause :%x\r\n",(unsigned int)reset_cause);
+
+    if((reset_cause & RSTC_RCAUSE_EXT_Msk) == RSTC_RCAUSE_EXT_Msk)
         printf("\n\n\rDevice exited from Hibernate mode\n");
     else if(reset_cause == RSTC_RCAUSE_POR_Msk)
         printf("\n\n\rDevice exited from OFF mode\n");
@@ -124,7 +127,7 @@ int main ( void )
             case HIBERNATE_SLEEP_MODE:
             {
                 printf("\n\rEntering HIBERNATE SLEEP Mode");
-                printf("\n\rPress Reset button to wakeup the device   ");   
+                printf("\n\rPress Reset button to wakeup the device   "); 
                 SYSTICK_TimerStop();
                 LED_OFF();
                 PM_HibernateModeEnter();
