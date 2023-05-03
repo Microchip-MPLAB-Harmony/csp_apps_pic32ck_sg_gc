@@ -74,7 +74,7 @@ extern uint32_t _stack;
 
 extern int main(void);
 
-__STATIC_INLINE void CMCC_Configure(void)
+__STATIC_INLINE void __attribute__((optimize("-O1"))) CMCC_Configure(void)
 {
     CMCC_REGS->CMCC_CTRL &= ~(CMCC_CTRL_CEN_Msk);
     while((CMCC_REGS->CMCC_SR & CMCC_SR_CSTS_Msk) == CMCC_SR_CSTS_Msk)
@@ -88,7 +88,7 @@ __STATIC_INLINE void CMCC_Configure(void)
 #if (__ARM_FP==14) || (__ARM_FP==4)
 
 /* Enable FPU */
-__STATIC_INLINE void FPU_Enable(void)
+__STATIC_INLINE void __attribute__((optimize("-O1"))) FPU_Enable(void)
 {
     uint32_t primask = __get_PRIMASK();
     __disable_irq();
