@@ -410,9 +410,9 @@ void SYS_Initialize ( void* data )
     TCC0_CompareInitialize();
 
 	SYSTICK_TimerInitialize();
-    SERCOM5_USART_Initialize();
-
     PM_Initialize();
+
+    SERCOM5_USART_Initialize();
 
     EIC_Initialize();
 
