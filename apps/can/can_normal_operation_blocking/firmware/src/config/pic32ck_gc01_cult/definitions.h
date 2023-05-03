@@ -54,8 +54,8 @@
 #include "peripheral/clock/plib_clock.h"
 #include "peripheral/nvic/plib_nvic.h"
 #include "peripheral/cmcc/plib_cmcc.h"
-#include "peripheral/sercom/usart/plib_sercom5_usart.h"
 #include "peripheral/pm/plib_pm.h"
+#include "peripheral/sercom/usart/plib_sercom5_usart.h"
 #include "peripheral/can/plib_can0.h"
 
 // DOM-IGNORE-BEGIN
@@ -65,6 +65,12 @@ extern "C" {
 
 #endif
 // DOM-IGNORE-END
+
+/* Device Information */
+#define DEVICE_NAME			 "PIC32CK2051GC01144"
+#define DEVICE_ARCH			 "CORTEX-M33"
+#define DEVICE_FAMILY		 "PIC32CK"
+#define DEVICE_SERIES		 "PIC32CKGC01"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 120000000
