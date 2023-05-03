@@ -64,7 +64,6 @@ void RTC_InterruptHandler (void);
 void DMA0_PRI0_InterruptHandler (void);
 void DMA0_PRI1_InterruptHandler (void);
 void DMA0_PRI2_InterruptHandler (void);
-void SERCOM5_USART_InterruptHandler (void);
 void ADC_CORE1_InterruptHandler (void);
 
 

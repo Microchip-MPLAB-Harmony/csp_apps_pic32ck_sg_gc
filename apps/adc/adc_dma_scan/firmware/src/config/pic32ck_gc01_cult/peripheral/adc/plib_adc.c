@@ -41,6 +41,7 @@
 // DOM-IGNORE-END
 #include "device.h"
 #include "plib_adc.h"
+#include "interrupts.h"
 
 // *****************************************************************************
 // *****************************************************************************
@@ -49,10 +50,10 @@
 // *****************************************************************************
 
 /* Load ADC calibration constant */
-#define ADC_CALIB_FCCFG65           *((uint32_t*)0x0A007184)
+#define ADC_CALIB_FCCFG65           *((uint32_t*)0xa007184)
 
 
-ADC_CORE_CALLBACK_OBJECT ADC_CoreCallbackObj[1];
+volatile static ADC_CORE_CALLBACK_OBJECT ADC_CoreCallbackObj[1];
 
 void ADC_Initialize(void)
 {
@@ -146,43 +147,45 @@ void ADC_Initialize(void)
 /* Enable channel compare mode */
 void ADC_CompareEnable(ADC_CHANNEL_NUM channel)
 {
-	ADC_Disable();
+    ADC_Disable();
 
-	ADC_REGS->CONFIG[0].ADC_CHNCFG1 |= (1UL << (uint32_t)channel);
+    ADC_REGS->CONFIG[0].ADC_CHNCFG1 |= (1UL << (uint32_t)channel);
 
-	ADC_REGS->ADC_CMPCTRL |= ADC_CMPCTRL_CMPEN_Msk;
-	
-	ADC_Enable();
+    ADC_REGS->ADC_CMPCTRL |= ADC_CMPCTRL_CMPEN_Msk;
+
+    ADC_Enable();
 }
-	
+
 /* Disable channel compare mode */
 void ADC_CompareDisable(ADC_CHANNEL_NUM channel)
 {
-	ADC_Disable();
+    ADC_Disable();
 
-	ADC_REGS->CONFIG[0].ADC_CHNCFG1 &= ~(1UL << (uint32_t)channel);
+    ADC_REGS->CONFIG[0].ADC_CHNCFG1 &= ~(1UL << (uint32_t)channel);
 
-	ADC_Enable();
+    ADC_Enable();
 }
 
 /* Configure window comparison threshold values */
 void ADC_CompareWinThresholdSet(uint16_t low_threshold, uint16_t high_threshold)
 {
-	ADC_Disable();
+    ADC_Disable();
 
-	ADC_REGS->ADC_CMPCTRL = (ADC_REGS->ADC_CMPCTRL & ~(ADC_CMPCTRL_ADCMPHI_Msk | ADC_CMPCTRL_ADCMPLO_Msk)) | ((low_threshold << ADC_CMPCTRL_ADCMPLO_Pos) | (high_threshold << ADC_CMPCTRL_ADCMPHI_Pos));
+    ADC_REGS->ADC_CMPCTRL = (ADC_REGS->ADC_CMPCTRL & ~(ADC_CMPCTRL_ADCMPHI_Msk | ADC_CMPCTRL_ADCMPLO_Msk)) |\
+                            (((uint32_t)low_threshold << ADC_CMPCTRL_ADCMPLO_Pos) |\
+                            ((uint32_t)high_threshold << ADC_CMPCTRL_ADCMPHI_Pos));
 
-	ADC_Enable();
+    ADC_Enable();
 }
 
 /* Configure window comparison event mode */
 void ADC_CompareWinModeSet(ADC_CMPCTRL mode)
 {
-	ADC_Disable();
-	
-	ADC_REGS->ADC_CMPCTRL = (ADC_REGS->ADC_CMPCTRL & ~(ADC_CMPCTRL_IELOLO_Msk | ADC_CMPCTRL_IELOHI_Msk | ADC_CMPCTRL_IEBTWN_Msk | ADC_CMPCTRL_IEHILO_Msk | ADC_CMPCTRL_IEHIHI_Msk)) | mode;
-	
-	ADC_Enable();
+    ADC_Disable();
+
+    ADC_REGS->ADC_CMPCTRL = (ADC_REGS->ADC_CMPCTRL & ~(ADC_CMPCTRL_IELOLO_Msk | ADC_CMPCTRL_IELOHI_Msk | ADC_CMPCTRL_IEBTWN_Msk | ADC_CMPCTRL_IEHILO_Msk | ADC_CMPCTRL_IEHIHI_Msk)) | mode;
+
+    ADC_Enable();
 }
 
 void ADC_CoreInterruptsEnable(ADC_CORE_INT interruptMask)
@@ -351,7 +354,7 @@ uint32_t ADC_FIFOBufferRead( uint32_t* pBuffer, uint32_t size )
 {
     uint32_t count = 0;
 
-    while ((ADC_REGS->ADC_CTLINTFLAG & ADC_CTLINTFLAG_PFFRDY_Msk) && (count < size))
+    while (((ADC_REGS->ADC_CTLINTFLAG & ADC_CTLINTFLAG_PFFRDY_Msk) != 0U) && (count < size))
     {
         pBuffer[count++] = ADC_REGS->ADC_PFFDATA;
     }
@@ -368,7 +371,7 @@ void ADC_CORE0CallbackRegister(ADC_CORE_CALLBACK callback, uintptr_t context)
 }
 
 
-void ADC_CORE1_InterruptHandler( void )
+void __attribute__((used)) ADC_CORE1_InterruptHandler( void )
 {
    uint32_t status;
 
@@ -379,7 +382,8 @@ void ADC_CORE1_InterruptHandler( void )
 
    if (ADC_CoreCallbackObj[0].callback != NULL)
    {
-       ADC_CoreCallbackObj[0].callback(status, ADC_CoreCallbackObj[0].context);
+       uintptr_t context = ADC_CoreCallbackObj[0].context;
+       ADC_CoreCallbackObj[0].callback(status, context);
    }
 }
 

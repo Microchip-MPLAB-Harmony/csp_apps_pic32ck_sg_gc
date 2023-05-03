@@ -407,9 +407,9 @@ void SYS_Initialize ( void* data )
 
     DMA0_Initialize();
 
-    PM_Initialize();
-
     SERCOM5_USART_Initialize();
+
+    PM_Initialize();
 
     ADC_Initialize();
 
