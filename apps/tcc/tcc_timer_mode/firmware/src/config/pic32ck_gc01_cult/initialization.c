@@ -378,9 +378,9 @@ void SYS_Initialize ( void* data )
 
 
 
-    EVSYS_Initialize();
-
     TCC0_TimerInitialize();
+
+    EVSYS_Initialize();
 
     PM_Initialize();
 
