@@ -136,7 +136,7 @@ uint32_t TCC3_Compare32bitPeriodGet( void );
 
 uint32_t TCC3_Compare32bitCounterGet( void );
 
-void TCC3_Compare32bitCounterSet( uint32_t count );
+void TCC3_Compare32bitCounterSet( uint32_t countVal );
 
 bool TCC3_Compare32bitMatchSet(TCC3_CHANNEL_NUM channel, uint32_t compareValue );
 
