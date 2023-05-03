@@ -382,9 +382,9 @@ void SYS_Initialize ( void* data )
 
     DMA0_Initialize();
 
-    SERCOM5_USART_Initialize();
-
     PM_Initialize();
+
+    SERCOM5_USART_Initialize();
 
 
 
