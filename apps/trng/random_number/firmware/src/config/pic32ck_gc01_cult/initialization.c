@@ -405,9 +405,9 @@ void SYS_Initialize ( void* data )
 
     EVSYS_Initialize();
 
-    PM_Initialize();
-
 	TRNG_Initialize();
+
+    PM_Initialize();
 
     SERCOM5_USART_Initialize();
 
