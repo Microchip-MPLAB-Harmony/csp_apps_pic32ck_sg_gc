@@ -729,7 +729,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult\PIC32CK2051GC01144.ld</file>
-         <hash>0ab02aa97f10c8e86ec14c6dbb5a889476d05de049c231a2fb1bdeaf8295528c</hash>
+         <hash>4c075fefa2949727edbf2fa5017c21ab99622f07d74a40df765ef9a9a2260e10</hash>
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult\peripheral\clock\plib_clock.c</file>
@@ -788,12 +788,12 @@
          <hash>5117c844c51e88132b384c381a94d9cc9e68777352e4ab4dc39c261d210b3ebd</hash>
       </entry>
       <entry>
-         <file>..\src\config\pic32ck_gc01_cult\peripheral\pm\plib_pm.h</file>
-         <hash>37890f6427dd8228e6743897f657f0d22cd7f8ea500c2b6e1bca643804728eb4</hash>
-      </entry>
-      <entry>
          <file>..\src\packs\PIC32CK2051GC01144_DFP\component\ccl.h</file>
          <hash>d04100befce1441484b0bfa4170b6294a79e9bec5618daa6148c500dfe24754b</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\pic32ck_gc01_cult\peripheral\pm\plib_pm.h</file>
+         <hash>37890f6427dd8228e6743897f657f0d22cd7f8ea500c2b6e1bca643804728eb4</hash>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CK2051GC01144_DFP\component\pac.h</file>
@@ -917,7 +917,7 @@
       </entry>
       <entry>
          <file>..\src\config\pic32ck_gc01_cult\pin_configurations.csv</file>
-         <hash>37010d13f16c6853517121bcb350a2198cf3178637284d3d4e05fbe060574d31</hash>
+         <hash/>
       </entry>
       <entry>
          <file>..\src\packs\PIC32CK2051GC01144_DFP\instance\sercom1.h</file>

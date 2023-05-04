@@ -11,7 +11,7 @@
             <sourceRootList/>
             <confList>
                 <confElem>
-                    <name>default</name>
+                    <name>pic32ck_gc01_cult</name>
                     <type>2</type>
                 </confElem>
             </confList>
