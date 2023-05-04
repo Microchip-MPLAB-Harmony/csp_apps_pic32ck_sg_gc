@@ -4,14 +4,14 @@
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
             <name>dsu_crc32_generate_pic32ck_gc01_cult</name>
-            <creation-uuid>d2a10d53-8190-49cf-bc9b-87520e4b8956</creation-uuid>
+            <creation-uuid>b401e533-e995-455c-b085-6b0eb0d4171a</creation-uuid>
             <make-project-type>0</make-project-type>
             <sourceEncoding>ISO-8859-1</sourceEncoding>
             <make-dep-projects/>
             <sourceRootList/>
             <confList>
                 <confElem>
-                    <name>default</name>
+                    <name>pic32ck_gc01_cult</name>
                     <type>2</type>
                 </confElem>
             </confList>
