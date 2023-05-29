@@ -1,5 +1,5 @@
 ---
-parent: Harmony 3 peripheral library application examples for PIC32CK SG/GC family
+parent: Harmony 3 peripheral library application examples for PIC32CK-GC/SG family
 title: CAN FD interrupt 
 has_children: false
 has_toc: false

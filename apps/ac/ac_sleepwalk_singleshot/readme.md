@@ -1,5 +1,5 @@
 ---
-parent: Harmony 3 peripheral library application examples for PIC32CK SG/GC Family
+parent: Harmony 3 peripheral library application examples for PIC32CK-GC/SG family
 title: AC Sleepwalking
 has_children: false
 has_toc: false

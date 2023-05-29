@@ -1,5 +1,5 @@
 ---
-parent: Harmony 3 peripheral library application examples for PIC32CK SG/GC Family
+parent: Harmony 3 peripheral library application examples for PIC32CK-GC/SG family
 title: TRAM erase on tamper detect 
 has_children: false
 has_toc: false
