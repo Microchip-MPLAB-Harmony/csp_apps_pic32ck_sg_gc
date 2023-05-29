@@ -3,11 +3,11 @@
 	"category": "com.microchip.ide.project",
 	"content": {
 		"metaDataVersion": "1.1.0",
-		"name": "com.microchip.mcu32.mplabx.project.csp_apps_pic32ck_sg_gc_sqi_read_write",
+		"name": "com.microchip.mcu32.mplabx.project.csp_apps_pic32ck_sg_gc_dma_crc32_generate",
 		"version": "3.0.0",
-		"displayName": "SQI flash read write Example for PIC32CK_GC Family",
-		"projectName": "sqi_read_write_pic32ck_gc01_cult",
-		"shortDescription": "This example application demonstrates how to use the SQI Peripheral library to perform erase, write and read operation with the on-board SST26 SQI Serial Flash memory.",
+		"displayName": "DMA CRC-32 Generation Example for PIC32CK_GC Family",
+		"projectName": "dma_crc32_generate_pic32ck_gc01_cult",
+		"shortDescription": "This example application demonstrates how to use the DMA peripheral to compute 32-bit Cyclic Redundancy Checksum (CRC).",
 		"ide": {
 			"name": "MPLABX",
 			"semverRange": ">=6.5.0"
@@ -45,22 +45,26 @@
 			[
 				"Harmony",
 				"Peripherals",
-				"SQI"
+				"DMAC"
 			],
 			[
 				"Peripherals",
-				"SQI"
+				"DMAC"
 			]
 		],
 		"peripherals": [
-			"SQI"
+			"DMAC"
 		],
 		"keywords": [
 			"MHC",
 			"Harmony",
 			"PIC32CK2051GC01144",
 			"PIC32CK_GC Family",
-			"Serial Quad Interface"
+			"DMA",
+			"Direct Memory Access",
+			"DMA Memory Transfer",
+			"DMA Controller",
+			"CRC"
 		],
 		"additionalData": {
 			"longDescription": {
