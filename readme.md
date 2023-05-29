@@ -44,9 +44,10 @@ The following applications are provided to demonstrate the typical or interestin
 | [CAN FD interrupt](apps/can/can_fd_operation_interrupt_timestamp/readme.md) | This example application shows how to use the CAN module to transmit and receive CAN FD messages in interrupt mode |
 | [CAN blocking](apps/can/can_normal_operation_blocking/readme.md) | This example application shows how to use the CAN module to transmit and receive normal CAN messages in polling mode |
 | [Clock configuration](apps/clock/clock_config/readme.md) | This example application shows how to configure the clock system to run the device at maximum frequency. It also outputs a prescaled clock signal on a GPIO pin for measurement and verification |
+| [DMA CRC-32 Generation](apps/dma/dma_crc32_generate/readme.md) | This example application demonstrates how to use the DMA peripheral to compute 32-bit Cyclic Redundancy Checksum (CRC) |
 | [DMAC memory transfer](apps/dma/dma_memory_transfer/readme.md) | This example application demonstrates how to use the DMAC peripheral to do a memory to memory transfer |
 | [DMAC USART echo](apps/dma/dma_usart_echo/readme.md) | This example application demonstrates USART transfer with DMA to receive 10 bytes and echo back the received bytes |
-| [DSU compute CRC32](apps/dsu/dsu_crc32_generate/readme.md) | This example application demonstrates how to use the DSU Peripheral library to compute 32-bit Cyclic Redundancy Checksum (CRC) |
+| [DSU CRC32 Generate](apps/dsu/dsu_crc32_generate/readme.md) | This example application demonstrates how to use the DSU Peripheral library to compute 32-bit Cyclic Redundancy Checksum (CRC) |
 | [EIC Interrupt](apps/eic/eic_led_on_off/readme.md) | This example application demonstrates how to generate interrupt using the EIC on switch press and indicate it through an LED |
 | [EVSYS trigger](apps/evsys/evsys_trigger/readme.md) | This example application demonstrates how to use the EVSYS Peripheral library to setup autonomous, low-latency and configurable communication between peripherals |
 | [FCW read write](apps/fcw/flash_read_write/readme.md) | This example application demonstrates how to use the FCW to erase and program the internal Flash memory |
@@ -58,7 +59,7 @@ The following applications are provided to demonstrate the typical or interestin
 | [RSTC reset cause](apps/rstc/rstc_reset_cause/readme.md) | This example shows how to use the RSTC peripheral to indicate the cause of the device reset |
 | [RTC alarm interrupt](apps/rtc/rtc_alarm/readme.md) | This example shows how to use the RTC to configure the time and generate the alarm |
 | [RTC periodic interrupt](apps/rtc/rtc_periodic_timeout/readme.md) | This example application shows how to use the RTC to generate periodic interrupts |
-| [SERCOM I2C EEPROM read write](apps/sercom/i2c/master/i2c_eeprom/readme.md) | This example application demonstrates how to use the SERCOM peripheral to write and read from the I2C serial EEPROM memory |
+| [SERCOM I2C EEPROM read write](apps/sercom/i2c/Master/i2c_eeprom/readme.md) | This example application demonstrates how to use the SERCOM peripheral to write and read from the I2C serial EEPROM memory |
 | [SERCOM SPI EEPROM read write](apps/sercom/spi/master/spi_eeprom_write_read/readme.md) | This example application demonstrates how to use the SERCOM SPI peripheral to write and read from the SPI serial EEPROM memory |
 | [SERCOM SPI interrupt](apps/sercom/spi/master/spi_self_loopback_interrupt/readme.md) | This example application shows how to use SERCOM SPI PLIB with external loop back to write and then read back an array of data in interrupt mode |
 | [SERCOM USART blocking](apps/sercom/usart/usart_echo_blocking/readme.md) | This example application demonstrates how to use the SERCOM peripheral in USART mode to transfer block of data in a blocking manner |
@@ -72,9 +73,9 @@ The following applications are provided to demonstrate the typical or interestin
 | [TCC timer mode](apps/tcc/tcc_timer_mode/readme.md) | This example shows how to use the TCC module in timer mode to generate periodic interrupt |
 | [TRAM erase on tamper detect](apps/tram/tram_tamper_erase/readme.md) | This example application shows how to configure and use tamper detect feature of RTC and TrustRam |
 | [TRNG random number](apps/trng/random_number/readme.md) | This example shows how to use the TRNG Peripheral library to generate and read a random number |
+| [TrustZone Systick periodic timeout](apps/trustzone/systick_period_timeout/readme.md) | This example application shows how to use the SysTick to generate periodic interrupts on both Secure and Non-secure modes |
+| [Secure TCC demonstration](apps/trustzone/tcc/readme.md) | This example application performs a PWM signal applied on PD20 pin (LED0) based on TCC0 peripheral |
 | [WDT timeout](apps/wdt/wdt_timeout/readme.md) | This example shows how to generate a Watchdog timer reset by emulating a deadlock |
-| [Trustzone Systick periodic interrupt](apps/trustzone/systick_periodic_timeout/readme.md) | This example shows how to use the SysTick to generate periodic interrupts on both Secure and Non-secure modes |
-| [TrustZone Secure TCC demonstration](apps/trustZone/tcc/readme.md) | This example application performs a PWM signal applied on PD20 pin (LED0) based on TCC0 peripheral |
 
 ____
 
