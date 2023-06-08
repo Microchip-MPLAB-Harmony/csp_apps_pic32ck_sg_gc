@@ -228,6 +228,7 @@
     <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="false">
       <itemPath>Makefile</itemPath>
       <itemPath>dma_memory_transfer_pic32ck_gc01_cult.mc3</itemPath>
+      <itemPath>../src/config/pic32ck_gc01_cult/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
