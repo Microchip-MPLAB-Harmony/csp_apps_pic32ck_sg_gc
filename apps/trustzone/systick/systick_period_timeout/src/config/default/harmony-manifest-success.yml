@@ -4,18 +4,18 @@
 
 
 project: systick_period_timeout
-creation_date: 2024-04-24T17:55:45.442+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2024-10-24T14:03:10.968+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 10
 mcc_mode: IDE            # [IDE|Standalone|Headless]
 mcc_version: v5.5.1
 mcc_core_version: v5.7.1
 mplabx_version: v6.20        # if MPLAB X plugin only
-harmony_version: v1.5.2
+harmony_version: v1.5.3
 compiler: XC32 4.35
 
 modules:
-    - {name: "csp", version: "v3.18.5"}
-    - {name: "CMSIS_5", version: "5.8.0"}
+    - {name: "csp", version: "v3.20.0-rc.1-13-g1e373d5"}
+    - {name: "CMSIS_5", version: "5.9.0"}
 
 packs:
     - {name: "PIC32CK-SG_DFP", version: "1.3.168"}

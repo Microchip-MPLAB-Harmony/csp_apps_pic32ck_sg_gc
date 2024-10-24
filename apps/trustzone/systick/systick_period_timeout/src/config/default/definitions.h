@@ -61,13 +61,13 @@ extern "C" {
 // DOM-IGNORE-END
 
 /* Device Information */
-#define DEVICE_NAME			 "PIC32CK2051SG01144"
-#define DEVICE_ARCH			 "CORTEX-M33"
-#define DEVICE_FAMILY		 "PIC32CK"
-#define DEVICE_SERIES		 "PIC32CKSG01"
+#define DEVICE_NAME          "PIC32CK2051SG01144"
+#define DEVICE_ARCH          "CORTEX-M33"
+#define DEVICE_FAMILY        "PIC32CK"
+#define DEVICE_SERIES        "PIC32CKSG01"
 
 /* CPU clock frequency */
-#define CPU_CLOCK_FREQUENCY 120000000
+#define CPU_CLOCK_FREQUENCY 120000000U
 
 // *****************************************************************************
 // *****************************************************************************
