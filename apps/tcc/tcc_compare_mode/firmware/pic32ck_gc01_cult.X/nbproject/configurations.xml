@@ -80,7 +80,6 @@
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/adc.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/pcc.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/fcw.h</itemPath>
-            <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/sig.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/can.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/pdec.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/spi_ixs.h</itemPath>
@@ -122,7 +121,6 @@
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/oscctrl.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/sercom4.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/sercom0.h</itemPath>
-            <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/sig.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/tcc2.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/usb.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/pdec.h</itemPath>

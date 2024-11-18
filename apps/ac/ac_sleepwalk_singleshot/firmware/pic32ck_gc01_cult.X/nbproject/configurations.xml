@@ -78,7 +78,6 @@
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/ptc.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/eth.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/prm.h</itemPath>
-            <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/sig.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/usbhs.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/evsys.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/pcc.h</itemPath>
@@ -164,7 +163,6 @@
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/hmatrix.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/ac.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/pm.h</itemPath>
-            <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/sig.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/rstc.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/pcc.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/adc.h</itemPath>

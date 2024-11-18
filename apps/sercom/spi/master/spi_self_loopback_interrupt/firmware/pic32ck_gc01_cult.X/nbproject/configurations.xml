@@ -89,7 +89,6 @@
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/supc.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/cmcc.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/usb.h</itemPath>
-            <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/sig.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/hmatrix2.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/pac.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/ptc.h</itemPath>
@@ -115,7 +114,6 @@
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/can0.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/dma1.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/adc.h</itemPath>
-            <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/sig.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/pm.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/tram.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/sqi.h</itemPath>

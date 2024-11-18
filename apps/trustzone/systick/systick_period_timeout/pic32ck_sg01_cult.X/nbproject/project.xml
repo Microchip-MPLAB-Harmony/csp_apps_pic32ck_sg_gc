@@ -3,7 +3,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>pic32ck_sg01_cult</name>
+            <name>systick_periodic_timeout_pic32ck_sg01_cult</name>
             <creation-uuid>a69a4ba2-7efc-467e-abc4-591aac0e0c9d</creation-uuid>
             <make-project-type>0</make-project-type>
             <sourceEncoding>ISO-8859-1</sourceEncoding>

@@ -4,7 +4,7 @@
 
 
 project: tcc_secure
-creation_date: 2024-10-24T14:14:43.225+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2024-11-18T21:30:38.633+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 10
 mcc_mode: IDE            # [IDE|Standalone|Headless]
 mcc_version: v5.5.1
@@ -14,7 +14,7 @@ harmony_version: v1.5.3
 compiler: XC32 4.45
 
 modules:
-    - {name: "csp", version: "v3.20.0-rc.1-13-g1e373d5"}
+    - {name: "csp", version: "v3.20.0"}
     - {name: "CMSIS_5", version: "5.9.0"}
 
 packs:

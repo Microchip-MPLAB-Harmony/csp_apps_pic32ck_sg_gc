@@ -100,7 +100,6 @@
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/tcc.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/oscctrl.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/rstc.h</itemPath>
-            <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/sig.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/hmatrix2.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/pdec.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/idau.h</itemPath>
@@ -137,7 +136,6 @@
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/tcc7.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/pcc.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/prm.h</itemPath>
-            <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/sig.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/eth.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/idau.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/usb.h</itemPath>

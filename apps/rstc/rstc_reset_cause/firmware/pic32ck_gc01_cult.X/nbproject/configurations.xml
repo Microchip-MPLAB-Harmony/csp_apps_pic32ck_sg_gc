@@ -102,7 +102,6 @@
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/tcc.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/ebi.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/eic.h</itemPath>
-            <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/sig.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/wdt.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/adc.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/pcc.h</itemPath>
@@ -164,7 +163,6 @@
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/eth.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/gclk.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/mclk.h</itemPath>
-            <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/sig.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/sercom7.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/tcc6.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/ebi.h</itemPath>
