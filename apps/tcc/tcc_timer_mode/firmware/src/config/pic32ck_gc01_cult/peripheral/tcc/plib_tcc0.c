@@ -62,7 +62,7 @@
 // *****************************************************************************
 // *****************************************************************************
 
-volatile static TCC_CALLBACK_OBJECT TCC0_CallbackObject;
+static volatile TCC_CALLBACK_OBJECT TCC0_CallbackObject;
 
 // *****************************************************************************
 // *****************************************************************************
@@ -135,7 +135,7 @@ void TCC0_TimerCommandSet(TCC_COMMAND command)
     while((TCC0_REGS->TCC_SYNCBUSY) != 0U)
     {
         /* Wait for Write Synchronization */
-    }    
+    }
 }
 
 /* Configure timer period */
@@ -169,7 +169,7 @@ uint32_t TCC0_Timer32bitCounterGet( void )
     {
         /* Wait for CMD to become zero */
     }
-    
+
     /* Read current count value */
     return TCC0_REGS->TCC_COUNT;
 }
@@ -200,7 +200,7 @@ void __attribute__((used)) TCC0_OTHER_InterruptHandler( void )
     uint32_t status;
     /* Additional local variable to prevent MISRA C violations (Rule 13.x) */
     uintptr_t context;
-    context = TCC0_CallbackObject.context;    
+    context = TCC0_CallbackObject.context;
     status = (TCC0_REGS->TCC_INTFLAG & 0xFFFFU);
     /* Clear interrupt flags */
     TCC0_REGS->TCC_INTFLAG = 0xFFFFU;
