@@ -213,8 +213,18 @@
       <itemPath>../src/config/pic32ck_gc01_cult/pin_configurations.csv</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="false">
+      <logicalFolder name="dsu_crc32_generate_pic32ck_gc01_cult_pic32ck_gc01_cult" displayName="dsu_crc32_generate_pic32ck_gc01_cult_pic32ck_gc01_cult" projectFiles="true">
+        <itemPath>dsu_crc32_generate_pic32ck_gc01_cult_pic32ck_gc01_cult/mcc-config.mc4</itemPath>
+        <logicalFolder name="components" displayName="components" projectFiles="true">
+          <itemPath>dsu_crc32_generate_pic32ck_gc01_cult_pic32ck_gc01_cult/components/cmsis.yml</itemPath>
+          <itemPath>dsu_crc32_generate_pic32ck_gc01_cult_pic32ck_gc01_cult/components/core.yml</itemPath>
+          <itemPath>dsu_crc32_generate_pic32ck_gc01_cult_pic32ck_gc01_cult/components/dfp.yml</itemPath>
+          <itemPath>dsu_crc32_generate_pic32ck_gc01_cult_pic32ck_gc01_cult/components/dsu.yml</itemPath>
+          <itemPath>dsu_crc32_generate_pic32ck_gc01_cult_pic32ck_gc01_cult/components/evsys.yml</itemPath>
+          <itemPath>dsu_crc32_generate_pic32ck_gc01_cult_pic32ck_gc01_cult/components/pm.yml</itemPath>
+        </logicalFolder>
+      </logicalFolder>
       <itemPath>Makefile</itemPath>
-      <itemPath>dsu_crc32_generate_pic32ck_gc01_cult.mc3</itemPath>
       <itemPath>../src/config/pic32ck_gc01_cult/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
   </logicalFolder>
@@ -228,7 +238,7 @@
         <targetPluginBoard/>
         <platformTool>pkob4hybrid</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.45</languageToolchainVersion>
+        <languageToolchainVersion>4.60</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
