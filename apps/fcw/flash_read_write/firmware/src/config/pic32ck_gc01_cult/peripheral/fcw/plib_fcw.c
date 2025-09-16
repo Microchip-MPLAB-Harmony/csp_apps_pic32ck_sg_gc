@@ -88,7 +88,7 @@ typedef struct
     uintptr_t Context;
 }fcwCallbackObjType;
 
-volatile static fcwCallbackObjType fcwCallbackObj;
+static volatile fcwCallbackObjType fcwCallbackObj;
 
 /* ************************************************************************** */
 /* ************************************************************************** */
