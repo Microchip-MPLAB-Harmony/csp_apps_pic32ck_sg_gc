@@ -1,0 +1,275 @@
+configVersion: 1.0.0
+componentName: tcc1
+coreVersion: 5.8.2
+device: PIC32CK2051GC01144
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: tcc1
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: CMSIS_5
+  type: package
+  version: 5.9.0
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.23.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: tcc1
+          x: '279'
+          y: '32'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    INTR_PWM_FAULT:
+      attributes:
+        id: INTR_PWM_FAULT
+      children:
+      - children:
+        - attributes:
+            id: tcc1
+            value: TCC1_OTHER_IRQn
+          type: Dynamic
+        type: Values
+      type: String
+    PWM_CALLBACK_API:
+      attributes:
+        id: PWM_CALLBACK_API
+      children:
+      - children:
+        - attributes:
+            id: tcc1
+            value: TCC1_PWMCallbackRegister
+          type: Dynamic
+        type: Values
+      type: String
+    PWM_GET_PERIOD_API:
+      attributes:
+        id: PWM_GET_PERIOD_API
+      children:
+      - children:
+        - attributes:
+            id: tcc1
+            value: TCC1_PWM32bitPeriodGet
+          type: Dynamic
+        type: Values
+      type: String
+    PWM_OUTPUT_DISABLE_API:
+      attributes:
+        id: PWM_OUTPUT_DISABLE_API
+      children:
+      - children:
+        - attributes:
+            id: tcc1
+            value: TCC1_PWMPatternSet
+          type: Dynamic
+        type: Values
+      type: String
+    PWM_OUTPUT_ENABLE_API:
+      attributes:
+        id: PWM_OUTPUT_ENABLE_API
+      children:
+      - children:
+        - attributes:
+            id: tcc1
+            value: TCC1_PWMPatternSet
+          type: Dynamic
+        type: Values
+      type: String
+    PWM_PATTERN_MASK:
+      attributes:
+        id: PWM_PATTERN_MASK
+      children:
+      - children:
+        - attributes:
+            id: tcc1
+            value: '119'
+          type: Dynamic
+        type: Values
+      type: Hex
+    PWM_PH_MASK:
+      attributes:
+        id: PWM_PH_MASK
+      children:
+      - children:
+        - attributes:
+            id: tcc1
+            value: '7'
+          type: Dynamic
+        type: Values
+      type: Hex
+    PWM_PH_U:
+      attributes:
+        id: PWM_PH_U
+      children:
+      - children:
+        - attributes:
+            id: tcc1
+            value: TCC1CHANNEL0
+          type: Dynamic
+        type: Values
+      type: String
+    PWM_PH_V:
+      attributes:
+        id: PWM_PH_V
+      children:
+      - children:
+        - attributes:
+            id: tcc1
+            value: TCC1CHANNEL1
+          type: Dynamic
+        type: Values
+      type: String
+    PWM_PH_W:
+      attributes:
+        id: PWM_PH_W
+      children:
+      - children:
+        - attributes:
+            id: tcc1
+            value: TCC1CHANNEL2
+          type: Dynamic
+        type: Values
+      type: String
+    PWM_SET_DUTY_API:
+      attributes:
+        id: PWM_SET_DUTY_API
+      children:
+      - children:
+        - attributes:
+            id: tcc1
+            value: TCC1_PWM32bitDutySet
+          type: Dynamic
+        type: Values
+      type: String
+    PWM_START_API:
+      attributes:
+        id: PWM_START_API
+      children:
+      - children:
+        - attributes:
+            id: tcc1
+            value: TCC1_PWMStart
+          type: Dynamic
+        type: Values
+      type: String
+    PWM_STOP_API:
+      attributes:
+        id: PWM_STOP_API
+      children:
+      - children:
+        - attributes:
+            id: tcc1
+            value: TCC1_PWMStop
+          type: Dynamic
+        type: Values
+      type: String
+    TCC_0_WAVE_POL:
+      attributes:
+        id: TCC_0_WAVE_POL
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            value: '1'
+          type: User
+        type: Values
+      type: KeyValueSet
+    TCC_1_WAVE_POL:
+      attributes:
+        id: TCC_1_WAVE_POL
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            value: '1'
+          type: User
+        type: Values
+      type: KeyValueSet
+    TCC_INTENSET_OVF:
+      attributes:
+        id: TCC_INTENSET_OVF
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    TCC_PER_PER:
+      attributes:
+        id: TCC_PER_PER
+      children:
+      - children:
+        - attributes:
+            value: '1200'
+          type: User
+        type: Values
+      type: Long
+    TCC_PWM_INTERRUPT_MODE:
+      attributes:
+        id: TCC_PWM_INTERRUPT_MODE
+      children:
+      - children:
+        - attributes:
+            id: tcc1
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    TCC_WAVE_WAVEGEN:
+      attributes:
+        id: TCC_WAVE_WAVEGEN
+      children:
+      - children:
+        - attributes:
+            value: '2'
+          type: User
+        type: Values
+      type: KeyValueSet
+    TCC_WEXCTRL_DTHS:
+      attributes:
+        id: TCC_WEXCTRL_DTHS
+      children:
+      - children:
+        - attributes:
+            value: '60'
+          type: User
+        type: Values
+      type: Integer
+    TCC_WEXCTRL_DTLS:
+      attributes:
+        id: TCC_WEXCTRL_DTLS
+      children:
+      - children:
+        - attributes:
+            value: '30'
+          type: User
+        type: Values
+      type: Integer
+  userData: {}
