@@ -94,9 +94,9 @@ void TCC0_CompareInitialize( void )
     TCC0_REGS->TCC_WEXCTRL = TCC_WEXCTRL_OTMX(0UL);
 
 
-    
+
     TCC0_REGS->TCC_PER = 10500U;
-    
+
     TCC0_REGS->TCC_CC[0] = 1800U;
     TCC0_REGS->TCC_CC[1] = 24U;
     TCC0_REGS->TCC_CC[2] = 24U;
@@ -145,7 +145,7 @@ void TCC0_CompareCommandSet(TCC_COMMAND command)
     while ((TCC0_REGS->TCC_SYNCBUSY & TCC_SYNCBUSY_CTRLB_Msk) == TCC_SYNCBUSY_CTRLB_Msk)
     {
         /* Wait for Write Synchronization */
-    }    
+    }
 }
 
 /* Get the current counter value */
