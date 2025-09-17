@@ -184,7 +184,6 @@
                    displayName="Important Files"
                    projectFiles="true">
       <itemPath>Makefile</itemPath>
-      <itemPath>../../tcc_secure/pic32ck_sg01_cult.X/pic32ck_sg01_cult.mc3</itemPath>
       <itemPath>../../tcc_secure/pic32ck_sg01_cult.X/tcc_secure_pic32ck_sg01_cult_default/mcc-config.mc4</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
