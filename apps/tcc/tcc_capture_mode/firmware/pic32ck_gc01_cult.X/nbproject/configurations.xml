@@ -207,7 +207,7 @@
         <itemPath>tcc_capture_mode_pic32ck_gc01_cult_pic32ck_gc01_cult/mcc-config.mc4</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
-      <itemPath>../src/config/pic32ck_gc01_cult/harmony-manifest-success.yml</itemPath>
+      <itemPath>../src/config/pic32ck_gc01_cult/pin_configurations.csv</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -272,7 +272,6 @@
           <itemPath>../src/config/pic32ck_gc01_cult/initialization.c</itemPath>
         </logicalFolder>
       </logicalFolder>
-      <itemPath>../src/config/pic32ck_gc01_cult/pin_configurations.csv</itemPath>
       <itemPath>../src/main.c</itemPath>
     </logicalFolder>
   </logicalFolder>
@@ -291,7 +290,7 @@
       </toolsSet>
       <packs>
         <pack name="PIC32CK-GC_DFP" vendor="Microchip" version="1.1.148"/>
-        <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
+        <pack name="CMSIS" vendor="ARM" version="5.9.0"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -407,7 +406,7 @@
         <property key="no-startup-files" value="false"/>
         <property key="oXC32ld-extra-opts" value=""/>
         <property key="optimization-level" value=""/>
-        <property key="preprocessor-macros" value=""/>
+        <property key="preprocessor-macros" value="VECTOR_REGION=boot_rom"/>
         <property key="remove-unused-sections" value="true"/>
         <property key="report-memory-usage" value="false"/>
         <property key="serial-length" value=""/>

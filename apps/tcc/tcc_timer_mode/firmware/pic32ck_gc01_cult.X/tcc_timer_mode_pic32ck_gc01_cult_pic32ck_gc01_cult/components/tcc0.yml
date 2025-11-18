@@ -127,7 +127,7 @@ data:
             id: max
           children:
           - type: Value
-            value: 7.3300776E7
+            value: '7.3300776E7'
           type: Float
         type: Attributes
       - children:

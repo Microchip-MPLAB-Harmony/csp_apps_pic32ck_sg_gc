@@ -18,7 +18,7 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\pic32ck_gc01_cult\PIC32CK2051GC01144.ld
   hash: af9a19827cf903f321899b3b2b1715dc351398e44d8ddc0b6d1afc5939c3a432
 - file: ..\src\config\pic32ck_gc01_cult\definitions.h
-  hash: bc1afb4be5d9233be453254108f8e2014032ef57f8794d37268b48dc30f0c16e
+  hash: ed5176372b16b27c4dd0ac8ebfc02fcc487f36faf2aea037851df67be9c22a41
 - file: ..\src\config\pic32ck_gc01_cult\device.h
   hash: 16c68b32ace41533b1b0f8cffc704dfea71c361c40fbc7fdab13f96645707c9f
 - file: ..\src\config\pic32ck_gc01_cult\device_cache.h
@@ -28,7 +28,7 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\pic32ck_gc01_cult\exceptions.c
   hash: 42f9da2668e04ccb3473d45b149683a00f80072c6883c7918d6ce93997cd6987
 - file: ..\src\config\pic32ck_gc01_cult\initialization.c
-  hash: fe96e5b030c85f7ed6209e381f44309df05ae1b223626cb6486d0550958789a1
+  hash: 726634c25d38852417624d321b9473551099b3fc99c70b5e2aa1fd257310e691
 - file: ..\src\config\pic32ck_gc01_cult\interrupts.c
   hash: 95b23aa7090d829e66dbd4e5e9dbd608fe19d634205c03e1ed722606e6414e8e
 - file: ..\src\config\pic32ck_gc01_cult\interrupts.h
