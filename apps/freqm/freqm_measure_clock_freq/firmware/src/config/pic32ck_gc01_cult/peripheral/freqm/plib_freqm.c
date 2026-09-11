@@ -142,9 +142,9 @@ uint32_t FREQM_FrequencyGet(void)
 {
     uint64_t result = 0U;
 
-    result = FREQM_Mul32x32(FREQM_REGS->FREQM_VALUE, 32768UL);
+    result = FREQM_Mul32x32((FREQM_REGS->FREQM_VALUE + 1UL), 32768UL);
 
-    result = (result >> 7);
+    result = result/(128UL + 1UL);
 
     return (uint32_t)result;
 }
