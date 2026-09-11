@@ -192,7 +192,7 @@ void TCC1_PWM32bitCounterSet (uint32_t countVal)
 /* Enable forced synchronous update */
 void TCC1_PWMForceUpdate(void)
 {
-    TCC1_REGS->TCC_CTRLBSET |= (uint8_t)TCC_CTRLBCLR_CMD_UPDATE;
+    TCC1_REGS->TCC_CTRLBSET |= (uint8_t)TCC_CTRLBSET_CMD_UPDATE;
     while ((TCC1_REGS->TCC_SYNCBUSY & TCC_SYNCBUSY_CTRLB_Msk) == TCC_SYNCBUSY_CTRLB_Msk)
     {
         /* Wait for sync */
