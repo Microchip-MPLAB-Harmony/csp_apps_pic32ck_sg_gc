@@ -56,7 +56,7 @@ static volatile sqiCallbackObjType SQICallbackObj;
 void SQI_Initialize(void)
 {
     // Reset and Disable SQI
-    SQI_REGS->SQI_CTRLA =  SQI_CTRLA_SWRST_Msk  ;
+    SQI_REGS->SQI_CTRLA =  1U  ;
 
     while((SQI_REGS->SQI_SYNCBUSY & SQI_SYNCBUSY_SWRST_Msk) == SQI_SYNCBUSY_SWRST_Msk)
     {

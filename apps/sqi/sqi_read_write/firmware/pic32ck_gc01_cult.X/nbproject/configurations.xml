@@ -45,15 +45,18 @@
           <logicalFolder name="CMSIS" displayName="CMSIS" projectFiles="true">
             <logicalFolder name="Core" displayName="Core" projectFiles="true">
               <logicalFolder name="Include" displayName="Include" projectFiles="true">
-                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang_ltm.h</itemPath>
+                <logicalFolder name="m-profile" displayName="m-profile" projectFiles="true">
+                  <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/m-profile/cmsis_gcc_m.h</itemPath>
+                  <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/m-profile/armv7m_cachel1.h</itemPath>
+                  <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/m-profile/cmsis_iccarm_m.h</itemPath>
+                  <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/m-profile/cmsis_armclang_m.h</itemPath>
+                  <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/m-profile/armv8m_mpu.h</itemPath>
+                </logicalFolder>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_version.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_gcc.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_compiler.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/mpu_armv8.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armcc.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/core_cm33.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cachel1_armv7.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_iccarm.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/tz_context.h</itemPath>
               </logicalFolder>
@@ -105,6 +108,7 @@
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/fuses.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/hmatrix2.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/fcr.h</itemPath>
+            <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/mcramc.h</itemPath>
           </logicalFolder>
           <logicalFolder name="instance" displayName="instance" projectFiles="true">
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/sercom2.h</itemPath>
@@ -165,6 +169,8 @@
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/can1.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/oscctrl.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/sercom0.h</itemPath>
+            <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/flexram.h</itemPath>
+            <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/bsdap.h</itemPath>
           </logicalFolder>
           <logicalFolder name="pio" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/pio/pic32ck2051gc01144.h</itemPath>
@@ -180,17 +186,21 @@
                      displayName="sqi_read_write_pic32ck_gc01_cult_pic32ck_gc01_cult"
                      projectFiles="true">
         <logicalFolder name="components" displayName="components" projectFiles="true">
+          <itemPath>sqi_read_write_pic32ck_gc01_cult_pic32ck_gc01_cult/components/evsys.yml</itemPath>
+          <itemPath>sqi_read_write_pic32ck_gc01_cult_pic32ck_gc01_cult/components/sqi.yml</itemPath>
+          <itemPath>sqi_read_write_pic32ck_gc01_cult_pic32ck_gc01_cult/components/dfp.yml</itemPath>
+          <itemPath>sqi_read_write_pic32ck_gc01_cult_pic32ck_gc01_cult/components/pm.yml</itemPath>
           <itemPath>sqi_read_write_pic32ck_gc01_cult_pic32ck_gc01_cult/components/cmsis.yml</itemPath>
           <itemPath>sqi_read_write_pic32ck_gc01_cult_pic32ck_gc01_cult/components/core.yml</itemPath>
-          <itemPath>sqi_read_write_pic32ck_gc01_cult_pic32ck_gc01_cult/components/dfp.yml</itemPath>
-          <itemPath>sqi_read_write_pic32ck_gc01_cult_pic32ck_gc01_cult/components/evsys.yml</itemPath>
-          <itemPath>sqi_read_write_pic32ck_gc01_cult_pic32ck_gc01_cult/components/pm.yml</itemPath>
-          <itemPath>sqi_read_write_pic32ck_gc01_cult_pic32ck_gc01_cult/components/sqi.yml</itemPath>
         </logicalFolder>
         <itemPath>sqi_read_write_pic32ck_gc01_cult_pic32ck_gc01_cult/mcc-config.mc4</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/pic32ck_gc01_cult/pin_configurations.csv</itemPath>
+    </logicalFolder>
+    <logicalFolder name="LibraryFiles"
+                   displayName="LibraryFiles"
+                   projectFiles="true">
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -259,12 +269,12 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>pkob4hybrid</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>5.00</languageToolchainVersion>
+        <languageToolchainVersion>6.00</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
         <pack name="CMSIS" vendor="ARM" version="5.9.0"/>
-        <pack name="PIC32CK-GC_DFP" vendor="Microchip" version="1.1.148"/>
+        <pack name="PIC32CK-GC_DFP" vendor="Microchip" version="1.5.239"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
