@@ -658,7 +658,7 @@ void CAN0_InterruptClear(CAN_INTERRUPT_MASK interruptMask)
    Returns:
     None
 */
-/* MISRA C-2012 Rule 11.3 violated 7 times below. Deviation record ID - H3_MISRAC_2012_R_11_3_DR_1*/
+/* MISRA C-2023 Rule 11.3 violated 7 times below. Deviation record ID - H3_MISRAC_2023_R_11_3_DR_1*/
 void CAN0_MessageRAMConfigSet(uint8_t *msgRAMConfigBaseAddress)
 {
     uint32_t offset = 0U;
@@ -734,7 +734,7 @@ void CAN0_MessageRAMConfigSet(uint8_t *msgRAMConfigBaseAddress)
         /* Wait for configuration complete */
     }
 }
-/* MISRAC 2012 deviation block end for 11.3 */
+/* MISRAC 2023 deviation block end for 11.3 */
 
 
 // *****************************************************************************
