@@ -27,16 +27,19 @@
           <logicalFolder name="CMSIS" displayName="CMSIS" projectFiles="true">
             <logicalFolder name="Core" displayName="Core" projectFiles="true">
               <logicalFolder name="Include" displayName="Include" projectFiles="true">
+                <logicalFolder name="m-profile" displayName="m-profile" projectFiles="true">
+                  <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/m-profile/cmsis_iccarm_m.h</itemPath>
+                  <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/m-profile/cmsis_gcc_m.h</itemPath>
+                  <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/m-profile/cmsis_armclang_m.h</itemPath>
+                  <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/m-profile/armv8m_mpu.h</itemPath>
+                  <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/m-profile/armv7m_cachel1.h</itemPath>
+                </logicalFolder>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_version.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_compiler.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_iccarm.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_gcc.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armcc.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang_ltm.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/core_cm33.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/mpu_armv8.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cachel1_armv7.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/tz_context.h</itemPath>
               </logicalFolder>
             </logicalFolder>
@@ -102,7 +105,6 @@
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/ptc.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/dsu.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/tram.h</itemPath>
-            <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/fpu_ns.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/prm.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/evsys.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/pac.h</itemPath>
@@ -171,12 +173,12 @@
                      displayName="tcc_secure_pic32ck_sg01_cult_default"
                      projectFiles="true">
         <logicalFolder name="components" displayName="components" projectFiles="true">
-          <itemPath>tcc_secure_pic32ck_sg01_cult_default/components/evsys.yml</itemPath>
-          <itemPath>tcc_secure_pic32ck_sg01_cult_default/components/pm.yml</itemPath>
-          <itemPath>tcc_secure_pic32ck_sg01_cult_default/components/tcc0.yml</itemPath>
-          <itemPath>tcc_secure_pic32ck_sg01_cult_default/components/core.yml</itemPath>
           <itemPath>tcc_secure_pic32ck_sg01_cult_default/components/cmsis.yml</itemPath>
+          <itemPath>tcc_secure_pic32ck_sg01_cult_default/components/core.yml</itemPath>
+          <itemPath>tcc_secure_pic32ck_sg01_cult_default/components/pm.yml</itemPath>
+          <itemPath>tcc_secure_pic32ck_sg01_cult_default/components/evsys.yml</itemPath>
           <itemPath>tcc_secure_pic32ck_sg01_cult_default/components/dfp.yml</itemPath>
+          <itemPath>tcc_secure_pic32ck_sg01_cult_default/components/tcc0.yml</itemPath>
         </logicalFolder>
         <itemPath>tcc_secure_pic32ck_sg01_cult_default/mcc-config.mc4</itemPath>
       </logicalFolder>
@@ -232,12 +234,12 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>pkob4hybrid</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.60</languageToolchainVersion>
+        <languageToolchainVersion>6.00</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="CMSIS" vendor="ARM" version="5.9.0"/>
-        <pack name="PIC32CK-SG_DFP" vendor="Microchip" version="1.6.199"/>
+        <pack name="CMSIS" vendor="ARM" version="6.3.0"/>
+        <pack name="PIC32CK-SG_DFP" vendor="Microchip" version="1.10.278"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>

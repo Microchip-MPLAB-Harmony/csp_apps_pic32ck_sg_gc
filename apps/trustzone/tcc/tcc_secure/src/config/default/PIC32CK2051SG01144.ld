@@ -1,7 +1,8 @@
+
 /*--------------------------------------------------------------------------
  * MPLAB XC32 Compiler -  PIC32CK2051SG01144 linker script
  * 
- * Copyright (c) 2025 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2026 Microchip Technology Inc. and its subsidiaries.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +17,6 @@
  * limitations under the License.
  *
  */
-
 OUTPUT_FORMAT("elf32-littlearm", "elf32-littlearm", "elf32-littlearm")
 OUTPUT_ARCH(arm)
 SEARCH_DIR(.)
@@ -43,7 +43,6 @@ ENTRY(__XC32_RESET_HANDLER_NAME)
  * macros in the MPLAB X project properties or on the command line when
  * calling the linker via the xc32-gcc shell.
  *************************************************************************/
-
 #ifndef ROM_ORIGIN
 #  define ROM_ORIGIN 0xc000000
 #endif
@@ -52,6 +51,7 @@ ENTRY(__XC32_RESET_HANDLER_NAME)
 #elif (ROM_LENGTH > 0x200000)
 #  error ROM_LENGTH is greater than the max size of 0x200000
 #endif
+
 #ifndef BOOT_ROM_ORIGIN
 #  define BOOT_ROM_ORIGIN 0x8000000
 #endif
@@ -60,6 +60,7 @@ ENTRY(__XC32_RESET_HANDLER_NAME)
 #elif (BOOT_ROM_LENGTH > 0x20000)
 #  error BOOT_ROM_LENGTH is greater than the max size of 0x20000
 #endif
+
 #ifndef RAM_ORIGIN
 #  define RAM_ORIGIN 0x20000000
 #endif
@@ -68,18 +69,20 @@ ENTRY(__XC32_RESET_HANDLER_NAME)
 #elif (RAM_LENGTH > 0x80000)
 #  error RAM_LENGTH is greater than the max size of 0x80000
 #endif
+
 #ifndef TCM_ORIGIN
 #  define TCM_ORIGIN 0x0
 #endif
 #ifndef __XC32_TCM_LENGTH
 #  define __XC32_TCM_LENGTH 0x0
-#elif (defined(__XC32_TCM_LENGTH)  && __XC32_TCM_LENGTH != 0x0 && __XC32_TCM_LENGTH != 0x800 && __XC32_TCM_LENGTH != 0xc00 && __XC32_TCM_LENGTH != 0x1000)
-#  warning Non-standard ITCM length, using default 0x1000
+#elif (__XC32_TCM_LENGTH != 0x0 \
+      && __XC32_TCM_LENGTH != 0x800 \
+      && __XC32_TCM_LENGTH != 0xc00 \
+      && __XC32_TCM_LENGTH != 0x1000 )
+#  warning Non-standard TCM length, using default 0x1000
 #  undef __XC32_TCM_LENGTH
 #  define __XC32_TCM_LENGTH 0x1000
 #endif
-
-
 
 /*  Linker Macros controlling memory regions for TrustZone-M
  *
@@ -204,8 +207,18 @@ MEMORY
 #endif
   ram (WX!R) : ORIGIN = TZ_RAM_ORIGIN, LENGTH = TZ_RAM_LENGTH
 #if defined(_SECURE)
- tcm (WX) : ORIGIN = TCM_ORIGIN, LENGTH = __XC32_TCM_LENGTH
+  tcm (WX) : ORIGIN = TCM_ORIGIN, LENGTH = __XC32_TCM_LENGTH
 #endif
+  /* Device configuration memory regions */
+  /* Use __attribute__((section(".<section_name>"))) to place data in these regions */
+  flash_cfm_usercfg1 (RW!X)  : ORIGIN = 0x0a000000, LENGTH = 0x1000 
+  flash_cfm_userotp1 (RW!X)  : ORIGIN = 0x0a001000, LENGTH = 0x1000 
+  flash_cfm_bootcfg1 (RW!X)  : ORIGIN = 0x0a002000, LENGTH = 0x1000 
+  flash_cfm_dalcfg (RW!X)  : ORIGIN = 0x0a004000, LENGTH = 0x1000 
+  flash_cfm_calbackup (RW!X)  : ORIGIN = 0x0a006000, LENGTH = 0x1000 
+  flash_cfm_usercfg2 (RW!X)  : ORIGIN = 0x0a008000, LENGTH = 0x1000 
+  flash_cfm_userotp2 (RW!X)  : ORIGIN = 0x0a009000, LENGTH = 0x1000 
+  flash_cfm_bootcfg2 (RW!X)  : ORIGIN = 0x0a00a000, LENGTH = 0x1000 
 
 }
 /*************************************************************************

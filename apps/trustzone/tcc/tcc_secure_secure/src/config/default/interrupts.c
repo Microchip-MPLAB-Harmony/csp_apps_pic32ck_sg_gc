@@ -213,10 +213,6 @@ extern void TCC7_MC0_Handler           ( void ) __attribute__((weak, alias("Dumm
 extern void TCC7_MC1_Handler           ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void ADC_GLOBAL_Handler         ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void ADC_CORE1_Handler          ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void Reserved2_Handler          ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void Reserved3_Handler          ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void Reserved4_Handler          ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void Reserved5_Handler          ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void AC_Handler                 ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void PTC_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void SPI_IXS_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
@@ -395,10 +391,6 @@ const H3DeviceVectors exception_table=
     .pfnTCC7_MC1_Handler           = TCC7_MC1_Handler,
     .pfnADC_GLOBAL_Handler         = ADC_GLOBAL_Handler,
     .pfnADC_CORE1_Handler          = ADC_CORE1_Handler,
-    .pfnReserved2_Handler          = Reserved2_Handler,
-    .pfnReserved3_Handler          = Reserved3_Handler,
-    .pfnReserved4_Handler          = Reserved4_Handler,
-    .pfnReserved5_Handler          = Reserved5_Handler,
     .pfnAC_Handler                 = AC_Handler,
     .pfnPTC_Handler                = PTC_Handler,
     .pfnSPI_IXS_Handler            = SPI_IXS_Handler,
