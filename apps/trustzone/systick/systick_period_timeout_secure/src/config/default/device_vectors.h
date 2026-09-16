@@ -216,10 +216,10 @@ typedef struct _H3DeviceVectors
   pfn_handler_t pfnTCC7_MC1_Handler;                /* 131 TCC Match/Compare 1 */
   pfn_handler_t pfnADC_GLOBAL_Handler;              /* 132 ADC Global Interrupt */
   pfn_handler_t pfnADC_CORE1_Handler;               /* 133 ADC Core 1 Interrupt */
-  pfn_handler_t pfnReserved2_Handler;               /* 134 ADC Unused/Reserved */
-  pfn_handler_t pfnReserved3_Handler;               /* 135 ADC Unused/Reserved */
-  pfn_handler_t pfnReserved4_Handler;               /* 136 ADC Unused/Reserved */
-  pfn_handler_t pfnReserved5_Handler;               /* 137 ADC Unused/Reserved */
+  pfn_handler_t pfnReserved134;
+  pfn_handler_t pfnReserved135;
+  pfn_handler_t pfnReserved136;
+  pfn_handler_t pfnReserved137;
   pfn_handler_t pfnAC_Handler;                      /* 138 Analog Comparator Interrupt */
   pfn_handler_t pfnPTC_Handler;                     /* 139 Peripheral Touch Controller */
   pfn_handler_t pfnSPI_IXS_Handler;                 /* 140 Audio SPI Interrupt */

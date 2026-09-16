@@ -40,8 +40,8 @@
 #include <stddef.h>
 
 /* Declaration of these functions are missing in stdio_s.h for ARM parts*/
-/* MISRAC 2012 deviation block start */
-/* MISRA C-2012 Rule 21.2 deviated four times.  Deviation record ID -  H3_MISRAC_2012_R_21_2_DR_1 */
+/* MISRAC 2023 deviation block start */
+/* MISRA C-2023 Rule 21.2 deviated four times.  Deviation record ID -  H3_MISRAC_2023_R_21_2_DR_1 */
 
 
 int read(int handle, void *buffer, unsigned int len)
@@ -54,4 +54,4 @@ int write(int handle, void * buffer, size_t count)
    return -1;
 }
 
-/* MISRAC 2012 deviation block end */
+/* MISRAC 2023 deviation block end */

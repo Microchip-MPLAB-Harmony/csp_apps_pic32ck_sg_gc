@@ -4,19 +4,19 @@
 
 
 project: systick_periodic_timeout_pic32ck_sg01_cult
-creation_date: 2025-08-28T11:55:11.782+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2026-09-16T12:20:35.391+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 11
 mcc_mode: IDE            # [IDE|Standalone|Headless]
-mcc_version: v5.6.2
-mcc_core_version: v5.8.2
-mplabx_version: v6.25        # if MPLAB X plugin only
-harmony_version: v5.6.2
-compiler: XC32 4.60
+mcc_version: v5.7.0
+mcc_core_version: v5.9.0
+mplabx_version: v6.35        # if MPLAB X plugin only
+harmony_version: 1.7.0
+compiler: XC32 6.00
 
 modules:
-    - {name: "csp", version: "v3.22.7"}
-    - {name: "CMSIS_5", version: "5.9.0"}
+    - {name: "CMSIS_6", version: "v6.3.0"}
+    - {name: "csp", version: "v3.26.1"}
 
 packs:
-    - {name: "PIC32CK-SG_DFP", version: "1.6.199"}
+    - {name: "PIC32CK-SG_DFP", version: "1.10.278"}
 

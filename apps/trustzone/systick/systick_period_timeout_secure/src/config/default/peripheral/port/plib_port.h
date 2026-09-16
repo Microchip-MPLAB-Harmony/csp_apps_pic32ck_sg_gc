@@ -117,7 +117,7 @@
 
 
 /* Helper macros to get port information from the pin */
-#define GET_PORT_GROUP(pin)  ((PORT_GROUP)(PORT_BASE_ADDRESS + (0x80U * (((uint32_t)pin) >> 5U))))
+#define GET_PORT_GROUP(pin)  ((PORT_GROUP)(PORT_SEC_BASE_ADDRESS + (0x80U * (((uint32_t)pin) >> 5U))))
 #define GET_PIN_MASK(pin)   (((uint32_t)(0x1U)) << (((uint32_t)pin) & 0x1FU))
 
 /* Named type for port group */
@@ -139,7 +139,7 @@ PERIPHERAL_FUNCTION_J = 0x9,
 PERIPHERAL_FUNCTION_K = 0xA,
 PERIPHERAL_FUNCTION_L = 0xB,
 PERIPHERAL_FUNCTION_M = 0xC,
-PERIPHERAL_FUNCTION_P = 0xF,
+PERIPHERAL_FUNCTION_P = 0xD,
 
 }PERIPHERAL_FUNCTION;
 
